@@ -101,6 +101,70 @@ to reinforce the meaning and distinguish it from 四. Even so, the character
 呬 eventually became obsolete too, with speakers now opting instead for
 compound words (terms made of at least two characters).
 
+No matter whether the explanation for the number 4 left you satisfied or
+disappointed, the truth is that the characters for the rest of the numbers
+follow the same concept of _sound loan_. We could now discuss the next number,
+the number 5, which is represented by the character 五 (wǔ). A sharp reader
+could try to find an explanation saying that this character is made up of five
+strokes, so maybe there were five individual lines at some point in the past.
+In fact, a more experienced Chinese learner would know that the character is
+actually written with four strokes (one with a bend), not five, and even if
+we look at early texts, there are only four well defined strokes, following
+a crisscross pattern, which was also the original meaning. While there are
+some theories which try to explain this choice, the most logical one is
+still—you guessed it—just a _sound loan_. The sound for the number 5 happened
+to be the same, so the character was borrowed just for its sound.
+
+This pattern of borrowing a character only for its sound and use it to
+represent a meaning completely unrelated to the original character's meaning
+is quite common in general, it is not only for numbers. For instance, another
+one of the first characters Chinese learners see is 我 (wǒ), which is used
+as the first person singular pronoun ('I' in English). This character is
+a depiction of a trident-like weapon. You already know where this is going,
+don't you? Yes, just a _sound loan_.
+
+I am not a linguist myself, but I am at a point where I find knowing the
+_real_ (quote, most widely accepted by scholars) explanations much more
+satisfying than coming up with a mnemonic story to remember the character
+and its meaning, even if the latter seems easier. In the end, we still have
+to learn by repetition. Anyway, I have nothing against mnemonics themselves
+(Heisig enjoyers, _u there_?), as long as we are aware that the vast majority
+are made up. However, there is usually only a really thin line between these
+stories and [_folk etymology_](https://en.wikipedia.org/wiki/Folk_etymology)
+(people thinking these stories are the real origins of the meanings). Maybe
+some of the readers were told the popular explanation for 我—it is a depiction
+of a hand (手) holding a weapon (戈), so as to protect oneself (我). While
+the story sounds reasonable, scholars believe it to be a reinterpretation of
+the character into more commonly understood concepts, which is why it falls
+into _folk etymology_. In contrast, our sound loan explanation is simple but
+less sticky, which is why many people don't find it useful.
+
+Many students who start learning Chinese feel attracted by the characters so
+much so that they often fall for the
+[_Ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
+Thus, methods like Heisig's _Remembering the Hanzi_ remain oblivious to
+character pronunciation, as if it were OK for students to turn a deaf ear to
+the character's voices. I myself used _Remembering the Kanji_—the Japanese
+characters equivalent—when I was learning Japanese, and learned hundreds
+of them without knowing how to pronounce them. There is actually a part 2
+of _Remembering the Kanji_ which focuses on mnemonic stories for how characters
+are read, although as far as I know this doesn't exist in _Remembering the
+Hanzi_, making it rather detrimental.
+
+I started with a popular statistic about 80% of Chinese characters being able
+to _speak_. This was to catch the reader's attention, because in reality this
+percentage doesn't include the _sound loan_ characters introduced in this
+section. While not many people know about the widespread of _sound loan_ in
+common characters, others do know about another special type, which is the one
+being referred to when talking about the 80%, and potentially the most
+important when trying to decipher the characters' voices.
+
+## But my life is not completely meaningless
+
+_More coming here_
+
+## I think I'm just a bit empty
+
 _More coming here_
 
 [^1]: There is a subtle difference in wording here. First, characters
