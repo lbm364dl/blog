@@ -159,13 +159,171 @@ common characters, others do know about another special type, which is the one
 being referred to when talking about the 80%, and potentially the most
 important when trying to decipher the characters' voices.
 
-## But my life is not completely meaningless
+## But my life isn't totally meaningless
 
-_More coming here_
+Of course, let's not forget that at some point in ancient times, before some
+being borrowed for their sound, all characters did have an original meaning.
+Recall, for example, the character 马 introduced in the dialogue, which is a
+depiction of a horse, as a simplified version of 馬. Do you still not see the
+horse here? Oh well...
+
+<figure style="text-align: center;">
+    <div style="display: flex; justify-content: center;" width="100%">
+        <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-oracle.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/馬-1.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-bronze.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/馬-2.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-seal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/馬-3.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-clerical-han.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/馬-4.svg" width="150" height="150" />
+        </a>
+    </div>
+    <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
+        Evolution of the 馬 character from left to right
+    </figcaption>
+</figure>
+
+Now the meaning argument goes like this: Chinese characters, when being part of
+other larger characters, still provide their meaning as part of a compound
+explanation. If we believe this, then naturally we have to find a reasonable
+story to put the pieces together in the character 玛—we have to find a way to
+connect the seemingly unrelated meanings of its components _gemstone_ and
+_horse_. While the existence of certain characters composed of meaning-only
+components is widely accepted (known as _associative compounds_)[^3], in the
+vast majority of compound characters we shouldn't force this idea, despite
+many people trying to do so.
+
+Enter the world of _phono-semantic_ compounds.
+
+Our example 玛 (_agate_) has a much simpler explanation, albeit for some less
+satisfying. The character 马 is pronounced mǎ, and, well, the character 玛 is
+pronounced—yeah, you guessed it—also mǎ. Then the character has the _meaning_
+component 𤣩which gives a small hint for its meaning, in this case,
+that it's a kind of _gemstone_, and a _sound_ component, which gives a hint
+on how to pronounce it, but doesn't necessarily add any new meaning hints.
+This is how _phono-semantic_ characters work. Unironically, you now more or
+less know how 80% of Chinese characters work.
+
+Now that we know 马 can be used as a sound component, the Chinese learner
+would probably recall two other characters that are taught right at the
+start.
+
+- The character 吗 (ma). This is used as a sentence-final particle [^4] to
+denote yes-no questions. Particles are usually another example of
+_phono-semantic_ characters. They usually include the mouth 口 (i.e. _speech_)
+as the meaning component besides the sound component. In the case of 吗, our
+lovely horse gives the sound. Just note that the tone [^5] is not the same,
+but as I said, the sound component works as a hint, and it doesn't need to
+be exactly spot on.
+- The character 妈 (mā), which means _mother_, usually also doubled as 妈妈.
+From the previous dialogue, you now also know that 女 means _woman_. _What do
+women have to do with horses?_ Why does this just sound like the start of a
+horrible joke? Fortunately, at this point, you can already understand how this
+works—a _mother_ is a _woman_, and 马 gives the sound, as simple as that.
+
+You can see where this is going. There are some characters which are commonly
+used as sound components of other characters, and 马 is one of them. But they
+don't necessarily have to be only one type of component. In this case, 马 can
+also work as a _meaning_ component in many other characters, and in theses
+cases the meaning related to horses should be much more convincing than, say,
+my made up story for 玛. A couple of examples (still _phono-semantic_) of 马
+as a _meaning_ component:
+
+- The character 骑 (qí), which originally meant _to ride a horse_, but
+later on extended its meaning to riding in general (horse, motorcycle, bike...).
+Here, it makes sense that 马 gives the meaning and the other component, 奇 (qí)
+gives the sound. _But wait, 奇 means 'weird, unusual'... No, no, no, no, no,
+there is nothing weird about riding horses_. Recall, no need to force meanings,
+it just gives the sound.
+- The character 驴 (lǘ), which means _donkey_. Again, 马 gives the meaning
+(a _donkey_ is similar to a _horse_) and 户 (hù, meaning 'door') gives the
+sound. _What did the horse say when it opened the door?_ Ok, ok, enough with
+the cringey jokes. Here 户 just gives the sound. _But are hù and lǘ that
+similar sounds...?_ Well, you decide that. But they don't necessarily need to
+be. How come? Bear with me, we will go back to this example in the next section.
+
+The sharp reader may have noticed that when the character works as a meaning
+component it appears on the left, and when it works as a sound component it
+appears on the right. This is a nice observation, and most of the times true,
+so it can be used as a rule of thumb. However, always be careful because there
+are also exceptions where it doesn't work.
+
+The set of other characters where a specific character is used with the same
+function is called a _series_. For the case of 马, if you're interested in
+more examples, the (probably non-exhaustive) series are:
+
+- The sound series: 吗 (ma), 妈 (mā), 玛 (mǎ), 码 (mǎ), 蚂 (mǎ), 骂 (mà).
+
+- The semantic series: 骑, 驴, 验, 驻, 骗, 驱, 驶, 驾, 冯, 驳, 骤, 驰, 闯, 骚, 骄,
+骇, 驼, 驯, 骆, 笃, 骏, 骡, 驭, 驮, 驹, 骁.
+
+While the number of characters commonly used as meaning components is a rather
+sane amount, the number of those used as sound components is I believe too
+large. However, I don't recommend trying to memorize neither sound nor semantic
+series of characters, since I think this is something you learn as second
+nature while encountering the characters themselves, and I would instead focus
+on learning the most common characters. For instance, from the sound and
+semantic series for 马 presented above, I could probably identify the function
+of 马 in them without knowing the actual character, and in fact I don't know
+most of them and it would be useless to try to do so just because they happen
+to be in the same series.
+
+At the end of the previous section I mentioned _Remembering the Hanzi_ as a
+book that seemed to ignore the phonetic aspect of characters. Thanks to some
+fellow learners, I also became aware of a similar Spanish book by Pedro Ceinos
+titled _Caracteres chinos_ (_Chinese characters_). This one actually does seem
+to introduce phonetic components, trying to explain the characters grouped by
+their _series_, but it always tries to enforce a meaning along with the sound.
+In the book's introduction he explains this point of view, which he shares with
+a few other scholars, that no sound component comes without a _slight_ hint of
+additional meaning to the overall character, effectively saying that _almost_
+all sound components are also meaning components at the same time. In addition,
+even though he mentions the concept of _sound loan_, in the actual characters
+where this happens he doesn't identify it, only relying on meaning arguments.
+
+While most scholars believe that sound loans and sound components can stand on
+their own feet without adding any additional meaning, just like I tried to
+convey here, I still think authors like Ceinos are laudable for their hard work,
+since he himself states to be no linguist and his book is a result of his
+own experiences and beliefs, not necessarily aligned with other linguists'
+point of view, which he is well aware of.
+
+By now I think you can't deny that characters _do speak_, and sound is a
+crucial part of most of them. Unfortunately, you may still encounter some
+tricky characters whose voice you will struggle to understand. Although this
+can be quite challenging, we will devote the next section to at least try to
+decipher some of them.
 
 ## I think I'm just a bit empty
 
 _More coming here_
+
+## Bonus: Character etymology resources
+
+#### I'm not into pay-to-win, there's plenty of free stuff on the internet
+
+More coming here
+
+#### I value my time, take my money and give me the etymology
+
+More coming here
+
+<div id="#images-attribution" style="margin-top: 10px; margin-bottom: 25px; font-size: 14px; color: gray;">
+    Images sourced from <a href="https://commons.wikimedia.org/w/index.php" target="_blank">Wikimedia Commons</a>, 
+    created by various contributors. Available sources: 
+    <a href="http://xiaoxue.iis.sinica.edu.tw/yanbian" target="_blank">Sinica Database</a>, 
+    <a href="https://hanziyuan.net" target="_blank">Chinese Etymology</a>, 
+    <a href="https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php" target="_blank">Multi-function Chinese Character Database</a>, 
+    <a href="https://ctext.org/dictionary.pl?if=en&amp;" target="_blank">Chinese Text Project</a>, 
+    and <a href="http://chinese-linguipedia.org/search_source_inner.html" target="_blank">Chinese Linguipedia</a>. 
+    Public Domain.
+</div>
+
+
 
 [^1]: There is a subtle difference in wording here. First, characters
     like 一, 二 and 三 should be called _ideograms_, since they represent
@@ -183,3 +341,15 @@ _More coming here_
     inferred gender would be better explained by the presence of breasts,
     which would likely be a more convincing argument for our _confused_
     student.
+
+[^3]: https://en.wikipedia.org/wiki/Chinese_character_classification
+
+[^4]: For the reader not familiar with particles, just think of them as
+    characters without a real concrete meaning, that are used to give a
+    sentence or a part of it a certain function or emotion.
+
+[^5]: For the reader not familiar with tones, just keep in mind that the
+    sound (_what you say_) is the same but the intonation (_how you say it_)
+    can be different. In Mandarin _pinyin_ (the romanization of Chinese
+    characters) we denote the intonations with different marks on top of
+    the vowels.
