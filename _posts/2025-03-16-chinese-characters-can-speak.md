@@ -300,7 +300,143 @@ decipher some of them.
 
 ## I think I'm just a bit empty
 
-_More coming here_
+In this article I'm focusing on simplified Chinese characters, which are used
+in mainland China, Singapore or Malaysia, because that's what most foreign
+learners start with, although I think experienced learners should know both
+simplified and traditional scripts. For example, 馬 is the traditional horse
+while 马 is the simplified counterpart. Traditional characters are now used
+mainly in Taiwan, Hong Kong and Macao. Until last century, they used to be a
+single script with maybe some character variants. We will not try to address
+[_why and when they changed_](https://www.sixthtone.com/news/1012040) but
+rather what they changed and how these changes affected the understanding of
+the characters' etymology.
+
+In the previous section we saw 驴 (lǘ) as an example of a _phono-semantic_
+character, where 户 (hù) gave the sound. While you could believe this works
+as a sound hint, another person could argue they are quite different. While
+in some cases the answer won't be too satisfying, in this one, it is quite
+simple. The traditional version of 驴 is 驢, and it turns out that here the
+phonetic component's (盧) sound is lú, which seems much more accurate.
+What happened here?
+
+Enter the world of _empty_ components.
+
+When characters are simplified in one way or another, we are doomed to lose
+some important information about them. In the previous example, the simplified
+component 户 can be known as both an _empty_ component and a _sound_ component.
+When simplifying characters, there are a few ways to do it. In this case, 户
+doesn't look excessively similar to 盧, neither does its sound, but together
+they somehow work as a simplified alternative. It can be called _empty_ because
+it lost its original form, although it can also still be called a _sound_
+component because it still conveys a small sound hint. Simplifying characters
+often comes at a small cost—they become harder to understand logically.
+
+Other times, however, the simplified character works quite well, without
+losing any significant bits. Let's have a look at 认 (rèn), which can mean
+_to know_ (part of the common compound 认识, rènshi, _to know_), and whose
+traditional character is 認.
+
+- The _meaning_ component is 讠, which is the simplified version of 訁, meaning
+_speech_ or something related to _speech_, giving the overall meaning _to
+recognize, to admit, to know_. One of the common simplification techniques is
+the regularization of cursive script. In fact, our lovely 马 also comes from
+a cursive variant! In some cases, this may still look similar to the original
+character and thus not be considered an _empty_ component. In addition, this
+simplification of some characters is consistent and always used like this when
+it works as a component in other characters.
+- The _sound_ component is 人 (rén), which is totally not a reasonable
+simplification of 忍 (rěn) when regarding its form, and can thus be considered
+an _empty_ component. But keep in mind that its function was only as a sound
+hint, and the simplified alternative also does this pretty well, so it's still
+a perfect sound component in the simplified character. We couldn't ask for more.
+Also remember that it's fine for characters to work as either meaning or sound
+components, so in this case, just because 人 (meaning person) is almost always
+a meaning component (written as 亻) when part of other characters, you don't
+need to force a meaning, it can also just work as a sound component.
+
+Was that OK? Well, now for the real mess... A character that often appears as an
+_empty_ component in simplified characters is 又 (yòu), which would by itself
+be a depiction of a _right hand_, and looks something more similar to ㄡ when
+used as a component on the left side. Let's see some examples in characters
+that may be familiar even for unexperienced Chinese learners:
+
+- The character 汉 (hàn), which can now reference the Han ethnic group, and is
+also part of the word 汉字 (hànzi), which means _Chinese character_. The 又 is
+an empty component and used to be the sound component 𦰩 (jiān) for the
+traditional variant 漢.
+- The character 难 (nán), which now means _difficult_ just by pure _sound loan_.
+However, before that, its original meaning was a type of bird, with 又 being
+an _empty_ component, simplification of 𦰩 (jiān) from the traditional variant
+難. What? The same one as for 汉? Then it's always like this? _Ha!_ Not even
+close... Just wait and see the next ones.
+- The character 对 (duì), which now means _yes_ or _to face_, among other
+things. Here the 又 is an empty component, simplification of 丵 and 土 in 對.
+It used to represent something related to developing the land, certainly not
+a sound component, maybe later a _sound loan_, but well, I won't even try
+to explain this one cause I don't even get it myself.
+- The character 欢 (huān), which can mean _happy_. Here the 又 is—you guessed
+it—an _empty_ component, simplification of 雚 (guàn), a sound component in
+_the_ traditional... What? Well, somehow there are _four_ different variants
+in the traditional script—歡, 驩, 懽, 讙. At least the sound component is the
+same in all of them...
+- The character 鸡 (jī), which means _chicken_. You obviously know what 又 is,
+and it used to be 奚 (xī), a sound component for the two different variants
+鷄 and 雞 of the traditional script.
+- The character 观 (guān), which means _to observe_. Your good friend 又 is yet
+again here trying to hide another sound component, this one being 雚 (guàn),
+from the traditional variant 觀.
+
+Phew! That really was a mess... And believe me there are like ten more
+characters where 又 is an _empty_ component. When confronted with these
+difficulties, one could only think that maybe traditional characters are not
+that hard, since their components are completely more consistent.
+
+We are approaching the end, but there is still one thing I want to talk about.
+In the first sentence of the article I mentioned that characters can produce
+_utterances of Old Chinese understood only by scholars_. I will try to explain
+what I meant with another example.
+
+Consider the character 也 (yě), which can now be used by _sound loan_ to mean
+_also_ or can be used as a particle[^4]. The following is, again, a
+non-exhaustive list of its sound series: 他 (tā), 她 (tā), 牠 (tā), 地 (dì),
+施 (shī), 池 (chí), 驰 (chí), 弛 (chí), 㐌 (yí), 匜 (yí). _What?_ There are at
+least five different sounds here! What's going on? Well, as almost always, the
+explanation can be quite simple although not too satisfying. 
+
+You see, the sounds I showed you are the evolved modern sounds used in Mandarin
+for those characters. Thousands of years have passed, and spoken language
+evolves, so in the past all of them would have had a similar sound, but evolved
+to quite different sounds as time passed by. For instance, some of them in Old
+Chinese are transcribed as *l̥ʰaːl, *l'els, *hljal, *l'aːl, *l'al, *hljalʔ, *lal.
+_No, no, no, I'm not an expert in Old Chinese_. I just though you would like
+to see the transcriptions yourself
+([see this phonetic series table](https://en.wiktionary.org/wiki/%E4%B9%9F#Chinese)).
+I guess we can trust phonologists on this one.
+
+It was never my intention to make you think that learning and understanding
+Chinese characters is _easy_. Again, I still remember many years ago when I
+would immerse myself into playful stories, crafty mnemonics, with the sole
+purpose of getting my brain to remember a bit of these Japanese characters,
+which for some reason Japanese people thought it was a good idea to borrow
+them from the Chinese hundreds of years ago. Although at some point I quit
+Heisig's method out of pure boredom. I just wanted to _read_. I started
+changing my strategy when I met etymology, _real_ etymology. Although there
+were still some parts of the puzzle that I couldn't put together at times,
+overall the process of understanding the characters felt gradually simpler.
+I was really starting to hear the characters' voices up to the point that
+they started feeling like a real alphabet, not much different than a Latin
+alphabet (_ok, ok, just a few thousand more symbols_), a millenial script
+system that initially stood on pictographic roots but eventually grew
+systematically out of the need to represent abstract and complex concepts that
+would otherwise prove imposible without stealing some voices from here or
+there, recycling some characters all over again, building their own monumental
+_hyeroglyphs_, without expecting westerners to ever think of them as magical
+beings.
+
+Do meaning stories and mnemonics work for you? Do you enjoy building your
+own? Keep going! Enjoy the journey. I just hope you learned to appreciate the
+characters' voices a tiny bit.
+
 
 ## Bonus: Character etymology resources
 
