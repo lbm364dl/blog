@@ -391,9 +391,11 @@ characters where 又 is an _empty_ component. When confronted with these
 difficulties, one could only think that maybe traditional characters are not
 that hard, since their components are completely more consistent.
 
-We are approaching the end, but there is still one thing I want to talk about.
-In the first sentence of the article I mentioned that characters can produce
-_utterances of Old Chinese understood only by scholars_. I will try to explain
+We're bringing the third act to a close, but there is still one thing I want
+to talk about. In the first sentence of the article I mentioned that characters
+can produce _utterances of Old Chinese understood only by scholars_. Although
+not directly related to _empty_ components, this phenomenon can also disguise
+the real intentions, just like _empty_ components do. I will try to explain
 what I meant with another example.
 
 Consider the character 也 (yě), which can now be used by _sound loan_ to mean
@@ -411,31 +413,33 @@ Chinese are transcribed as *l̥ʰaːl, *l'els, *hljal, *l'aːl, *l'al, *hljalʔ,
 _No, no, no, I'm not an expert in Old Chinese_. I just though you would like
 to see the transcriptions yourself
 ([see this phonetic series table](https://en.wiktionary.org/wiki/%E4%B9%9F#Chinese)).
-I guess we can trust phonologists on this one.
+Unless we happen to be linguists ourselves, trained in the recognition of
+sound evolutions, this can just be a pain, but the only workaround is to
+acknowledge that these characters have nowadays multiple voices, and we should
+take all of them into account. In the end, I guess we should just trust
+phonologists on this one.
 
 It was never my intention to make you think that learning and understanding
 Chinese characters is _easy_. Again, I still remember many years ago when I
-would immerse myself into playful stories, crafty mnemonics, with the sole
+would immerse myself in playful stories, crafty mnemonics, with the sole
 purpose of getting my brain to remember a bit of these Japanese characters,
-which for some reason Japanese people thought it was a good idea to borrow
-them from the Chinese hundreds of years ago. Although at some point I quit
-Heisig's method out of pure boredom. I just wanted to _read_. I started
-changing my strategy when I met etymology, _real_ etymology. Although there
-were still some parts of the puzzle that I couldn't put together at times,
-overall the process of understanding the characters felt gradually simpler.
-I was really starting to hear the characters' voices up to the point that
-they started feeling like a real alphabet, not much different than a Latin
-alphabet (_ok, ok, just a few thousand more symbols_), a millenial script
-system that initially stood on pictographic roots but eventually grew
-systematically out of the need to represent abstract and complex concepts that
-would otherwise prove imposible without stealing some voices from here or
-there, recycling some characters all over again, building their own monumental
-_hyeroglyphs_, without expecting westerners to ever think of them as magical
-beings.
-
-Do meaning stories and mnemonics work for you? Do you enjoy building your
-own? Keep going! Enjoy the journey. I just hope you learned to appreciate the
-characters' voices a tiny bit.
+which for some reason the Japanese thought it was a good idea to borrow from
+the Chinese hundreds of years ago. But at some point, I quit Heisig's method
+out of pure boredom. I just wanted to _read_. I started changing my strategy
+when I met etymology—_real_ etymology. Although there were still some parts
+of the puzzle that I couldn't put together at times, overall, the process of
+understanding the characters became increasingly clear. I was really starting
+to hear (and enjoy) the characters' voices up to the point that they would
+end up feeling like a real alphabet—not much different from a Latin alphabet
+(_ok, ok, just a few thousand more symbols_), but still a millenial script
+system that initially built itself on the pretense of pictographic roots yet
+eventually kept growing systematically out of the need to represent abstract
+and complex concepts that would otherwise prove impossible without stealing
+some voices from here or there, recycling some characters all over again,
+building their own monumental _hyeroglyphs_, inducing false fantasies in the
+marveled Westerners whose eyes dream of _intellectual paintings_, _metaphysical
+and ideal pictorial algebras of the sciences and arts_[^6], but still, down to
+its core, just another way to convey the power and beauty of language.
 
 
 ## Bonus: Character etymology resources
@@ -489,3 +493,8 @@ More coming here
     can be different. In Mandarin _pinyin_ (the romanization of Chinese
     characters) we denote the intonations with different marks on top of
     the vowels.
+
+[^6]: Metaphors extracted from an excerpt of _Mémoires concernant l'histoire,
+    les sciences, les arts, les moeurs, les usages, &c des Chinois, par les
+    missionaries de Pekin_ that I read in the article 
+    [_Ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
