@@ -437,22 +437,186 @@ eventually kept growing systematically out of the need to represent abstract
 and complex concepts that would otherwise prove impossible without stealing
 some voices from here or there, recycling some characters all over again,
 building their own monumental _hyeroglyphs_, inducing false fantasies in the
-marveled Westerners whose eyes dream of _intellectual paintings_, _metaphysical
-and ideal pictorial algebras of the sciences and arts_[^6], but still, down to
-its core, just another way to convey the power and beauty of language.
+marveled Westerners whose eyes dreamed of _intellectual paintings_,
+_metaphysical and ideal pictorial algebras of the sciences and arts_[^6], but
+still, down to its core, just another way to convey the power and beauty of
+language.
 
+<hr style="margin-bottom: 25px;">
 
 ## Bonus: Character etymology resources
 
-#### I'm not into pay-to-win, there's plenty of free stuff on the internet
+_Hey, the show is over..._. If you keep reading this, I'm assuming I somehow
+catched your attention and you are interested in knowing more about Chinese
+characters etymology. After this long journey, I wouldn't want you to conclude
+that I wrote the whole thing just as a shameless advertisement. This post was
+born for three main reasons:
 
-More coming here
+- I barely ever write. But I wanted to give it a try. I just wanted to convey
+my interests in one topic and make an attempt at some serious writing. I can
+now say I enjoyed the process, and I hope I'll keep writing in the future.
+- I _really_ got into _real_ etymology when stumbling upon
+[Outlier linguistics](https://www.outlier-linguistics.com/). _Yeah, yeah, this
+is a paid service, blah, blah, blah_. Since it has been so useful to me, I also
+wanted to present it briefly here but not in the main article, lest it would
+feel like I'm trying to sell you something. If you're curious and willing to
+spend a bit of money, maybe you could also read the second subsection.
+- Once I got to grasp the characters' voices myself, and also being aware of
+many people who still won't, I just wanted to put my two cents here and link
+them to this so that they could widen their vision a little bit.
 
-#### I value my time, take my money and give me the etymology
+Let's go to the resources!
 
-More coming here
+### I'm not into pay-to-win, there's plenty of free stuff on the internet
 
-<div id="#images-attribution" style="margin-top: 10px; margin-bottom: 25px; font-size: 14px; color: gray;">
+_Yes, you're right!_ I'm also fond of free resources particularly when being
+a student and not affording any paid alternatives. I have some interesting
+ones for you, that I also use from time to time:
+
+- [Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page): I wasn't
+paying too much attention to it in the past, but believe me I used it _a lot_
+when writing this article. When looking at entries for Chinese characters, I
+mainly use the section called _Glyph origin_, which is where you can find
+information like the one I present here. Look, for example, at 
+[this entry for 四](https://en.wiktionary.org/wiki/%E5%9B%9B), that I used to
+get some info for our _sound loan_ introduction. There are probably not too
+many places with so much information compiled by experts in the field.
+- [Hanziyuan](https://hanziyuan.net/#home): From 汉字源 (hànziyuán), meaning
+_source of Chinese characters_. This is a lifelong project by Richard Sears,
+popularly known as _Uncle hanzi_ in China. He presents an astounding database
+of different versions of each character throughout the history, to see their
+evolution, along with additional data about the character, some related to
+its etymology and decomposition, though this information can sometimes feel
+a bit _cryptic_. The site can feel a bit old, but it's still incredibly relevant.
+In the main page there are also a few articles linked, but the links are broken.
+You can access them
+[here](https://github.com/Dixin/Etymology/blob/main/docs/_posts/2017-09-17-why-study-chinese-etymology.md).
+These are also an invaluable resource to get started into etymology, and might
+also contain some additional explanations to better understand the sometimes
+_cryptic_ information found on the site.
+- [Dong Chinese dictionary](https://www.dong-chinese.com/dictionary): OK, I
+must confess I haven't used this one myself a lot, but probably because I
+only found it recently. I had a look at some dictionary entries and the origin
+explanations seem accurate. For instance, 
+[the entry for 四](https://www.dong-chinese.com/dictionary/search/%E5%9B%9B)
+is also in line with what we explained. It seems they take the origins
+seriously, as I read through 
+[this brief post](https://blog.dong-chinese.com/2019/07/07/character-origins.html).
+Incidentally, they also mention here a resource I wasn't aware of, which they
+introduce as _The most reliable and comprehensive source for character origins
+available online that I’ve found_, so I'll also include it here, [again with
+our example for 四
+](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=%E5%9B%9B).
+That one is only in Chinese—fortunately we live in a time when we can use
+tools like ChatGPT for accurate translations, so that shouldn't be a problem.
+- [Zhongwen](https://zhongwen.com/): When talking about Chinese characters
+etymology, it's impossible not to mention the _Shuowen Jiezi_, a character
+dictionary compiled by Xu Shen by the year 100 CE, which continues to be a
+relevant source to this day, even though some of its character explanations
+may now be considered outdated due to more recent research. Many tools try to
+break down characters into _radicals_, but doing so automatically usually
+results in a _horrible_ and _meaningless_ decomposition. In this site, you
+can navigate through a tree containing all characters and their inclusion
+relations as compiled manually by the _Shuowen Jiezi_. Each entry also
+contains a little explanation from the book itself, and vocabulary examples.
+Keep in mind that the general tree appears in traditional script, but then the
+simplified version is also shown in each entry. Also remember this is faithful
+to the _Shuowen Jiezi_, so some explanations may be outdated.
+- [Shuowenjiezi](http://www.shuowenjiezi.com/): _Tired of seeing short
+explanations from others that have read the Shuowen Jiezi for you? Then why
+not reading it yourself?_ Ok, this is a hardcore resource. Here you can
+access the whole _Shuowen Jiezi_ in Chinese, along with commentaries from
+the annotated edition by Duan Yucai from 1815, and many other sources. You
+must _really_ like etymology if you end up here. Again, if you don't speak
+Chinese, you can just translate, not a big deal. Another thing that I find
+awesome (and I value in any dictionary) is that you can click any character
+in the text and it directly goes to the entry for that character. A _paradise_
+for linguists and etymology _geeks_.
+
+Let's acknowledge and appreciate the incredible amount of effort that so
+many people put in compiling these resources and offering them for free. The
+world is a better place thanks to people like them.
+
+### I value my time, take my money and give me the etymology
+
+After presenting such a useful list of free resources above, what are we left
+with? Can anything be better than that? Well, it depends on what you consider
+_better_. From those resources, apart from the _Dong Chinese dictionary_ and,
+to a lesser extent, the _Hanziyuan_ and the _Zhongwen_ ones, in general we can
+assume the vast majority of reliable etymology resources to not be focused on
+Chinese learners, but rather in academia and research itself, so a Chinese
+language student might find them overwhelming (I'm aware you might have also
+felt like that when reading some parts of my article, and I'm sorry for that).
+
+As much as I could find all of this interesting, you would have a point if
+you say most of the information is quite unuseful for learning the language.
+Unfortunately I don't remember when and how this happened, but at some point
+while I was learning Japanese I stumbled upon
+[Outlier linguistics](https://www.outlier-linguistics.com/).
+I found myself watching their [_How Chinese characters actually work_ playlist
+](https://www.youtube.com/watch?v=Ng3UC894haQ&list=PLebp9ufr_vijeQBbjFo7YHI6RaibrYFMI)
+and found it enlightening. Then I also read through some of their posts
+(the equivalents for Japanese, but I'm linking the ones for Chinese here),
+notably these—[_part 1_](https://www.outlier-linguistics.com/blogs/chinese/what-is-etymology-and-is-it-useful-for-learning-chinese-characters-part-1)
+and [_part 2_](https://www.outlier-linguistics.com/blogs/chinese/what-is-etymology-and-is-it-useful-for-learning-chinese-characters-part-2)
+(they have more nice free to read posts there if you're interested).
+
+The team of _Outlier linguistics_ is made of two
+people—[Ash Henson](https://www.outlier-linguistics.com/pages/ash), who has
+a PhD touching many fields of Chinese linguistics, and 
+[John Renfroe](https://www.outlier-linguistics.com/pages/john), who
+basically got into Sinology by accident but none could stop him until he
+found himself researching in classical Chinese and Chinese paleography,
+history and archaeology. Surely this pair must know something about Chinese
+character origins.
+
+These two put their efforts into building a reliable dictionary of Chinese
+character etymology, keeping up to date with research, and trying to provide
+only the information necessary for Chinese learners to understand how the
+characters form, without necessarily going into too much detail. I found this
+systematic approach extremely convenient when I would be reading some text
+and I would want to know about an unfamiliar character, and I can basically
+do it in less than 30 seconds from my phone (it integrates with the
+[Pleco app](https://www.pleco.com/)).
+
+If you believe you can pay back for a service that makes your life easier and
+you can afford it, I would highly recommend 
+[_The Outlier Dictionary of Chinese Characters_](https://www.outlier-linguistics.com/products/outlier-dictionary-of-chinese-characters)
+(the _Essentials edition_). The _Expert edition_ contains much more information
+in the spirit of the more detailed research resources I presented before, but
+since this is also a lot of work to do, for now they only have this extra
+information for a subset of the characters. In any case, an amazing feature is
+that, even in the _Essentials edition_, they include at least one reference
+to a technical book as a source for their claims, making it extremely reliable,
+and you can use that as a starting point if you really want to delve deeper.
+For learners though, the _Essentials edition_ is enough, just consider the
+_Expert edition_ if you use the _Essentials_ and you absolutely love it.
+
+From everything I presented, this is the resource I use the most without a
+doubt, and I also used it for some of the information included in this article
+(trying not to abuse from it too much and also draw from open resources), so
+I hope the authors can forgive me by having devoted a whole subsection to their
+amazing dictionary. I won't try to explain anything else, they already do it
+a hundred times better than me.
+
+Lastly, for those of you learning Chinese, if you accept a little advice from
+another fellow learner, _just go and read_. Use all these resources just as a
+helpful secondary tool. Only access them when you find characters you don't
+know. Don't lose time trying to memorize words, or worse, individual characters.
+The best way to remember a word or character is through the frustration of not
+having been able to understand it in its context. And if you don't understand
+the sentence, fear not! Tell _ChatGPT_ to break it down and explain grammar
+points. You will grasp them in no time. _Just go and read_.
+Personally I love _graded readers_. You can see some recommendations
+[here](https://lahlahbanana.com/2022/04/27/chinese-graded-novels-readers-review/)
+(I'm particularly fond of the _Chinese breeze_ series) and also learn more about
+[_extensive reading_](https://lahlahbanana.com/2021/08/28/extensive-reading-the-secret-to-learning-chinese/).
+
+Enjoy the journey.
+
+<hr>
+
+<div id="#images-attribution" style="margin-top: 30px; margin-bottom: 25px; font-size: 14px; color: gray;">
     Images sourced from <a href="https://commons.wikimedia.org/w/index.php" target="_blank">Wikimedia Commons</a>, 
     created by various contributors. Available sources: 
     <a href="http://xiaoxue.iis.sinica.edu.tw/yanbian" target="_blank">Sinica Database</a>, 
