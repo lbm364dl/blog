@@ -5,11 +5,17 @@ date:   2025-03-16 18:02:46 +0100
 categories: jekyll update
 ---
 
-Roughly 80% of Chinese characters can speak—whether in something close to
-Mandarin or in utterances of Old Chinese understood only by scholars. They're
-not particularly talkative, capable of producing just one or two syllables in
-their language. In fact, the only thing they were ever taught to say is their
-own names.
+<blockquote style="text-align: right; border-left: none; margin-bottom: 40px">
+  "The decipherment of Hieroglyphic Egyptian required the replacement of the deep-seated notion of symbolism by the correct view that the main (though not the only) feature of the script is phonetic."
+  <footer style="text-align: right">— Cyrus H. Gordon, <em>Forgotten Scripts</em>, 1968, p. 24</footer>
+</blockquote>
+
+
+Roughly 80% of Chinese characters can _speak_—whether in something close to
+Mandarin or in the ancient utterances of Old Chinese, understood only by
+scholars. They're not particularly talkative, capable of producing just one or
+two syllables in their own language. In fact, the only thing they were ever
+taught to say, is their own name.
 
 > **Teacher**: Chinese characters are not difficult. They are just pictograms
 [^1]—simplified drawings representing real things. Try to guess what these
@@ -101,6 +107,29 @@ to reinforce the meaning and distinguish it from 四. Even so, the character
 呬 eventually became obsolete too, with speakers now opting instead for
 compound words (terms made of at least two characters).
 
+<figure style="text-align: center;">
+    <div style="display: flex; justify-content: center;" width="100%">
+        <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-oracle.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/四-oracle.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-silk.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/四-silk.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-bigseal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/四-bigseal.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-ancient.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/四-ancient.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-seal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/四-seal.svg" width="150" height="150" />
+        </a>
+    </div>
+    <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
+        Evolution of 四 with original (leftmost) and borrowed from <i>to exhale</i>, nose depiction (the rest)
+    </figcaption>
+</figure>
+
 No matter whether the explanation for the number 4 left you satisfied or
 disappointed, the truth is that the characters for the rest of the numbers
 follow the same concept of _sound loan_. We could now discuss the next number,
@@ -140,11 +169,11 @@ into _folk etymology_. In contrast, our sound loan explanation is simple but
 less sticky, which is why many people don't find it useful.
 
 Many students who start learning Chinese feel attracted by the characters so
-much so that they often fall for the
-[_Ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
+much so that they often fall for
+[_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html)[^3].
 Thus, methods like Heisig's _Remembering the Hanzi_ remain oblivious to
 character pronunciation, as if it were OK for students to turn a deaf ear to
-the character's voices. I myself used _Remembering the Kanji_—the Japanese
+the characters' voices. I myself used _Remembering the Kanji_—the Japanese
 characters equivalent—when I was learning Japanese, and learned hundreds
 of them without knowing how to pronounce them. There is actually a part 2
 of _Remembering the Kanji_ which focuses on mnemonic stories for how characters
@@ -193,13 +222,13 @@ explanation. If we believe this, then naturally we have to find a reasonable
 story to put the pieces together in the character 玛—we have to find a way to
 connect the seemingly unrelated meanings of its components _gemstone_ and
 _horse_. While the existence of certain characters composed of meaning-only
-components is widely accepted (known as _associative compounds_)[^3], in the
+components is widely accepted (known as _associative compounds_), in the
 vast majority of compound characters we shouldn't force this idea, despite
 many people trying to do so.
 
 Enter the world of _phono-semantic_ compounds.
 
-Our example 玛 (_agate_) has a much simpler explanation, albeit for some less
+Our example 玛 (_agate_[^4]) has a much simpler explanation, albeit for some less
 satisfying. The character 马 is pronounced mǎ, and, well, the character 玛 is
 pronounced—yeah, you guessed it—also mǎ. Then the character has the _meaning_
 component 𤣩which gives a small hint for its meaning, in this case,
@@ -212,17 +241,17 @@ Now that we know 马 can be used as a sound component, the Chinese learner
 would probably recall two other characters that are taught right at the
 start.
 
-- The character 吗 (ma). This is used as a sentence-final particle [^4] to
+- The character 吗 (ma). This is used as a sentence-final particle[^5] to
 denote yes-no questions. Particles are usually another example of
 _phono-semantic_ characters. They usually include the mouth 口 (i.e. _speech_)
 as the meaning component besides the sound component. In the case of 吗, our
-lovely horse gives the sound. Just note that the tone [^5] is not the same,
+lovely horse gives the sound. Just note that the tone[^6] is not the same,
 but as I said, the sound component works as a hint, and it doesn't need to
 be exactly spot on.
 - The character 妈 (mā), which means _mother_, usually also doubled as 妈妈.
 From the previous dialogue, you now also know that 女 means _woman_. _What do
-women have to do with horses?_ Why does this just sound like the start of a
-horrible joke? Fortunately, at this point, you can already understand how this
+women have to do with horses?_ Oh, come on, Chinese characters are not a
+joke... Fortunately, at this point, you can already understand how this
 works—a _mother_ is a _woman_, and 马 gives the sound, as simple as that.
 
 You can see where this is going. There are some characters which are commonly
@@ -241,10 +270,10 @@ there is nothing weird about riding horses_. Recall, no need to force meanings,
 it just gives the sound.
 - The character 驴 (lǘ), which means _donkey_. Again, 马 gives the meaning
 (a _donkey_ is similar to a _horse_) and 户 (hù, meaning 'door') gives the
-sound. _What did the horse say when it opened the door?_ Ok, ok, enough with
-the cringey jokes. Here 户 just gives the sound. _But are hù and lǘ that
-similar sounds...?_ Well, you decide that. But they don't necessarily need to
-be. How come? Bear with me, we will go back to this example in the next section.
+sound. _Another witty joke?_ Ok, ok, no more jokes. Here 户 just gives the
+sound. _But are hù and lǘ that similar sounds...?_ Well, you decide that.
+But they don't necessarily need to be. How come? Bear with me, we will go
+back to this example in the next section.
 
 The sharp reader may have noticed that when the character works as a meaning
 component it appears on the left, and when it works as a sound component it
@@ -379,17 +408,45 @@ it—an _empty_ component, simplification of 雚 (guàn), a sound component in
 _the_ traditional... What? Well, somehow there are _four_ different variants
 in the traditional script—歡, 驩, 懽, 讙. At least the sound component is the
 same in all of them...
-- The character 鸡 (jī), which means _chicken_. You obviously know what 又 is,
-and it used to be 奚 (xī), a sound component for the two different variants
-鷄 and 雞 of the traditional script.
 - The character 观 (guān), which means _to observe_. Your good friend 又 is yet
-again here trying to hide another sound component, this one being 雚 (guàn),
-from the traditional variant 觀.
+again here trying to hide another sound component, this one again being 雚
+(guàn), from the traditional variant 觀.
+- The character 鸡 (jī), which means _chicken_. You obviously know what
+function 又 plays, and it used to be 奚 (xī), a sound component for the two
+different variants 鷄 and 雞 of the traditional script.
 
 Phew! That really was a mess... And believe me there are like ten more
 characters where 又 is an _empty_ component. When confronted with these
 difficulties, one could only think that maybe traditional characters are not
 that hard, since their components are completely more consistent.
+
+Another unfortunate example of _empty_ component can be found in 续 (xù),
+which can mean _to continue_. Here, 卖 (mài) is supposed to be the sound
+component. Well, this doesn't sound quite similar... Its traditional form
+is 賣. It turns out that this is accurate for the single character 卖, but
+for our original one 续/續, the component 賣 was actually a simplification
+of the absolute _beast_ that is 𧸇 (you'd better _zoom_ your screen), which
+is pronounced yù (much more similar to xù). Therefore, the sound component
+was quite accurate at some point in the past but it turned into an _empty_
+component when it was simplified to the unrelated 賣, leaving us apparently
+with two different sounds for the same character. But now you know the reason.
+
+<figure style="text-align: center;">
+    <div style="display: flex; justify-content: center;" width="100%">
+        <a href="https://commons.wikimedia.org/wiki/File:%E7%BA%8C-seal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/續-seal.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%F0%A7%B6%A0-seal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/𧶠-seal.svg" width="150" height="150" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E8%B3%A3-seal.svg" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/賣-seal.svg" width="150" height="150" />
+        </a>
+    </div>
+    <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
+        Seal scripts for 续/續 (left), its actual sound component 𧸇 (middle) and the real 賣 (right) 
+    </figcaption>
+</figure>
 
 We're bringing the third act to a close, but there is still one thing I want
 to talk about. In the first sentence of the article I mentioned that characters
@@ -399,7 +456,7 @@ the real intentions, just like _empty_ components do. I will try to explain
 what I meant with another example.
 
 Consider the character 也 (yě), which can now be used by _sound loan_ to mean
-_also_ or can be used as a particle[^4]. The following is, again, a
+_also_ or can be used as a particle[^5]. The following is, again, a
 non-exhaustive list of its sound series: 他 (tā), 她 (tā), 牠 (tā), 地 (dì),
 施 (shī), 池 (chí), 驰 (chí), 弛 (chí), 㐌 (yí), 匜 (yí). _What?_ There are at
 least five different sounds here! What's going on? Well, as almost always, the
@@ -418,6 +475,31 @@ sound evolutions, this can just be a pain, but the only workaround is to
 acknowledge that these characters have nowadays multiple voices, and we should
 take all of them into account. In the end, I guess we should just trust
 phonologists on this one.
+
+## What a beautiful recital!
+
+By now I just hope I didn't disappoint you when I claimed that Chinese
+characters can _speak_. I will be satisfied if I helped you to train your ear
+just a tiny bit so that next time you encounter a character _in the wild_ you
+have a higher chance to decipher its voice. Let's review what we learned here.
+
+- The _sound loan_ phenomenon. Sometimes characters are borrowed just for
+their sound, as simple as that. They had an original meaning but it started
+being substituted by another one whose spoken word sounded the same, perhaps
+because it was too abstract of a concept so as to build a real pictogram for it.
+Example: 四 (sì), originally _to exhale_, but now _four_ (sì), because it had
+the same sound.
+- The _phono-semantic_ compound. Roughly 80% of Chinese characters are built
+of two blocks: a _meaning_ component which gives a small hint for its meaning,
+and a _sound_ component, which gives a small hint for how it's read. Example:
+妈 (mā), from 女 (woman), _meaning_ component, and 马 (mǎ), _sound_ component.
+- The _empty_ component. Sometimes a component undergoes a simplification
+process that loses the clearer sight of its function in the character, usually
+conveying misleading information (mostly of its sound). Example: the
+excessively large amount of different unrelated components that 又 simplifies,
+like 汉, 难, 对, 欢, 观, 鸡, etc.
+
+You're now closer to becoming the conductor of the characters' orchestra!
 
 It was never my intention to make you think that learning and understanding
 Chinese characters is _easy_. Again, I still remember many years ago when I
@@ -438,7 +520,7 @@ and complex concepts that would otherwise prove impossible without stealing
 some voices from here or there, recycling some characters all over again,
 building their own monumental _hyeroglyphs_, inducing false fantasies in the
 marveled Westerners whose eyes dreamed of _intellectual paintings_,
-_metaphysical and ideal pictorial algebras of the sciences and arts_[^6], but
+_metaphysical and ideal pictorial algebras of the sciences and arts_[^7], but
 still, down to its core, just another way to convey the power and beauty of
 language.
 
@@ -446,7 +528,7 @@ language.
 
 ## Bonus: Character etymology resources
 
-_Hey, the show is over..._. If you keep reading this, I'm assuming I somehow
+_Pssst, the show is over..._. If you keep reading this, I'm assuming I somehow
 catched your attention and you are interested in knowing more about Chinese
 characters etymology. After this long journey, I wouldn't want you to conclude
 that I wrote the whole thing just as a shameless advertisement. This post was
@@ -632,11 +714,12 @@ Enjoy the journey.
 [^1]: There is a subtle difference in wording here. First, characters
     like 一, 二 and 三 should be called _ideograms_, since they represent
     abstract _ideas_ rather than _pictures_ of real things. The other
-    examples, however, are indeed _pictograms_. While the terms _pictogram_
-    and _pictograph_ are sometimes used interchangeably, _pictograph_ is more
-    precise when referring to ancient historical representations like cave
-    paintings. In contrast, _pictogram_ is the more appropriate term when
-    discussing characters within a writing system.
+    examples, however, should be called _pictograms_. While the terms
+    _pictogram_ and _pictograph_ are sometimes used interchangeably,
+    I would argue that _pictograph_ is more precise when referring to
+    ancient historical representations like cave paintings. In contrast,
+    _pictogram_ should be more appropriate when discussing characters
+    within a writing system.
 
 [^2]: I've heard this explanation many times, and while it might seem
     reasonable, early depictions in texts suggest otherwise. The pictogram
@@ -646,19 +729,30 @@ Enjoy the journey.
     which would likely be a more convincing argument for our _confused_
     student.
 
-[^3]: https://en.wikipedia.org/wiki/Chinese_character_classification
+[^3]: This is one chapter from _The Chinese Language: Fact and Fantasy_ by
+    John DeFrancis, who seems to be controversial at times, but I only
+    read this specific chapter, which I found quite inspiring. I can't
+    speak for the rest.
 
-[^4]: For the reader not familiar with particles, just think of them as
+[^4]: The meaning actually comes as an abbreviation of 玛瑙 (mǎnǎo), from
+    earlier form 马脑, which seems to be a mistranslation from Sanskrit,
+    mistakenly understood as _horse's brain_. So while originally even the
+    horse part could have an explanation, here we only focus on the modern
+    character. See the 
+    [Wiktionary entry](https://en.wiktionary.org/wiki/%E7%91%AA%E7%91%99#Chinese) 
+    for more details.
+
+[^5]: For the reader not familiar with particles, just think of them as
     characters without a real concrete meaning, that are used to give a
     sentence or a part of it a certain function or emotion.
 
-[^5]: For the reader not familiar with tones, just keep in mind that the
+[^6]: For the reader not familiar with tones, just keep in mind that the
     sound (_what you say_) is the same but the intonation (_how you say it_)
     can be different. In Mandarin _pinyin_ (the romanization of Chinese
     characters) we denote the intonations with different marks on top of
     the vowels.
 
-[^6]: Metaphors extracted from an excerpt of _Mémoires concernant l'histoire,
+[^7]: Metaphors extracted from an excerpt of _Mémoires concernant l'histoire,
     les sciences, les arts, les moeurs, les usages, &c des Chinois, par les
     missionaries de Pekin_ that I read in the article 
-    [_Ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
+    [_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
