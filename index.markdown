@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+Welcome to this random blog. Feel free to read the only existing post for now...
