@@ -473,8 +473,8 @@ which can mean _to continue_. Here, 卖 (mài) is supposed to be the sound
 component. Well, this doesn't sound quite similar... Its traditional form
 is 賣. It turns out that this is accurate for the single character 卖, but
 for our original one 续/續, the component 賣 was actually a simplification
-of the absolute _beast_ that is 𧸇 (you'd better _zoom_ your screen), which
-is pronounced yù (much more similar to xù). Therefore, the sound component
+of 𧶠[^7] (you'd better _zoom_ your screen if you can't tell the difference),
+which is pronounced yù (much more similar to xù). Therefore, the sound component
 was quite accurate at some point in the past but turned into an _empty_
 component when it was simplified to the unrelated 賣, leaving us apparently
 with two different sounds for the same character. But now you know the reason.
@@ -516,7 +516,7 @@ with two different sounds for the same character. But now you know the reason.
         </a>
     </div>
     <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
-        Seal scripts for 续/續 (left), its actual sound component 𧸇 (middle) and the real 賣 (right) 
+        Seal scripts for 续/續 (left), its actual sound component 𧶠 (middle) and the real 賣 (right) 
     </figcaption>
 </figure>
 
@@ -595,7 +595,7 @@ would otherwise prove impossible without stealing some voices from here or
 there, recycling some characters all over again, building their own monumental
 _hieroglyphs_, inducing false fantasies in the marveled Westerners whose eyes
 dreamed of _intellectual paintings_, _metaphysical and ideal pictorial algebras
-of the sciences and arts_[^7], but still, down to its core, just another way
+of the sciences and arts_[^8], but still, down to its core, just another way
 to convey the power and beauty of language.
 
 <hr style="margin-bottom: 25px;">
@@ -826,7 +826,14 @@ Enjoy the journey.
     can be different. In Mandarin _pinyin_ (the romanization of Chinese
     characters) we denote the intonations with different marks on the vowels.
 
-[^7]: Metaphors from an excerpt of _Mémoires concernant l'histoire, les
+[^7]: This character is itself a simplification. Initially I wanted to show
+    here the absolute _beast_ that is the older character 𧸇, but most likely
+    you can't see it in your device unless you have a special font installed
+    that supports old characters. It's not your fault. If you can't see the
+    one in this footnote, you can get an idea of how it looks like in the
+    images I included.
+
+[^8]: Metaphors from an excerpt of _Mémoires concernant l'histoire, les
     sciences, les arts, les moeurs, les usages, &c des Chinois, par les
     missionaries de Pekin_, which I read in the article 
     [_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
