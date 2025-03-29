@@ -2,7 +2,7 @@
 layout: post
 title:  "The hidden voices of Chinese characters"
 date:   2025-03-16 18:02:46 +0100
-categories: jekyll update
+categories: languages
 ---
 
 <blockquote style="text-align: right; border-left: none; margin-bottom: 40px">
