@@ -74,13 +74,13 @@ chance you have some strong detective-like intuition and manage to figure them
 out, I would be delighted to know how. For the rest of us, they're just a
 bunch of strokes put together, following no apparent easy _ideogram_
 explanation like for the first three numbers. Why these choices? Open your
-ears wide — you will slowly start unraveling the hidden voices of the
+ears wide—you will slowly start unraveling the hidden voices of the
 characters!
 
 
 ## Excuse me, can I borrow your sound?
 
-OK, our previous game wasn't fair. Instead, I could have told you that the
+Okay, our previous game wasn't fair. Instead, I could have told you that the
 number 4 is written as 亖, and you would, of course, believe me. How is
 this not better than 四? What is 四 even representing? 
 
@@ -167,6 +167,23 @@ pattern, which was also the original meaning. While there are some theories
 that try to explain this choice, the most logical one is still—you guessed
 it—just a _sound loan_. The sound for the number 5 happened to match, so the
 character was borrowed just for its sound.
+
+<figure style="text-align: center;">
+    <div style="display: flex; justify-content: center;" width="100%">
+        <a href="https://commons.wikimedia.org/wiki/File:%E4%BA%94-oracle.svg" target="_blank">
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/五-oracle.svg" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E4%BA%94-bronze.svg" target="_blank">
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/五-bronze.svg" />
+        </a>
+        <a href="https://commons.wikimedia.org/wiki/File:%E4%BA%94-silk.svg" target="_blank">
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/五-silk.svg" />
+        </a>
+    </div>
+    <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
+        Evolution of the character 五 now used to represent the number 5
+    </figcaption>
+</figure>
 
 This pattern of borrowing a character only for its sound and using it to
 represent a meaning completely unrelated to the original character's meaning
