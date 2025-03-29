@@ -107,22 +107,46 @@ to reinforce the meaning and distinguish it from 四. Even so, the character
 呬 eventually became obsolete too, with speakers now opting instead for
 compound words (terms made of at least two characters).
 
+<style>
+    .responsive-img {
+        width: 150px; /* Default size for desktop */
+        height: 150px; /* Maintain aspect ratio */
+        margin: 5px;
+    }
+
+    /* Mobile view: make the images smaller */
+    @media screen and (max-width: 768px) {
+        .responsive-img {
+            width: 100px; /* Smaller size for tablets or small screens */
+            height: 100px;
+        }
+    }
+
+    /* Smaller screens: even more compact */
+    @media screen and (max-width: 480px) {
+        .responsive-img {
+            width: 70px; /* Even smaller size for mobile devices */
+            height: 70px;
+        }
+    }
+</style>
+
 <figure style="text-align: center;">
     <div style="display: flex; justify-content: center;" width="100%">
         <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-oracle.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/四-oracle.svg" width="150" height="150" />
+            <img class="responsive-img" src="{{ site.baseurl }}/assets/images/四-oracle.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-silk.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/四-silk.svg" width="150" height="150" />
+            <img class="responsive-img" src="{{ site.baseurl }}/assets/images/四-silk.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-bigseal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/四-bigseal.svg" width="150" height="150" />
+            <img class="responsive-img" src="{{ site.baseurl }}/assets/images/四-bigseal.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-ancient.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/四-ancient.svg" width="150" height="150" />
+            <img class="responsive-img" src="{{ site.baseurl }}/assets/images/四-ancient.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E5%9B%9B-seal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/四-seal.svg" width="150" height="150" />
+            <img class="responsive-img" src="{{ site.baseurl }}/assets/images/四-seal.svg" />
         </a>
     </div>
     <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
@@ -196,19 +220,43 @@ Recall, for example, the character 马 introduced in the dialogue, which is a
 depiction of a horse, as a simplified version of 馬. Do you still not see the
 horse here? Oh well...
 
+<style>
+    .responsive-img-2 {
+        width: 150px; /* Default size for desktop */
+        height: 150px; /* Maintain aspect ratio */
+        margin: 5px;
+    }
+
+    /* Mobile view: make the images smaller */
+    @media screen and (max-width: 768px) {
+        .responsive-img-2 {
+            width: 120px; /* Smaller size for tablets or small screens */
+            height: 120px;
+        }
+    }
+
+    /* Smaller screens: even more compact */
+    @media screen and (max-width: 480px) {
+        .responsive-img-2 {
+            width: 90px; /* Even smaller size for mobile devices */
+            height: 90px;
+        }
+    }
+</style>
+
 <figure style="text-align: center;">
     <div style="display: flex; justify-content: center;" width="100%">
         <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-oracle.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/馬-1.svg" width="150" height="150" />
+            <img class="responsive-img-2" src="{{ site.baseurl }}/assets/images/馬-1.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-bronze.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/馬-2.svg" width="150" height="150" />
+            <img class="responsive-img-2" src="{{ site.baseurl }}/assets/images/馬-2.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-seal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/馬-3.svg" width="150" height="150" />
+            <img class="responsive-img-2" src="{{ site.baseurl }}/assets/images/馬-3.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E9%A6%AC-clerical-han.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/馬-4.svg" width="150" height="150" />
+            <img class="responsive-img-2" src="{{ site.baseurl }}/assets/images/馬-4.svg" />
         </a>
     </div>
     <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
@@ -431,16 +479,40 @@ was quite accurate at some point in the past but turned into an _empty_
 component when it was simplified to the unrelated 賣, leaving us apparently
 with two different sounds for the same character. But now you know the reason.
 
+<style>
+    .responsive-img-3 {
+        width: 150px; /* Default size for desktop */
+        height: 150px; /* Maintain aspect ratio */
+        margin: 5px;
+    }
+
+    /* Mobile view: make the images smaller */
+    @media screen and (max-width: 768px) {
+        .responsive-img-3 {
+            width: 150px; /* Smaller size for tablets or small screens */
+            height: 150px;
+        }
+    }
+
+    /* Smaller screens: even more compact */
+    @media screen and (max-width: 480px) {
+        .responsive-img-3 {
+            width: 110px; /* Even smaller size for mobile devices */
+            height: 110px;
+        }
+    }
+</style>
+
 <figure style="text-align: center;">
     <div style="display: flex; justify-content: center;" width="100%">
         <a href="https://commons.wikimedia.org/wiki/File:%E7%BA%8C-seal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/續-seal.svg" width="150" height="150" />
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/續-seal.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%F0%A7%B6%A0-seal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/𧶠-seal.svg" width="150" height="150" />
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/𧶠-seal.svg" />
         </a>
         <a href="https://commons.wikimedia.org/wiki/File:%E8%B3%A3-seal.svg" target="_blank">
-            <img src="{{ site.baseurl }}/assets/images/賣-seal.svg" width="150" height="150" />
+            <img class="responsive-img-3" src="{{ site.baseurl }}/assets/images/賣-seal.svg" />
         </a>
     </div>
     <figcaption style="margin-top: 10px; font-size: 18px; color: gray;">
