@@ -700,12 +700,12 @@ to the _Shuowen Jiezi_, so some explanations may be outdated.
 explanations from others that have read the Shuowen Jiezi for you? Then why
 not read it yourself?_ Okay, this is a hardcore resource. Here, you can
 access the entire _Shuowen Jiezi_ in Chinese, along with commentaries from
-the annotated edition by Duan Yucai's annotated edition from 1815 and many
-other sources. You must _really_ like etymology if you end up here. Again,
-if you don't speak Chinese, you can just translate, not a big deal. Another
-thing that I find awesome (and I value in any dictionary) is that you can
-click any character in the text and it directly goes to the entry for that
-character. A _paradise_ for linguists and etymology _enthusiasts_.
+Duan Yucai's annotated edition from 1815 and many other sources. You must
+_really_ like etymology if you end up here. Again, if you don't speak
+Chinese, you can just translate, not a big deal. Another thing that I find
+awesome (and I value in any dictionary) is that you can click any character
+in the text and it directly goes to the entry for that character. A
+_paradise_ for linguists and etymology _enthusiasts_.
 
 Let's acknowledge and appreciate the immense effort that so many people
 have put into compiling these resources and offering them for free. The
