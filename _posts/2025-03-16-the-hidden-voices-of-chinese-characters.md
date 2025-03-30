@@ -71,7 +71,7 @@ shuffled in a random order. Would you be able to guess them if you didn't
 already know them? From the previous dialogue, you should already know
 that 一, 二 and 三 are 1, 2 and 3 respectively. As for the rest, if by any
 chance you have some strong detective-like intuition and manage to figure them
-out, I would be delighted to know how. For the rest of us, they're just a
+out, I would be delighted to know how[^3]. For the rest of us, they're just a
 bunch of strokes put together, following no apparent easy _ideogram_
 explanation like for the first three numbers. Why these choices? Open your
 ears wide—you will slowly start unraveling the hidden voices of the
@@ -211,7 +211,7 @@ less sticky, which is why many people don't find it useful.
 
 Many students who start learning Chinese feel attracted by the characters so
 much so that they often fall for
-[_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html)[^3].
+[_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html)[^4].
 Thus, methods like Heisig's _Remembering the Hanzi_ disregard character
 pronunciation, as if it were acceptable for students to turn a deaf ear to
 the characters' voices. I myself used _Remembering the Kanji_—the equivalent
@@ -292,7 +292,7 @@ onto the vast majority of compound characters, despite many attempts to do so.
 
 Enter the world of _phono-semantic_ compounds.
 
-Our example 玛 (_agate_[^4]) has a much simpler explanation—though for some,
+Our example 玛 (_agate_[^5]) has a much simpler explanation—though for some,
 a less satisfying one. The character 马 is pronounced mǎ, and, well, the
 character 玛 is pronounced—yeah, you guessed it—also mǎ. The character has a
 _meaning_ component, 𤣩, which provides a small hint—indicating that it's a
@@ -304,11 +304,11 @@ of Chinese characters work.
 Now that we know 马 can be used as a sound component, a Chinese learner
 might recall two other characters that are taught right at the start.
 
-- The character 吗 (ma). This is used as a sentence-final particle[^5] to
+- The character 吗 (ma). This is used as a sentence-final particle[^6] to
 denote yes-no questions. Particles are often another example of
 _phono-semantic_ characters. They typically include the mouth 口 (i.e. _speech_)
 as the meaning component, alone with the sound component. In the case of 吗, our
-lovely horse provides the sound. Just note that the tone[^6] is not the same,
+lovely horse provides the sound. Just note that the tone[^7] is not the same,
 but as I mentioned earlier, the sound component serves as a hint and doesn't
 need to be exactly spot on.
 - The character 妈 (mā), which means _mother_, usually also doubled as 妈妈.
@@ -490,7 +490,7 @@ which can mean _to continue_. Here, 卖 (mài) is supposed to be the sound
 component. Well, this doesn't sound quite similar... Its traditional form
 is 賣. It turns out that this is accurate for the single character 卖, but
 for our original one 续/續, the component 賣 was actually a simplification
-of 𧶠[^7] (you'd better _zoom_ your screen if you can't tell the difference),
+of 𧶠[^8] (you'd better _zoom_ your screen if you can't tell the difference),
 which is pronounced yù (much more similar to xù). Therefore, the sound component
 was quite accurate at some point in the past but turned into an _empty_
 component when it was simplified to the unrelated 賣, leaving us apparently
@@ -545,7 +545,7 @@ the real intentions, just like _empty_ components do. I will try to explain
 what I meant with another example.
 
 Consider the character 也 (yě), which can now be used by _sound loan_ to mean
-_also_ or can be used as a particle[^5]. The following is, again, a
+_also_ or can be used as a particle[^6]. The following is, again, a
 non-exhaustive list of its sound series: 他 (tā), 她 (tā), 牠 (tā), 地 (dì),
 施 (shī), 池 (chí), 驰 (chí), 弛 (chí), 㐌 (yí), 匜 (yí). _What?_ There are at
 least five different sounds here! What's going on? Well, as almost always, the
@@ -612,7 +612,7 @@ would otherwise prove impossible without stealing some voices from here or
 there, recycling some characters all over again, building their own monumental
 _hieroglyphs_, inducing false fantasies in the marveled Westerners whose eyes
 dreamed of _intellectual paintings_, _metaphysical and ideal pictorial algebras
-of the sciences and arts_[^8], but still, down to its core, just another way
+of the sciences and arts_[^9], but still, down to its core, just another way
 to convey the power and beauty of language.
 
 <hr style="margin-bottom: 25px;">
@@ -821,12 +821,19 @@ Enjoy the journey.
     which would likely be a more convincing argument for our _confused_
     student.
 
-[^3]: This is one chapter from _The Chinese Language: Fact and Fantasy_ by
+[^3]: If you still didn't know the characters and tried to guess them,
+    you can check a table of the numbers 
+    [here](https://lh7-us.googleusercontent.com/n9LKmfe5nJiBcBu7QjXOKXetWHs9UQ9YKVK43pYx94fKP3lr0Xs6GSa5lkwN86vJ4NAOPmM2AgOkEIUWnmF9u9oIMFrRWI4Tgh7791gpCQppmmvlkJQCEYHQohU_ZkRRNHuykiQiQIdsvI1Wx7Bp-Hs).
+    If you're interested in knowing a bit more about the numbers,
+    [this article](https://mathshistory.st-andrews.ac.uk/HistTopics/Chinese_numerals/)
+    is quite interesting.
+
+[^4]: This is one chapter from _The Chinese Language: Fact and Fantasy_ by
     John DeFrancis, who seems to be controversial at times. I can't tell you
     why, since I have only read this specific chapter, so I can't speak for
     the rest, but at least this one I found quite inspiring.
 
-[^4]: The meaning actually comes as an abbreviation of 玛瑙 (mǎnǎo), from an
+[^5]: The meaning actually comes as an abbreviation of 玛瑙 (mǎnǎo), from an
     earlier form, 马脑, which seems to be a mistranslation from Sanskrit,
     mistakenly understood as _horse's brain_. So while originally even the
     horse part could have an explanation, here we only focus on the modern
@@ -834,23 +841,23 @@ Enjoy the journey.
     [Wiktionary entry](https://en.wiktionary.org/wiki/%E7%91%AA%E7%91%99#Chinese) 
     for more details.
 
-[^5]: For the reader not familiar with particles, just think of them as
+[^6]: For the reader not familiar with particles, just think of them as
     characters without a real concrete meaning, which are used to give a
     sentence or a part of it a certain function or emotion.
 
-[^6]: For the reader not familiar with tones, just keep in mind that the
+[^7]: For the reader not familiar with tones, just keep in mind that the
     sound (_what you say_) is the same, but the intonation (_how you say it_)
     can be different. In Mandarin _pinyin_ (the romanization of Chinese
     characters) we denote the intonations with different marks on the vowels.
 
-[^7]: This character is itself a simplification. Initially I wanted to show
+[^8]: This character is itself a simplification. Initially I wanted to show
     here the absolute _beast_ that is the older character 𧸇, but most likely
     you can't see it in your device unless you have a special font installed
     that supports old characters. It's not your fault. If you can't see the
     one in this footnote, you can get an idea of how it looks like in the
     images I included.
 
-[^8]: Metaphors from an excerpt of _Mémoires concernant l'histoire, les
+[^9]: Metaphors from an excerpt of _Mémoires concernant l'histoire, les
     sciences, les arts, les moeurs, les usages, &c des Chinois, par les
     missionaries de Pekin_, which I read in the article 
     [_The ideographic myth_](https://pinyin.info/readings/texts/ideographic_myth.html).
