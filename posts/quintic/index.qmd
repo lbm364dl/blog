@@ -1,0 +1,211 @@
+---
+title: "TODO: quintic title"
+date: "2025-07-31"
+categories: [math]
+---
+
+TODO: intro
+
+# Second degree
+
+## Dancing with symbols
+
+Our _goold ol'_ friends the Babylonians were already solving second degree equations...
+Ok, yeah, they didn't formulate them in the same way, but they really could solve them.
+For us, this is a second degree equation:
+
+$$ 
+  ax^{2} + bx + c = 0
+$$ 
+
+Now it's your time to shine... You do remember that formula you were forced to
+memorize in high school, don't you? Yes!
+
+$$ 
+  x = \frac{-b \pm \sqrt{b^{2} - 4ac}  }{2a}
+$$ 
+
+Huh...
+
+This is supposed to be an entry to [Summer of Math Exposition #4](https://some.3b1b.co/prize).
+If you check this link, you'll find one part that goes like this:
+
+> **Most Frequently Requested Topics**
+>
+> Foundation-Level Concepts (Ages 11-16):
+>
+> 1. Variables and algebra - Students don’t understand that “x” represents an unknown value to find
+>
+> ...
+
+Well, well, we just started and I'm already digging my own pit. I'll wait for someone
+else to address that in a whole post. We're going to be using these letters a lot so
+I'll try briefly... If you're already fine with that, you can skip to the [next section](#but-how-did-you-get-there).
+
+- Letters from the end of the alphabet will represent values that we don't know.
+  These would be $x$, $y$, $z$... But I'm pretty sure we're only going to use $x$,
+  which means there's really only one unknown value to be found.
+- Letters from the start of the alphabet will represent _actual numbers_, but like _any_
+  number. A _specific_ quadratic formula could be something like $x^{2} - 2x + 1 = 0$ or
+  $x^{2} + 5x - 2 = 0$, but when we write $x^{2} + bx + c = 0$, we mean that we could
+  just write anything where $b$ and $c$ are. We're essentially working with all the
+  quadratic equations at the same time! So these letters could typically be $a$, $b$,
+  $c$...
+
+Regarding this second point, throughout the post, instead of $a$, $b$, $c$... we're
+probably going to use the same letter but with subscripts, like $a_2$, $a_1$, $a_0$..., where:
+
+- $a_0$ is the coefficient for $x^{0}$
+- $a_1$ is the coefficient for $x^{1}$ 
+- $a_2$ is the coefficient for $x^{2}$
+- ...
+- $a_i$ is the coefficient for $x^{i}$
+- ...
+
+And yes, this $i$ above also represents _any_ subscript of a coefficient. It's a faster
+way to refer to all of them, it just means that you can substitute $i$ for any number
+and the sentence still holds true. Naturally, you don't have to find an explanation for
+this, it's just one of the thousands of conventions mathematicians use as part of
+their economy of language. I will try to be rather verbose in this post, but I know
+I already have one foot in this jargon myself, so I'm sorry if I fail at times.
+
+Now that we know this, let's rewrite the quadratic equation so that we're all at the same page:
+
+$$ 
+  a_2 x^{2} + a_1 x^{1} + a_0 x^{0} = a_2 x^{2} + a_1 x + a_0 = 0
+$$ 
+
+Let's simplify even more. The coefficient $a_2$ is quite useless. If it were zero,
+this wouldn't be a quadratic equation at all. So we can divide everything by $a_2$
+safely, and we would have:
+
+$$ 
+  x^{2} + \frac{a_1}{a_2} x + \frac{a_0}{a_2} = x^{2} + b_1 x + b_0 = 0
+$$ 
+
+_Didn't you say we were going to use the letter $a$?_ Yes... I'm just trying to tease you.
+Who cares if it's $a$'s or $b$'s, really. Ok, so the quadratic formula is now like this:
+
+$$ 
+  x^{2} + a_1 x + a_0 = 0
+$$ 
+
+_Are you kidding me? This is clearly wrong._ Why? I told you letters don't matter.
+These just represent _anything_. This $a_1$ isn't the one you previously saw in
+$\frac{a_1}{a_2}$, and similarly, the $a_0$ isn't the one you saw in $\frac{a_0}{a_2}$.
+I'm kind of cheating. I know this is confusing. This is why mathematicians also use
+apostrophes along with the same letters to represent that they're something similar,
+they still represent an arbitrary value but they were built from some previous letters
+with the same name. Therefore, we could instead say that $a_1' = \frac{a_1}{a_2}$ and
+$a_0' = \frac{a_0}{a_2}$, so that the quadratic formula can be written as
+$x^{2} + a_1' x + a_0' = 0$. Here, $a_1'$ is read _a 1 prime_, and similarly, $a_0'$ is
+read _a 0 prime_.
+
+One last caveat. The word _anything_ can actually mean anything... I'm so funny. No,
+really. I mean, we have to establish a set of values that these letters can actually take.
+We could decide that it can be _any natural number_ ($0, 1, 2\dots$), _any integer_ ($0, 1, -1, 2, -2\dots$),
+_any rational_... For us, the original equation we're going to consider will be any
+rational number. Rational numbers are what you may know as fractions, the result of dividing
+one integer by another. Rational numbers are things like $0, \frac{1}{2}, -\frac{57}{3}, -2$...
+Of course, integers are also contained in rationals because any integer $a$ can be
+written as $\frac{a}{1}$.
+
+In the simplification we did at the start by dividing everything by $a_2$, we were
+already considering that the new coefficients had to be at least rational. Imagine
+the original coefficients were only allowed to be integers. Since they could be
+_any integer_, the result of $\frac{a_0}{a_2}$ might not be an integer anymore,
+e.g. if $a_0 = 1$ and $a_2 = 2$, but it will always be a rational. So we are allowed
+to do basic operations (sum, subtract, multiply, divide) with the rational
+coefficients and be sure that the result will still be a rational number.
+
+> It's dividing fractions... What's dividing a fraction by a fraction anyway?
+>
+> — _Only yesterday_ (1991)
+
+No, I'm not going to explain how to divide fractions today. I just wanted an
+excuse to include a part of [one of my favourite movies](https://letterboxd.com/film/only-yesterday/),
+where Taeko, the protagonist, shows her frustration of not being able to understand 
+the logic behind dividing fractions. _Ok, I get what I have to do, but why is it
+like that?_ This is a recurring theme in many fields, and math is no exception.
+I also feel like this, even when I was doing my research to write this post.
+Many suggest that math is something you start understanding while you do it,
+meaning that you shouldn't force yourself too far to get the logic behind some
+concepts until you have already spent quite some time working with them. While
+I do agree with this, and is partly how I accept my own knowledge gaps, I
+will try my best in this article to build some intuition.
+
+So just for the last time, let's rewrite the equation and the solution with the new
+letters...
+
+$$ 
+  x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$ are rationals}
+$$ 
+
+$$ 
+  x = \frac{-a_1 \pm \sqrt{a_1^{2} -4 a_0} }{2}
+$$ 
+
+## But how did you get there?
+
+_Shut up and memorize!_
+
+Just joking. Let's see what we can do...
+
+Suppose we give names $x_1$, $x_2$ to our hypothetical roots. Then we should
+be able to write the polynomial from our original equation as
+
+$$ 
+  (x - x_1) (x - x_2) = x^{2} + (- x_1 - x_2) x + x_1 x_2
+$$
+
+But that means we have the following equalities for our roots:
+
+$$ 
+\begin{cases}
+  x_1 + x_2 &= - a_1 \\
+  x_1 x_2 &= a_0
+\end{cases}
+$$ 
+
+The cool thing about them is that the result of adding or multiplying the roots
+is again a rational number (because our coefficients were rationals), even if
+the roots might not be rational. Maybe we can generalize this and find even
+more expressions in terms of the roots that are actually just rational numbers,
+if we can rewrite them in terms of sums of products of the roots. Just keep this
+in mind. Now let's go for another seemingly weird move.
+
+Let's define another _value_, that we might or might not really know:
+
+$$ 
+  t = x_1 - x_2
+$$ 
+
+This _t_ has a special property: it _encodes_ everything about the roots $x_1$
+and $x_2$! What I mean is that, if we ever get to know the actual value of $t$,
+we could get back our roots by just using $t$! How come? Well...
+
+$$ 
+  \begin{cases}
+      t &= x_1 - x_2 \\
+      -a_1 &= x_1 + x_2
+  \end{cases}
+  = 
+  \begin{cases}
+      x_1 &= \frac{-a_1 + t}{2} \\
+      x_2 &= \frac{-a_1 - t}{2}
+  \end{cases}
+$$ 
+
+Do you see where this is going? Of course, we'll try to find the value of $t$!
+But why would this be easier? Well, instead of computing $t$, let's try with $t^{2}$:
+
+$$ 
+  t^{2} = (x_1 - x_2)^{2} = x_1^{2} + x_2^{2} - 2 x_1 x_2 = (x_1 + x_2)^{2} - 4 x_1 x_2 = a_1^{2} - 4 a_0
+$$
+
+We do know the value of $t^{2}$ since it's made up of the coefficients of the original
+equation, which are known. So knowing $t$ and consequently the roots is now just routine
+substitution. But before showing the cool final result of our proof, let's shift the perspective
+a bit. Suppose we craft another equation, of which we're sure that $t$ is a root, and we
+know how to solve this new equation. In the end we calculate the value of $t$, just like
+above, hoping that it would be easier. Which equation can we choose?
