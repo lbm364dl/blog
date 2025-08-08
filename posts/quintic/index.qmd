@@ -24,7 +24,7 @@ Just kidding.
 
 # Second degree
 
-## Dancing with symbols
+## I know that one
 
 Our _good ol'_ friends the Babylonians were already solving second degree equations...
 Ok, yeah, they didn't formulate them in the same way, but they really could solve them.
@@ -62,32 +62,29 @@ from you anything more than the algebra and complex numbers you were taught in h
 
 While you probably knew the above formula with the coefficients $a, b, c$ just like that,
 I'm going to be using the same letter with subscripts, where $a_i$ is the coefficient
-of the $x^{i}$. Moreover, the coefficient of the highest degree term (here $x^2$) is
-useless: the equation obtained by dividing everything by that coefficient has the same
-roots. So the equation we'll work with is this:
+of the term $x^{i}$. Moreover, note that the coefficient $a_n$ of the highest degree term
+(here $a_2$) is useless: the equation obtained from dividing everything by that
+coefficient will have the same roots (prove it!). So the equation we'll work with is like this:
 
 $$ 
   x^{2} + a_1 x + a_0 = 0
 $$ 
 
-Now we haven't talked about which values can
+We haven't talked about which values can the coefficients of the equation take.
+We could decide that they can be _any natural number_ ($0, 1, 2\dots$), _any integer_
+($0, 1, -1, 2, -2\dots$), _any rational_... From now on, we'll assume they're
+rational numbers. This is just a fancy term for fractions, the result of dividing
+one integer by another. They are things like $0, \frac{1}{2}, -\frac{57}{3}, -2$...
+Of course, integers are also rationals because any integer $a$ can be written as $\frac{a}{1}$.
 
-One last caveat. The word _anything_ can actually mean anything... I'm so funny. No,
-really. I mean, we have to establish a set of values that these letters can actually take.
-We could decide that it can be _any natural number_ ($0, 1, 2\dots$), _any integer_ ($0, 1, -1, 2, -2\dots$),
-_any rational_... For us, the original equation we're going to consider will be any
-rational number. Rational numbers are what you may know as fractions, the result of dividing
-one integer by another. Rational numbers are things like $0, \frac{1}{2}, -\frac{57}{3}, -2$...
-Of course, integers are also contained in rationals because any integer $a$ can be
-written as $\frac{a}{1}$.
-
-In the simplification we did at the start by dividing everything by $a_2$, we were
-already considering that the new coefficients had to be at least rational. Imagine
-the original coefficients were only allowed to be integers. Since they could be
-_any integer_, the result of $\frac{a_0}{a_2}$ might not be an integer anymore,
-e.g. if $a_0 = 1$ and $a_2 = 2$, but it will always be a rational. So we are allowed
-to do basic operations (sum, subtract, multiply, divide) with the rational
-coefficients and be sure that the result will still be a rational number.
+And why not choosing, say, just integers? Because we need some freedom with
+the operations we do with coefficients. When we talked about dividing everything
+by $a_2$, we were already considering that the new coefficients had to be at
+least rational. Otherwise, depending on which division we perform, if we had
+integers initially, we could now end up with something that isn't an integer
+anymore. Thus, if we choose rational coefficients we're allowed to do basic
+operations (sum, subtract, multiply, divide) with them and always be sure that
+the result will still be a rational number.
 
 > It's dividing fractions... What's dividing a fraction by a fraction anyway?
 >
@@ -160,7 +157,7 @@ $\frac{(x_1 + x_2)^{3}}{3x_1 x_2} -4(x_1 + x_2)(x_1 x_2)^{6}$, will be _rational
 known_. I'm using these words on purpose, because that's how Galois
 himself referred to quantities that ultimately evaluate to a rational number, even
 if the operands themselves aren't necessarily rationals (like our roots). Keep this
-cool observation in mind, you'll see in just a while. 
+cool observation in mind, you'll see why in just a while. 
 
 So we have to figure out a formula for both roots. They're just two now, yes, but
 you know this is going further, right? We will work with higher degree equations later.
@@ -170,7 +167,7 @@ we're also allowed to use the original coefficients of the polynomial, since the
 also known numbers.
 
 I'll help you with that. There are probably a lot of values we could choose to find,
-but I'll give you this one, which we call $t$:
+but I'll give you this one:
 
 $$ 
   t = x_1 - x_2
@@ -224,15 +221,12 @@ $$
   (x - t)(x + t) = 0
 $$
 
-Please don't be confused about the use of $x$. The letter $x$ here again
-represents an unknown value, a solution to the equation, but to _this_ equation,
-not the original one! So of course this equation makes sense. We already made
-a useful observation before. If $t$ has to be a root, there must be a factor like
-$(x - t)$ out there. The reason we also included $(x + t)$ is that now this
-product will give a neat result, as you might expect from before. Yes, we
-just happen to know that because we already calculated $t^{2}$ before, and
-this seems to be some circular reasoning, but bear with me, this will be a
-useful reinterpretation later...
+Of course this equation makes sense. We already made a useful observation before.
+If $t$ has to be a root, there must be a factor like $(x - t)$ out there.
+The reason we also included $(x + t)$ is that now this product will give a neat
+result, as you might expect from before. Yes, we just happen to know that because
+we already calculated $t^{2}$ before, and this seems to be some circular
+reasoning, but bear with me, this will be a useful reinterpretation later...
 
 $$ 
 \begin{array}{c}
@@ -295,7 +289,121 @@ get back to it later. _No spoilers_.
 
 # First symmetry
 
-TODO
+I bet you know what's coming next... But before we try to tame that naughty cubic
+equation, we need some polynomial machinery. We'll find some symmetries along
+the way, I hope you're excited!
+
+Let's recall the cool observation from previous section:
+
+$$
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 &= -a_1 \\
+  x_1 x_2   &= a_0
+  \end{aligned}
+  \right.
+$$
+
+The question is obvious... Can we find something similar for the cubic equation?
+
+$$ 
+  x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
+$$ 
+
+We proceed the same way as for the quadratic. If the roots are $x_1$, $x_2$ and
+$x_3$, we should be able to factor the equation like $(x - x_1)(x - x_2)(x - x_3)$.
+What do we get from here? You can check it yourself:
+
+$$ 
+  (x - x_1)(x - x_2)(x - x_3) = x^{3} - (x_1 + x_2 + x_3) x^{2} + (x_1 x_2 + x_1 x_3 + x_2 x_3) x - x_1 x_2 x_3
+$$ 
+
+We got our relations!
+
+$$
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 &= -a_2 \\
+  x_1 x_2 + x_1 x_3 + x_2 x_3 &= a_1 \\
+  x_1 x_2 x_3 &= -a_3
+  \end{aligned}
+  \right.
+$$
+
+I know you're seeing the pattern for the coefficients:
+
+- Sum of all roots, negative sign
+- Sum of all products of two different roots, positive sign
+- Sum of all products of three different roots, negative sign
+- ...
+
+Now pay attention to this. If we have an equation of degree $n$, in coefficient
+$a_i$, we have all possible different ways of choosing $n-i$ roots. What happens
+if we swap any two of the roots? Of course, nothing! We rearranged some sums
+and products, but since the order doesn't matter, and we were including all
+possible products, we still have the same result! We say that these expressions
+are _symmetric_ polynomials. A polynomial on the roots $x_1, x_2, \dots, x_n$
+is _symmetric_ if it doesn't change no matter how we rearrange the roots.
+
+The symmetric polynomials we've been working with actually have a special name:
+they're called _elementary symmetric polynomials_. Any guess for why they have
+this name? I'll give you a few examples to think.
+
+Let's take for example this obviously symmetric polynomial:
+
+$$ 
+  x_1^{2} + x_2^{2} + x_3^{2}
+$$ 
+
+Can we know its value? Let's rewrite it...
+
+$$ 
+  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
+$$ 
+
+Yes! That's a known rational. Let's try another symmetric polynomial:
+
+$$ 
+  x_1^{3} x_2 + x_2^{3} x_3 + x_3^{3} x_1
+$$ 
+
+_Oops!_ This is not a symmetric polynomial! Can you see why? It needs a small fix:
+
+$$ 
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3}
+$$ 
+
+Yes, much better now. Can you prove this one is indeed symmetric? Hint: it's
+enough to check swaps of two roots. That's because any rearrangement of roots
+can be explained as a series of swaps of two roots. Now, is this also a known value?
+Perhaps a product of familiar expressions...?
+
+$$ 
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot a_0
+$$ 
+
+Well, this one also worked. Do you see where I'm going?
+
+We were already observing in a previous section that any expression written
+in terms of these elementary symmetric polynomials has a known rational value,
+no matter how complicated the expression may be. An expression written in terms
+of elementary symmetric polynomials is of course symmetric, because each of
+these terms is. But can we go further? 
+
+_Any symmetric polynomial can be written in terms of elementary symmetric polynomials._ 
+
+I hope you agree this is not obvious at all. And the statement just like that
+doesn't seem too interesting. Because we know that elementary symmetric
+polynomials are known rational numbers, then we get this more insightful
+result for free:
+
+_Any symmetric polynomial on the roots is a known number._ 
+
+We'll use this result a few times later. Of course, we should prove the first
+statement about elementary symmetric polynomials. In Galois' time, this was
+such a well-known fact that he didn't even bother including it in the
+prerequisites for his memoir. (TODO: link proof or include in appendix)
+
 
 # Third degree
 
