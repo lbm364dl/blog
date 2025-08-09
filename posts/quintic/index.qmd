@@ -22,6 +22,32 @@ _What's $a$?_
 
 Just kidding.
 
+::: {.callout-tip collapse=true}
+
+# Hint: Subtract $a$ from both sides... And try clicking me!
+
+You might see boxes like this one throughout the article. If they have
+an arrow at the right end, it means they have hidden content and you can
+expand to see it by clicking on them.
+
+Another thing worth mentioning. Writing a blog with aesthetically pleasant math
+formulas is totally not easy. They have to look good in all kinds of devices.
+For this reason, the safest workaround so that I don't risk someone seeing
+absolute rubbish is to use horizontal scroll bars when the formula might
+otherwise overflow the screen. This will rarely appear on a large monitor
+but will be quite frequent in mobile devices, and I think there's no way
+to force a scroll bar actually showing on mobile browsers, so I had to warn
+you. If you feel like a formula is going out of the screen, please try to
+scroll it even if you don't see a scroll bar! Here, an example:
+
+$$ 
+  \text{I am not one of those who fear to die, and I will not go quietly to the grave without telling the truth. My life's work will be understood in time. I have studied the theory of equations not as an isolated discipline but as part of a grander vision — the theory of groups. This new approach will illuminate the roots of algebraic problems and forever change mathematics. Though my life may be brief, my ideas will live on.}
+$$ 
+
+
+:::
+
+
 # Second degree
 
 ## I know that one
@@ -409,7 +435,174 @@ prerequisites for his memoir. (TODO: link proof or include in appendix)
 
 ## Déjà vu
 
-TODO
+Time for the cubic! Just to recap, this is what we have to start with:
+
+$$ 
+  x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
+$$ 
+
+$$
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 &= -a_2 \\
+  x_1 x_2 + x_1 x_3 + x_2 x_3 &= a_1 \\
+  x_1 x_2 x_3 &= -a_3
+  \end{aligned}
+  \right.
+$$
+
+Remember what we did in the [Second degree](#but-how-did-you-get-there) section?
+We were discussing the possibility of finding a special value $t$ which could
+encode all the information about our roots, in the sense that we could find
+their values just from $t$ itself and other known values. For the quadratic
+we used $t = x_1 - x_2$. Can we find such a value for the cubic?
+
+::: {.callout-tip collapse=true}
+
+## Hint: Can you use the solutions of the equation $x^{3} = 1$?
+
+Yes we can! Did you think about complex roots of unity? If you like following
+the pattern, for the quadratic we have $t = \alpha_1 x_1 + \alpha_2 x_2$
+where $\alpha_1, \alpha_2$ are the solutions of the equation $x^{2} = 1$. These
+are of course $1$ and $-1$.
+
+What are the solutions of $x^{3} = 1$? They're $1$, $\omega$ and $\omega^{2}$,
+where $\omega$ is a complex root of $x^{2} + x + 1 = 0$. Then, again just
+following the pattern, we could think of the following special value:
+
+$$ 
+  t = x_1 + \omega x_2 + \omega^{2} x_3
+$$ 
+
+This is just a hunch! In order to use this, we should actually show that all
+$x_1$, $x_2$, $x_3$ can be expressed in terms of this $t$ and other known values.
+
+:::
+
+Now that we got the value, it's time to show that the roots can be expressed
+in terms of this $t$... Or that's what I thought while writing this. Too optimistic...
+I'm not saying it's not possible, but it can be quite difficult to get those
+formulas. Instead of trying to narrow down to a single value $t$, let's try
+for a moment to use two values, the other being very similar to $t$. I'll help
+you with this one.
+
+:::{.callout-note collapse=true}
+
+# Check these relations
+
+$$ 
+\left\{
+\begin{aligned}
+  t &= x_1 + \omega x_2 + \omega^{2} x_3 \\
+  t' &= x_1 + \omega^{2} x_2 + \omega x_3 \\
+  -a_2 &= x_1 + x_2 + x_3
+\end{aligned}
+\right.
+$$ 
+
+:::
+
+Can you now find the roots by using $t$, $t'$, $\omega$ and the coefficients?
+
+:::{.callout-tip collapse=true}
+
+# Hint: Can you use the fact that $1 + \omega + \omega^{2} = 0$?
+
+We can try to sum all three equations multiplied by specific coefficients
+so that our root remains there and the other two are cancelled out
+à la reduction method, because of the given relation of $\omega$.
+
+Doing that, we get these formulas for the roots:
+
+$$ 
+\left\{
+\begin{aligned}
+  x_1 &= \frac{t + t' - a_2}{3} \\
+  x_2 &= \frac{\omega^{2} t + \omega t' - a_2}{3} \\
+  x_3 &= \frac{\omega t + \omega^{2} t' - a_2}{3}
+\end{aligned}
+\right.
+$$
+
+:::
+
+OK, so we can get the roots by using both $t$ and $t'$. Yes, I know what
+you're thinking. We now have to find two values instead of one, but trust
+me, this is justified, since these values seem so similar that I hope
+we'll be able to find both of them _at the same time_.
+
+You already know how this goes, now we have to build a polynomial for which
+$t$ is a root, and hopefully, just hopefully, $t'$ will also be one of its
+roots. Let's recall, or rather expand, the way we built the polynomial for
+the quadratic case. I told you it would be helpful later, and the time has come.
+
+Remember that we had $t = x_1 - x_2$. Our special polynomial for the quadratic
+was this:
+
+$$ 
+  (x - t)(x + t) = (x - (x_1 - x_2))(x + (x_1 - x_2)) = (x - (x_1 - x_2))(x - (x_2 - x_1))
+  = x^{2} - ((x_1 - x_2) + (x_2 - x_1)) x + (x_1 - x_2)(x_2 - x_1)
+$$ 
+
+You already know what the actual polynomial is, but I left it in this last form
+to notice something: the coefficients are symmetric polynomials on the roots!
+If you try swapping $x_1$ and $x_2$ in both expressions $((x_1 - x_2) + (x_2 - x_1))$
+and $(x_1 - x_2)(x_2 - x_1)$, you get the same result. In the previous section,
+we just saw that all symmetric polynomials on the roots are actually known values.
+They're made from the coefficients of the original equation, which were rational,
+so we got a new equation with rational coefficients. 
+
+Of course, there _is_ one concern. Perhaps this new equation is just as hard to
+solve as the original one, and then we did something completely useless. While
+that's a possibility, we were hoping that our choice of $t$ would make the new
+equation sufficiently easy to solve. In the case of the quadratic, you know that
+this was true because we were able to lose the term of $x$, and get a simpler
+quadratic $x^{2} - t^{2} = 0$, which only requires to take a square root to solve.
+
+We saw the coefficients we got in the end are symmetric polynomials, but we could
+have deduced that from the start, from the way we defined the polynomial as a
+product. Yes, in the quadratic example it was easier to see why we would benefit
+from choosing both $t$ and $-t$ (sum times difference is the difference of squares).
+Another way to look at this is that $-t$ is the result of swapping the roots in $t$:
+
+$$ 
+  (x - (\text{t with no rearrangement}))(x - (\text{t with roots swapped}))
+$$ 
+
+This form is telling us that this is a symmetric polynomial _on the roots_, and
+therefore, that its final coefficients will be known rational values. Can you see
+why? I'll let you figure that out, because now it's your turn again... Can you
+use this idea to find a suitable new polynomial for the cubic, for which $t$ and
+$t'$ are two of its roots? Just to remember, these are their expressions:
+
+$$ 
+  \left\{
+  \begin{aligned}
+      t &= x_1 + \omega x_2 + \omega^{2} x_3 \\
+      t' &= x_1 + \omega^{2} x_2 + \omega x_3
+  \end{aligned}
+  \right.
+  \quad
+  \text{The value $\omega$ is such that $1+\omega+\omega^{2} = 0$}
+$$ 
+
+Come on, try to find the polynomial!
+
+::: {.callout-tip collapse=true}
+
+# Hint: Why is the quadratic example a symmetric polynomial on its roots?
+
+
+:::
+
+::: {.callout-tip collapse=true}
+
+# Hint: You'll get a wild expression for the cubic, but try to simplify as much as possible.
+
+
+:::
+
+
 
 ## I ain't doing that
 
