@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-07-31">
+
+<title>TODO: title – random-blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fee6a71561de58ae2da9574b51d86d73.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">random-blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#first-degree" id="toc-first-degree" class="nav-link active" data-scroll-target="#first-degree">First degree</a></li>
+  <li><a href="#second-degree" id="toc-second-degree" class="nav-link" data-scroll-target="#second-degree">Second degree</a>
+  <ul class="collapse">
+  <li><a href="#i-know-that-one" id="toc-i-know-that-one" class="nav-link" data-scroll-target="#i-know-that-one">I know that one</a></li>
+  <li><a href="#but-how-did-you-get-there" id="toc-but-how-did-you-get-there" class="nav-link" data-scroll-target="#but-how-did-you-get-there">But how did you get there?</a></li>
+  </ul></li>
+  <li><a href="#first-symmetry" id="toc-first-symmetry" class="nav-link" data-scroll-target="#first-symmetry">First symmetry</a></li>
+  <li><a href="#third-degree" id="toc-third-degree" class="nav-link" data-scroll-target="#third-degree">Third degree</a>
+  <ul class="collapse">
+  <li><a href="#déjà-vu" id="toc-déjà-vu" class="nav-link" data-scroll-target="#déjà-vu">Déjà vu</a></li>
+  <li><a href="#i-aint-doing-that" id="toc-i-aint-doing-that" class="nav-link" data-scroll-target="#i-aint-doing-that">I ain’t doing that</a></li>
+  </ul></li>
+  <li><a href="#fourth-degree" id="toc-fourth-degree" class="nav-link" data-scroll-target="#fourth-degree">Fourth degree</a></li>
+  <li><a href="#second-symmetry" id="toc-second-symmetry" class="nav-link" data-scroll-target="#second-symmetry">Second symmetry</a></li>
+  <li><a href="#you-cant-solve-it" id="toc-you-cant-solve-it" class="nav-link" data-scroll-target="#you-cant-solve-it">You can’t solve it</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">TODO: title</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">math</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 31, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>TODO: intro</p>
+<section id="first-degree" class="level1">
+<h1>First degree</h1>
+<p>Here’s one for my kindergarten fans out there. Can you solve this equation?</p>
+<p><span class="math display">\[
+  x + a = 0
+\]</span></p>
+<p><em>What’s <span class="math inline">\(x\)</span>?</em></p>
+<p><em>What’s <span class="math inline">\(a\)</span>?</em></p>
+<p>…</p>
+<p>Just kidding.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try clicking me!
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You might see boxes like this one throughout the article. If they have an arrow at the right end, it means they have hidden content and you can expand to see it by clicking on them.</p>
+<p>Another thing worth mentioning. Writing a blog with aesthetically pleasant math formulas is totally not easy. They have to look good in all kinds of devices. For this reason, the safest workaround so that I don’t risk someone seeing absolute rubbish is to use horizontal scroll bars when the formula might otherwise overflow the screen. This will rarely appear on a large monitor but will be quite frequent in mobile devices, and I think there’s no way to force a scroll bar actually showing on mobile browsers, so I had to warn you. If you feel like a formula is going out of the screen, please try to scroll it even if you don’t see a scroll bar! Here, an example:</p>
+<p><span class="math display">\[
+  \text{I am not one of those who fear to die, and I will not go quietly to the grave without telling the truth. My life's work will be understood in time. I have studied the theory of equations not as an isolated discipline but as part of a grander vision — the theory of groups. This new approach will illuminate the roots of algebraic problems and forever change mathematics. Though my life may be brief, my ideas will live on.}
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="second-degree" class="level1">
+<h1>Second degree</h1>
+<section id="i-know-that-one" class="level2">
+<h2 class="anchored" data-anchor-id="i-know-that-one">I know that one</h2>
+<p>Our <em>good ol’</em> friends the Babylonians were already solving second degree equations… Ok, yeah, they didn’t formulate them in the same way, but they really could solve them. For us, this is a second degree equation:</p>
+<p><span class="math display">\[
+  ax^{2} + bx + c = 0
+\]</span></p>
+<p>Now it’s your time to shine… You do remember that formula you were forced to memorize in high school, don’t you? Yes!</p>
+<p><span class="math display">\[
+  x = \frac{-b \pm \sqrt{b^{2} - 4ac}  }{2a}
+\]</span></p>
+<p>Huh…</p>
+<p>This is supposed to be an entry to <a href="https://some.3b1b.co/prize">Summer of Math Exposition #4</a>. If you check this link, you’ll find one part that goes like this:</p>
+<blockquote class="blockquote">
+<p><strong>Most Frequently Requested Topics</strong></p>
+<p>Foundation-Level Concepts (Ages 11-16):</p>
+<ol type="1">
+<li>Variables and algebra - Students don’t understand that “x” represents an unknown value to find</li>
+</ol>
+<p>…</p>
+</blockquote>
+<p>Well, well, we just started and I’m already digging my own pit. I think I’ll just wait for someone else to address that in a whole post. If you happen to be one of those confused students and you end up here, well, good luck with that. You have all your time. Don’t think the post will be an <em>easy</em> read. But as for the prerequisites, I don’t expect from you anything more than the algebra and complex numbers you were taught in high school.</p>
+<p>While you probably knew the above formula with the coefficients <span class="math inline">\(a, b, c\)</span> just like that, I’m going to be using the same letter with subscripts, where <span class="math inline">\(a_i\)</span> is the coefficient of the term <span class="math inline">\(x^{i}\)</span>. Moreover, note that the coefficient <span class="math inline">\(a_n\)</span> of the highest degree term (here <span class="math inline">\(a_2\)</span>) is useless: the equation obtained from dividing everything by that coefficient will have the same roots (prove it!). So the equation we’ll work with is like this:</p>
+<p><span class="math display">\[
+  x^{2} + a_1 x + a_0 = 0
+\]</span></p>
+<p>We haven’t talked about which values can the coefficients of the equation take. We could decide that they can be <em>any natural number</em> (<span class="math inline">\(0, 1, 2\dots\)</span>), <em>any integer</em> (<span class="math inline">\(0, 1, -1, 2, -2\dots\)</span>), <em>any rational</em>… From now on, we’ll assume they’re rational numbers. This is just a fancy term for fractions, the result of dividing one integer by another. They are things like <span class="math inline">\(0, \frac{1}{2}, -\frac{57}{3}, -2\)</span>… Of course, integers are also rationals because any integer <span class="math inline">\(a\)</span> can be written as <span class="math inline">\(\frac{a}{1}\)</span>.</p>
+<p>And why not choosing, say, just integers? Because we need some freedom with the operations we do with coefficients. When we talked about dividing everything by <span class="math inline">\(a_2\)</span>, we were already considering that the new coefficients had to be at least rational. Otherwise, depending on which division we perform, if we had integers initially, we could now end up with something that isn’t an integer anymore. Thus, if we choose rational coefficients we’re allowed to do basic operations (sum, subtract, multiply, divide) with them and always be sure that the result will still be a rational number.</p>
+<blockquote class="blockquote">
+<p>It’s dividing fractions… What’s dividing a fraction by a fraction anyway?</p>
+<p>— <em>Only yesterday</em> (1991)</p>
+</blockquote>
+<p>No, I’m not going to explain how to divide fractions today. I just wanted an excuse to include a part of <a href="https://letterboxd.com/film/only-yesterday/">one of my favourite movies</a>, where Taeko, the protagonist, shows her frustration of not being able to understand the logic behind dividing fractions. <em>Ok, I get what I have to do, but why is it like that?</em> This is a recurring theme in many fields, and math is no exception. I also feel like this, even when I was doing my research to write this post. Many suggest that math is something you start understanding while you do it, meaning that you shouldn’t force yourself too far to get the logic behind some concepts until you have already spent quite some time working with them. While I do agree with this, and is partly how I accept my own knowledge gaps, I will try my best in this article to build some intuition.</p>
+<p>So just for the last time, let’s rewrite the equation and the solution with the new letters…</p>
+<p><span class="math display">\[
+  x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$ are rationals}
+\]</span></p>
+<p><span class="math display">\[
+  x = \frac{-a_1 \pm \sqrt{a_1^{2} -4 a_0} }{2}
+\]</span></p>
+</section>
+<section id="but-how-did-you-get-there" class="level2">
+<h2 class="anchored" data-anchor-id="but-how-did-you-get-there">But how did you get there?</h2>
+<p><em>Shut up and memorize!</em></p>
+<p>Just joking. Let’s see what we can do…</p>
+<p>In the previous section we talked about equations and solutions. We might sometimes still use that terminology, but we’re also going to talk about polynomials and roots. For our purposes, an equation can be expressed as <span class="math inline">\(p(x) = 0\)</span>, where <span class="math inline">\(p(x)\)</span> is a polynomial. In the quadratic example, the polynomial would be <span class="math inline">\(p(x) = x^{2} + a_1 x + a_0\)</span>. A root of the polynomial is any value that gives an output of <span class="math inline">\(0\)</span> when plugged as <span class="math inline">\(x\)</span> into that polynomial. Therefore, a solution of the equation is a root of the polynomial.</p>
+<p>Suppose we give names <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> to our hypothetical roots. If something is a root, as we just said, it should evaluate the polynomial to <span class="math inline">\(0\)</span>. This must work for both roots, so when factored out, the polynomial should look like <span class="math inline">\((x - x_1)(x - x_2)\)</span>. Here, if we change <span class="math inline">\(x\)</span> by either <span class="math inline">\(x_1\)</span> or <span class="math inline">\(x_2\)</span>, the result will be <span class="math inline">\(0\)</span> as expected. Now let’s expand:</p>
+<p><span class="math display">\[
+  (x - x_1) (x - x_2) = x^{2} + (- x_1 - x_2) x + x_1 x_2
+\]</span></p>
+<p>But considering the original polynomial looked like <span class="math inline">\(x^{2} + a_1 x + a_0\)</span>, that means we have the following equalities for our roots:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 &amp;= -a_1 \\
+  x_1 x_2   &amp;= a_0
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>The cool thing about them is that the result of adding or multiplying the roots is again a rational number (because our coefficients were rationals), even if the roots themselves might not be rational. In fact, knowing that, any weird expression made up of sums and products of roots, say <span class="math inline">\(\frac{(x_1 + x_2)^{3}}{3x_1 x_2} -4(x_1 + x_2)(x_1 x_2)^{6}\)</span>, will be <em>rationally known</em>. I’m using these words on purpose, because that’s how Galois himself referred to quantities that ultimately evaluate to a rational number, even if the operands themselves aren’t necessarily rationals (like our roots). Keep this cool observation in mind, you’ll see why in just a while.</p>
+<p>So we have to figure out a formula for both roots. They’re just two now, yes, but you know this is going further, right? We will work with higher degree equations later. Wouldn’t it be cool if we could just find the value of <em>one</em> thing, and then get the value of all roots <em>for free</em> just from that? Of course, besides this weird value, we’re also allowed to use the original coefficients of the polynomial, since they’re also known numbers.</p>
+<p>I’ll help you with that. There are probably a lot of values we could choose to find, but I’ll give you this one:</p>
+<p><span class="math display">\[
+  t = x_1 - x_2
+\]</span></p>
+<p>Of course you’re now supposed to check that this does <em>encode</em> everything about the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Remember learning how to solve systems of equations in high school? Reduction method, is that you?</p>
+<p><span class="math display">\[
+  \left.
+  \begin{aligned}
+      t &amp;= x_1 - x_2 \\
+      -a_1 &amp;= x_1 + x_2
+  \end{aligned}
+  \right\}
+  \Rightarrow
+  \left\{
+  \begin{aligned}
+      x_1 &amp;= \frac{-a_1 + t}{2} \\
+      x_2 &amp;= \frac{-a_1 - t}{2}
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>Do you see where this is going? Of course, we’ll now try to find the value of <span class="math inline">\(t\)</span>! But why would this be easier? Well, instead of computing <span class="math inline">\(t\)</span>, let’s try with <span class="math inline">\(t^{2}\)</span>:</p>
+<p><span class="math display">\[
+  t^{2} = (x_1 - x_2)^{2} = x_1^{2} + x_2^{2} - 2 x_1 x_2 = (x_1 + x_2)^{2} - 4 x_1 x_2
+  \overset{\text{cool obs.}}{=} a_1^{2} - 4 a_0
+\]</span></p>
+<p>You do know what happened in the last step, right? The cool observation we made earlier. We put everything in terms of <span class="math inline">\(x_1 + x_2\)</span> and <span class="math inline">\(x_1 x_2\)</span>, so we can then use the known rational coefficients, and we’re done. We know what <span class="math inline">\(t^{2}\)</span> is, so we can now pick a square root and have <span class="math inline">\(t = \sqrt{a_1^{2} - 4a_0}\)</span>. Then getting back the values of the original roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> is routine substitution in the equalities we stated earlier.</p>
+<p>But before claiming our trophy in the form of a final result, let’s expand our perspective a bit. Suppose we craft another equation, of which we’re sure that <span class="math inline">\(t\)</span> is a root, and we know how to solve this new equation. That way we would get the value of <span class="math inline">\(t\)</span>, just like above, hoping that it would be easier than trying to solve the original equation.</p>
+<p>So… How does such an equation look like? The one I’ll show you won’t be too surprising, and you’ll even think I’m just making fun of you, but keep in mind I’m trying to prepare a recipe for future sections. Alright, the equation:</p>
+<p><span class="math display">\[
+  (x - t)(x + t) = 0
+\]</span></p>
+<p>Of course this equation makes sense. We already made a useful observation before. If <span class="math inline">\(t\)</span> has to be a root, there must be a factor like <span class="math inline">\((x - t)\)</span> out there. The reason we also included <span class="math inline">\((x + t)\)</span> is that now this product will give a neat result, as you might expect from before. Yes, we just happen to know that because we already calculated <span class="math inline">\(t^{2}\)</span> before, and this seems to be some circular reasoning, but bear with me, this will be a useful reinterpretation later…</p>
+<p><span class="math display">\[
+\begin{array}{c}
+  (x - t)(x + t) = 0 \\
+  \Downarrow \\
+  x^{2} - t^{2} = 0 \\
+  \Downarrow \\
+  x^{2} = t^{2} \\
+  \Downarrow \\
+  x = \sqrt{t^{2}} = \sqrt{a_1^{2} - 4 a_0} = t
+\end{array}
+\]</span></p>
+<p>At this point you might be wondering why I never bother to write the typical sign <span class="math inline">\(\pm\)</span> to represent that we could take either the positive or the negative value, in this case, when taking the square root. At least for our quadratic example, this is irrelevant! Why? Well, you just look back at the relations:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      x_1 &amp;= \frac{-a_1 + t}{2} \\
+      x_2 &amp;= \frac{-a_1 - t}{2}
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>If we take the positive value, that is, <span class="math inline">\(t = \sqrt{a_1^{2} - 4 a_0}\)</span>, then we get the solutions:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      x_1 &amp;= \frac{-a_1 + \sqrt{a_1^{2} - 4 a_0}}{2} \\
+      x_2 &amp;= \frac{-a_1 - \sqrt{a_1^{2} - 4 a_0}}{2}
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>If we instead take the negative value, i.e., <span class="math inline">\(t = -\sqrt{a_1^{2} - 4 a_0}\)</span>, then our solutions will be:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      x_1 &amp;= \frac{-a_1 - \sqrt{a_1^{2} - 4 a_0}}{2} \\
+      x_2 &amp;= \frac{-a_1 + \sqrt{a_1^{2} - 4 a_0}}{2}
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>They’re the same but swapped! So who cares? We just wanted to find the roots in the first place, we didn’t even define what should be called <span class="math inline">\(x_1\)</span> and what <span class="math inline">\(x_2\)</span>, there’s just no difference. This also somehow addresses another question you might have had. We want to find the value of the root <span class="math inline">\(t\)</span> from the new equation. <em>But how do we even know which one of the roots is <span class="math inline">\(t\)</span>?</em> Well, as we just said, it turns out any of them works… The more general answer to this question isn’t that easy, but will play a crucial role in our understanding of these equations, and we’ll get back to it later. <em>No spoilers</em>.</p>
+</section>
+</section>
+<section id="first-symmetry" class="level1">
+<h1>First symmetry</h1>
+<p>I bet you know what’s coming next… But before we try to tame that naughty cubic equation, we need some polynomial machinery. We’ll find some symmetries along the way, I hope you’re excited!</p>
+<p>Let’s recall the cool observation from previous section:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 &amp;= -a_1 \\
+  x_1 x_2   &amp;= a_0
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>The question is obvious… Can we find something similar for the cubic equation?</p>
+<p><span class="math display">\[
+  x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
+\]</span></p>
+<p>We proceed the same way as for the quadratic. If the roots are <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>, we should be able to factor the equation like <span class="math inline">\((x - x_1)(x - x_2)(x - x_3)\)</span>. What do we get from here? You can check it yourself:</p>
+<p><span class="math display">\[
+  (x - x_1)(x - x_2)(x - x_3) = x^{3} - (x_1 + x_2 + x_3) x^{2} + (x_1 x_2 + x_1 x_3 + x_2 x_3) x - x_1 x_2 x_3
+\]</span></p>
+<p>We got our relations!</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 &amp;= -a_2 \\
+  x_1 x_2 + x_1 x_3 + x_2 x_3 &amp;= a_1 \\
+  x_1 x_2 x_3 &amp;= -a_3
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>I know you’re seeing the pattern for the coefficients:</p>
+<ul>
+<li>Sum of all roots, negative sign</li>
+<li>Sum of all products of two different roots, positive sign</li>
+<li>Sum of all products of three different roots, negative sign</li>
+<li>…</li>
+</ul>
+<p>Now pay attention to this. If we have an equation of degree <span class="math inline">\(n\)</span>, in coefficient <span class="math inline">\(a_i\)</span>, we have all possible different ways of choosing <span class="math inline">\(n-i\)</span> roots. What happens if we swap any two of the roots? Of course, nothing! We rearranged some sums and products, but since the order doesn’t matter, and we were including all possible products, we still have the same result! We say that these expressions are <em>symmetric</em> polynomials. A polynomial on the roots <span class="math inline">\(x_1, x_2, \dots, x_n\)</span> is <em>symmetric</em> if it doesn’t change no matter how we rearrange the roots.</p>
+<p>The symmetric polynomials we’ve been working with actually have a special name: they’re called <em>elementary symmetric polynomials</em>. Any guess for why they have this name? I’ll give you a few examples to think.</p>
+<p>Let’s take for example this obviously symmetric polynomial:</p>
+<p><span class="math display">\[
+  x_1^{2} + x_2^{2} + x_3^{2}
+\]</span></p>
+<p>Can we know its value? Let’s rewrite it…</p>
+<p><span class="math display">\[
+  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
+\]</span></p>
+<p>Yes! That’s a known rational. Let’s try another symmetric polynomial:</p>
+<p><span class="math display">\[
+  x_1^{3} x_2 + x_2^{3} x_3 + x_3^{3} x_1
+\]</span></p>
+<p><em>Oops!</em> This is not a symmetric polynomial! Can you see why? It needs a small fix:</p>
+<p><span class="math display">\[
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3}
+\]</span></p>
+<p>Yes, much better now. Can you prove this one is indeed symmetric? Hint: it’s enough to check swaps of two roots. That’s because any rearrangement of roots can be explained as a series of swaps of two roots. Now, is this also a known value? Perhaps a product of familiar expressions…?</p>
+<p><span class="math display">\[
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot a_0
+\]</span></p>
+<p>Well, this one also worked. Do you see where I’m going?</p>
+<p>We were already observing in a previous section that any expression written in terms of these elementary symmetric polynomials has a known rational value, no matter how complicated the expression may be. An expression written in terms of elementary symmetric polynomials is of course symmetric, because each of these terms is. But can we go further?</p>
+<p><em>Any symmetric polynomial can be written in terms of elementary symmetric polynomials.</em></p>
+<p>I hope you agree this is not obvious at all. And the statement just like that doesn’t seem too interesting. Because we know that elementary symmetric polynomials are known rational numbers, then we get this more insightful result for free:</p>
+<p><em>Any symmetric polynomial on the roots is a known number.</em></p>
+<p>We’ll use this result a few times later. Of course, we should prove the first statement about elementary symmetric polynomials. In Galois’ time, this was such a well-known fact that he didn’t even bother including it in the prerequisites for his memoir. (TODO: link proof or include in appendix)</p>
+</section>
+<section id="third-degree" class="level1">
+<h1>Third degree</h1>
+<section id="déjà-vu" class="level2">
+<h2 class="anchored" data-anchor-id="déjà-vu">Déjà vu</h2>
+<p>Time for the cubic! Just to recap, this is what we have to start with:</p>
+<p><span class="math display">\[
+  x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
+\]</span></p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 &amp;= -a_2 \\
+  x_1 x_2 + x_1 x_3 + x_2 x_3 &amp;= a_1 \\
+  x_1 x_2 x_3 &amp;= -a_3
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>Remember what we did in the <a href="#but-how-did-you-get-there">Second degree</a> section? We were discussing the possibility of finding a special value <span class="math inline">\(t\)</span> which could encode all the information about our roots, in the sense that we could find their values just from <span class="math inline">\(t\)</span> itself and other known values. For the quadratic we used <span class="math inline">\(t = x_1 - x_2\)</span>. Can we find such a value for the cubic?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Can you use the solutions of the equation <span class="math inline">\(x^{3} = 1\)</span>?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Yes we can! Did you think about complex roots of unity? If you like following the pattern, for the quadratic we have <span class="math inline">\(t = \alpha_1 x_1 + \alpha_2 x_2\)</span> where <span class="math inline">\(\alpha_1, \alpha_2\)</span> are the solutions of the equation <span class="math inline">\(x^{2} = 1\)</span>. These are of course <span class="math inline">\(1\)</span> and <span class="math inline">\(-1\)</span>.</p>
+<p>What are the solutions of <span class="math inline">\(x^{3} = 1\)</span>? They’re <span class="math inline">\(1\)</span>, <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span>, where <span class="math inline">\(\omega\)</span> is a complex root of <span class="math inline">\(x^{2} + x + 1 = 0\)</span>. Then, again just following the pattern, we could think of the following special value:</p>
+<p><span class="math display">\[
+  t = x_1 + \omega x_2 + \omega^{2} x_3
+\]</span></p>
+<p>This is just a hunch! In order to use this, we should actually show that all <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, <span class="math inline">\(x_3\)</span> can be expressed in terms of this <span class="math inline">\(t\)</span> and other known values.</p>
+</div>
+</div>
+</div>
+<p>Now that we got the value, it’s time to show that the roots can be expressed in terms of this <span class="math inline">\(t\)</span>… Or that’s what I thought while writing this. Too optimistic… I’m not saying it’s not possible, but it can be quite difficult to get those formulas. Instead of trying to narrow down to a single value <span class="math inline">\(t\)</span>, let’s try for a moment to use two values, the other being very similar to <span class="math inline">\(t\)</span>. I’ll help you with this one.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Check these relations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  t &amp;= x_1 + \omega x_2 + \omega^{2} x_3 \\
+  t' &amp;= x_1 + \omega^{2} x_2 + \omega x_3 \\
+  -a_2 &amp;= x_1 + x_2 + x_3
+\end{aligned}
+\right.
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Can you now find the roots by using <span class="math inline">\(t\)</span>, <span class="math inline">\(t'\)</span>, <span class="math inline">\(\omega\)</span> and the coefficients?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Can you use the fact that <span class="math inline">\(1 + \omega + \omega^{2} = 0\)</span>?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We can try to sum all three equations multiplied by specific coefficients so that our root remains there and the other two are cancelled out à la reduction method, because of the given relation of <span class="math inline">\(\omega\)</span>.</p>
+<p>Doing that, we get these formulas for the roots:</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  x_1 &amp;= \frac{t + t' - a_2}{3} \\
+  x_2 &amp;= \frac{\omega^{2} t + \omega t' - a_2}{3} \\
+  x_3 &amp;= \frac{\omega t + \omega^{2} t' - a_2}{3}
+\end{aligned}
+\right.
+\]</span></p>
+</div>
+</div>
+</div>
+<p>OK, so we can get the roots by using both <span class="math inline">\(t\)</span> and <span class="math inline">\(t'\)</span>. Yes, I know what you’re thinking. We now have to find two values instead of one, but trust me, this is justified, since these values seem so similar that I hope we’ll be able to find both of them <em>at the same time</em>.</p>
+<p>You already know how this goes, now we have to build a polynomial for which <span class="math inline">\(t\)</span> is a root, and hopefully, just hopefully, <span class="math inline">\(t'\)</span> will also be one of its roots. Let’s recall, or rather expand, the way we built the polynomial for the quadratic case. I told you it would be helpful later, and the time has come.</p>
+<p>Remember that we had <span class="math inline">\(t = x_1 - x_2\)</span>. Our special polynomial for the quadratic was this:</p>
+<p><span class="math display">\[
+  (x - t)(x + t) = (x - (x_1 - x_2))(x + (x_1 - x_2)) = (x - (x_1 - x_2))(x - (x_2 - x_1))
+  = x^{2} - ((x_1 - x_2) + (x_2 - x_1)) x + (x_1 - x_2)(x_2 - x_1)
+\]</span></p>
+<p>You already know what the actual polynomial is, but I left it in this last form to notice something: the coefficients are symmetric polynomials on the roots! If you try swapping <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> in both expressions <span class="math inline">\(((x_1 - x_2) + (x_2 - x_1))\)</span> and <span class="math inline">\((x_1 - x_2)(x_2 - x_1)\)</span>, you get the same result. In the previous section, we just saw that all symmetric polynomials on the roots are actually known values. They’re made from the coefficients of the original equation, which were rational, so we got a new equation with rational coefficients.</p>
+<p>Of course, there <em>is</em> one concern. Perhaps this new equation is just as hard to solve as the original one, and then we did something completely useless. While that’s a possibility, we were hoping that our choice of <span class="math inline">\(t\)</span> would make the new equation sufficiently easy to solve. In the case of the quadratic, you know that this was true because we were able to lose the term of <span class="math inline">\(x\)</span>, and get a simpler quadratic <span class="math inline">\(x^{2} - t^{2} = 0\)</span>, which only requires to take a square root to solve.</p>
+<p>We saw the coefficients we got in the end are symmetric polynomials, but we could have deduced that from the start, from the way we defined the polynomial as a product. Yes, in the quadratic example it was easier to see why we would benefit from choosing both <span class="math inline">\(t\)</span> and <span class="math inline">\(-t\)</span> (sum times difference is the difference of squares). Another way to look at this is that <span class="math inline">\(-t\)</span> is the result of swapping the roots in <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+  (x - (\text{t with no swaps}))(x - (\text{t with roots swapped}))
+\]</span></p>
+<p>This form is telling us that this is a symmetric polynomial <em>on the roots</em>, and therefore, that its final coefficients will be known rational values. Can you see why? I’ll let you figure that out, because now it’s your turn again… Can you use this idea to find a suitable new polynomial for the cubic, for which <span class="math inline">\(t\)</span> and <span class="math inline">\(t'\)</span> are two of its roots? Just to remember, these are their expressions:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      t &amp;= x_1 + \omega x_2 + \omega^{2} x_3 \\
+      t' &amp;= x_1 + \omega^{2} x_2 + \omega x_3
+  \end{aligned}
+  \right.
+  \quad
+  \text{The value $\omega$ is such that $1+\omega+\omega^{2} = 0$}
+\]</span></p>
+<p>Come on, try to find the polynomial!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Why is the quadratic example a symmetric polynomial on its roots?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We defined it as the product of two terms. Note that the order of the product doesn’t matter. What happens to the expression if we swap the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>? Then we get:</p>
+<p><span class="math display">\[
+  (x - (\text{t with roots swapped}))(x - (\text{t with no swaps}))
+\]</span></p>
+<p>And this is certainly the same polynomial. For the quadratic, all the possible rearrangements are only swapping both roots or leaving them the same way. Since all these rearrangements give the same polynomial, we can say the polynomial is symmetric in the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Do you see how this helps for the cubic?</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: You’ll get a wild expression for the cubic, but try to simplify as much as possible.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The previous hint talked about <em>all rearrangements</em> of the roots. This should already be a really good hint. Yes, we’re doing exactly that. Let’s start from <span class="math inline">\(t\)</span> and find all possible expressions that come from rearrangements of <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  x_1 + \omega x_2 + \omega^{2} x_3 &amp;= t \\
+  x_1 + \omega x_3 + \omega^{2} x_2 &amp;= t' \\
+  x_3 + \omega x_1 + \omega^{2} x_2 &amp;= \omega t \\
+  x_2 + \omega x_1 + \omega^{2} x_3 &amp;= \omega t' \\
+  x_2 + \omega x_3 + \omega^{2} x_1 &amp;= \omega^{2} t \\
+  x_3 + \omega x_2 + \omega^{2} x_1 &amp;= \omega^{2} t'
+\end{aligned}
+\right.
+\]</span></p>
+<p>There are quite some things going on there, so you’d better pause and check those relations hold. Note that we also included <span class="math inline">\(t'\)</span> in there! We now see that <span class="math inline">\(t'\)</span> was just one of the expressions obtained from the rearrangements of the roots in <span class="math inline">\(t\)</span>. Of course, now we’ll build a polynomial that has all of these as roots, so in particular it will have both <span class="math inline">\(t\)</span> and <span class="math inline">\(t'\)</span> as roots, just like we wanted! The reason I wrote the equalities above is so that we now don’t have to write the absolute beast that this polynomial would be as a product. We will instead just write the right side of the equalities:</p>
+<p><span class="math display">\[
+  (x - t)(x - t')(x - \omega t)(x - \omega t')(x - \omega^{2} t)(x - \omega^{2} t')
+\]</span></p>
+<p>Oh, yeah, we’re going to have fun trying to simplify this… But by now we should know that, no matter how complicated it looks, in the end, this should be a polynomial with rational coefficients. It’s a symmetric polynomial on the roots, <em>we</em> made it like that by multiplying all rearrangements of roots.</p>
+<p>What happens if we try to multiply only those terms having <span class="math inline">\(t\)</span>? I’ll let you check that, but the product simplifies nicely because of the relations <span class="math inline">\(1 + \omega + \omega^{2} = 0\)</span> and <span class="math inline">\(\omega^{3} = 1\)</span>:</p>
+<p><span class="math display">\[
+  (x - t)(x - \omega t)(x - \omega^{2} t) = x^{3} - t^{3}
+\]</span></p>
+<p>We can of course do the same with the terms involving <span class="math inline">\(t'\)</span>:</p>
+<p><span class="math display">\[
+  (x - t')(x - \omega t')(x - \omega^{2} t') = x^{3} - t'^{3}
+\]</span></p>
+<p>So because of the useful relations that we got from the roots of unity, our product simplified into this much cleaner expression:</p>
+<p><span class="math display">\[
+  (x^{3} - t^{3})(x^{3} - t'^{3})
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Yes, we still have some work to do to simplify that…</p>
+</section>
+<section id="i-aint-doing-that" class="level2">
+<h2 class="anchored" data-anchor-id="i-aint-doing-that">I ain’t doing that</h2>
+<p>I really like these <em>boxes</em> that help hiding <em>spoilers</em> and try to encourage you, my dear lazy reader, to work through some of the steps on your own. Of course, we can’t hide everything inside these boxes and the text must keep flowing. I’ll now have to show how the polynomial we were looking for in the previous section looks like, but I’m showing a simplified expression. The moral of the story is that the <em>spoiler</em> isn’t the polynomial itself, because it’s simplified. The real <em>spoiler</em> is the series of steps you needed to get there! Remember we’re trying to build intuition.</p>
+<p>And in fact, we already got a lot of intuition from the previous section! This section is only meant to show you that we can actually end and get the solutions of the cubic, although it’s more of a rutinary calculation from here on. You and me are both lazy human beings that don’t bother doing those mundane calculations, do we? Let’s see what we can do…</p>
+<p>We left at this point:</p>
+<p><span class="math display">\[
+  (x^{3} - t^{3})(x^{3} - t'^{3})
+\]</span></p>
+<p>We can expand that product and get this:</p>
+<p><span class="math display">\[
+  x^{6} - (t^{3} + t'^{3}) x^{3} + t^{3} t'^{3}
+\]</span></p>
+<p>See, the values <span class="math inline">\(t^{3}\)</span> and <span class="math inline">\(t'^{3}\)</span> don’t have to be rationals themselves, but since this came from a symmetric polynomial on the roots, the coefficients must be rationals! And we want to try solving a polynomial with known coefficients… OK, OK, you don’t have to calculate those coefficients if you don’t want to. I’ll tell you what they really are, but we’ll give them short names <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> for a while after that:</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  u &amp;= t^{3} + t'^{3} = - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3} \\
+  v &amp;= t^{3} t'^{3} = (- 3 a_{1} + a_{2}^{2})^{3}
+\end{aligned}
+\right.
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+So you still want to know how I got them…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
+<p>We first define all the symbols we need in our expressions:</p>
+<div id="1a744743" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> x1 <span class="op">+</span> w <span class="op">*</span> x2 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x3</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
+<div id="30ee8c24" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">+</span> x2 <span class="op">+</span> x3: <span class="op">-</span>a2,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">*</span> x2 <span class="op">+</span> x2 <span class="op">*</span> x3 <span class="op">+</span> x3 <span class="op">*</span> x1: a1,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">*</span> x2 <span class="op">*</span> x3: <span class="op">-</span>a0,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="65">
+<p><span class="math inline">\(\displaystyle a_{1} \left(w^{2} + w - 2\right) + a_{2}^{2}\)</span></p>
+</div>
+</div>
+<p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
+<div id="4f653bcf" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="66">
+<p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
+</div>
+</div>
+<p>And <span class="math inline">\(t \cdot t'\)</span> was indeed a symmetric polynomial! Then we also got the desired value:</p>
+<p><span class="math display">\[
+  t^3 t'^3 = (-3 a_1 + a_2^2)^3
+\]</span></p>
+<p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
+<div id="cf392049" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">+</span> x2 <span class="op">+</span> x3: <span class="op">-</span>a2,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">*</span> x2 <span class="op">+</span> x2 <span class="op">*</span> x3 <span class="op">+</span> x3 <span class="op">*</span> x1: a1,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        x1 <span class="op">*</span> x2 <span class="op">*</span> x3: <span class="op">-</span>a0,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="67">
+<p><span class="math inline">\(\displaystyle - a_{0} \left(12 w^{3} - 9 w^{2} - 9 w + 6\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
+</div>
+</div>
+<p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
+<div id="9562b7ef" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="68">
+<p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
+</div>
+</div>
+<div id="ac6e3070" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="69">
+<p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
+</div>
+</div>
+<p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
+<div id="04f6bcc9" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="70">
+<p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
+</div>
+</div>
+<p>Yes! We got a really neat expression:</p>
+<p><span class="math display">\[
+  t^{3} + t'^{3} = - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>We’ll use the actual values of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> later, just to not write too long equations. It turns out we end up with a surprisingly cool equation:</p>
+<p><span class="math display">\[
+  x^{6} - u x^{3} + v = 0
+\]</span></p>
+<p>Another way to look at it is this:</p>
+<p><span class="math display">\[
+  (x^{3})^{2} - u (x^{3}) + v = 0
+\]</span></p>
+<p>Can you see it? This is really just a quadratic equation!</p>
+<p><span class="math display">\[
+  x^{3} = \frac{u \pm \sqrt{u^{2} - 4v}}{2}
+\]</span></p>
+<p>We can obviously just take a cube root now and obtain a solution:</p>
+<p><span class="math display">\[
+  x = \sqrt[3]{\frac{u \pm \sqrt{u^{2} - 4v}}{2}}
+\]</span></p>
+<p><em>No, this isn’t one solution, these are a lot of solutions!</em> Yes, that’s right. We already had this kind of discussion before, right? In this case, we have two possible values for the inner square root, and three possible values for the outer cube root. The six possible solutions! Which ones are <span class="math inline">\(t\)</span> and <span class="math inline">\(t'\)</span>? Unfortunately, in this case, we can’t just choose any combination.</p>
+<p>By now I think it’s time we get rid of <span class="math inline">\(t'\)</span>. How come? Well, we already derived a useful relation:</p>
+<p><span class="math display">\[
+\begin{array}{c}
+  t \cdot t' = - 3 a_{1} + a_{2}^{2} \\
+  \Downarrow \\
+  t' = \frac{- 3 a_{1} + a_{2}^{2} }{t}
+\end{array}
+\]</span></p>
+<p>Let’s go back to our original equations for the roots. We originally wanted to get back the roots by just using one quantity <span class="math inline">\(t\)</span> and other known values. We finally made it!</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  x_1 &amp;= \frac{t + \frac{k}{t} - a_2}{3} \\
+  x_2 &amp;= \frac{\omega^{2} t + \omega \frac{k}{t} - a_2}{3} \\
+  x_3 &amp;= \frac{\omega t + \omega^{2} \frac{k}{t} - a_2}{3}
+\end{aligned}
+\right.
+\quad
+\text{where } k = -3 a_1 + a_2^{2}
+\]</span></p>
+<p>Did the question change in any way? How do we know which root of the new polynomial is the <span class="math inline">\(t\)</span> we want? Of course, we could always try all six possible values in these equations for <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>, and double check if they really are solutions of the original cubic equation.</p>
+<p>Will you do that for me? Well…</p>
+<p>Before we die in the attempt, let’s try to give some short expressions for all six roots. We will fix one of them and get the others in terms of that one. We’ll call this one <span class="math inline">\(t\)</span>, but this is just a name for a fixed root, it could be any of them. Suppose then that <span class="math inline">\(t\)</span> is this:</p>
+<p><span class="math display">\[
+  t = \sqrt[3]{\frac{u + \sqrt{u^{2} - 4v}}{2}}
+\]</span></p>
+<p>When taking cube roots, one way of writing all three of them is to fix one and multiply by roots of unity to get the others (because of course you get the same if you again raise to the third power). That means another two roots are <span class="math inline">\(\omega t\)</span> and <span class="math inline">\(\omega^{2} t\)</span>.</p>
+<p>What about the other three? We should take the negative sign for the square root inside. If we call that one <span class="math inline">\(t'\)</span>, we then have the relation we defined earlier:</p>
+<p><span class="math display">\[
+  t \cdot t' = k \Rightarrow t' = \frac{k}{t} \quad \text{where } k = -3 a_1 + a_2^{2}
+\]</span></p>
+<p>So another root is <span class="math inline">\(\frac{k}{t}\)</span>. Since there’s also a cube root there, we can pick another two roots to be <span class="math inline">\(\omega \frac{k}{t}\)</span> and <span class="math inline">\(\omega^{2} \frac{k}{t}\)</span>. So after fixing one root <span class="math inline">\(t\)</span>, all six of them can be expressed like this:</p>
+<p><span class="math display">\[
+  \left\{
+  t, \omega t, \omega ^{2} t, \frac{k}{t}, \omega \frac{k}{t}, \omega^{2} \frac{k}{t}
+  \right\}
+\]</span></p>
+<p>Remember this <span class="math inline">\(t\)</span> was just some fixed root. If we use this one, in the equations above for the roots, we would get <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in that order. That’s basically just the definition. How about trying to input <span class="math inline">\(\omega t\)</span> where <span class="math inline">\(t\)</span> appears in the equations? Let’s try:</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  \frac{(\omega t) + \frac{k}{(\omega t)} - a_2}{3} = \frac{\omega t + \omega^{2} \frac{k}{t} - a_2}{3} &amp;= x_3 \\
+  \frac{\omega^{2} (\omega t) + \omega \frac{k}{(\omega t)} - a_2}{3} = \frac{t + \frac{k}{t} - a_2}{3} &amp;= x_1 \\
+  \frac{\omega (\omega t) + \omega^{2} \frac{k}{(\omega t)} - a_2}{3} = \frac{\omega^{2} t + \omega \frac{k}{t} - a_2}{3} &amp;= x_2
+\end{aligned}
+\right.
+\]</span></p>
+<p>In the first one we used the equality <span class="math inline">\(\frac{1}{\omega} = \frac{\omega^{2}}{\omega^{2}} \cdot \frac{1}{\omega} = \omega^{2}\)</span>.</p>
+<p>Perhaps unexpectedly, we got the same set of solutions, but in a different arrangement! Let’s try with another one, for example, <span class="math inline">\(\frac{k}{t}\)</span>:</p>
+<p><span class="math display">\[
+\left\{
+\begin{aligned}
+  \frac{(\frac{k}{t}) + \frac{k}{(\frac{k}{t})} - a_2}{3} = \frac{\frac{k}{t} + t - a_2}{3} &amp;= x_1 \\
+  \frac{\omega^{2} (\frac{k}{t}) + \omega \frac{k}{\frac{k}{t}} - a_2}{3} = \frac{\omega^{2} \frac{k}{t} + \omega t - a_2}{3} &amp;= x_3 \\
+  \frac{\omega (\frac{k}{t}) + \omega^{2} \frac{k}{(\frac{k}{t})} - a_2}{3} = \frac{\omega \frac{k}{t} + \omega^{2} t - a_2}{3} &amp;= x_2
+\end{aligned}
+\right.
+\]</span></p>
+<p>We got another rearrangement of the roots! What kind of witchery is this? Well, I don’t know about you, but I’m starting to become tired of writing these equations… I claim that each one of the roots of the new polynomial gives a different rearrangement of the roots <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> when introduced in the formulae of the roots. Thus, <em>any</em> root of the new polynomial will give us valid solutions for the original equation, no matter which one we take. Of course, you don’t need to trust me, you can check it yourself! I’ll leave here every root and its rearrangement:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      t \mapsto (x_1, x_2, x_3) \\
+      \omega t \mapsto (x_3, x_1, x_2) \\
+      \omega^{2} t \mapsto (x_2, x_3, x_1) \\
+      \frac{k}{t} \mapsto (x_1, x_3, x_2) \\
+      \omega \frac{k}{t} \mapsto (x_2, x_1, x_3) \\
+      \omega^{2} \frac{k}{t} \mapsto (x_3, x_2, x_1) \\
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>Yes, we have the cool result that any root of the new polynomial is valid for getting the original solutions of the cubic. But what do you think about these neat rearrangements? Are they only useful for the above conclusion, or can we do more with them? Was this a coincidence, or a more general result? Keep some popcorn for later. I warned you.</p>
+</section>
+</section>
+<section id="fourth-degree" class="level1">
+<h1>Fourth degree</h1>
+<p>Ha! Did you really think I was going to do this again? Nope.</p>
+</section>
+<section id="second-symmetry" class="level1">
+<h1>Second symmetry</h1>
+<p>TODO</p>
+</section>
+<section id="you-cant-solve-it" class="level1">
+<h1>You can’t solve it</h1>
+<p>TODO</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
