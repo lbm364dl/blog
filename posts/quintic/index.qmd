@@ -566,7 +566,7 @@ from choosing both $t$ and $-t$ (sum times difference is the difference of squar
 Another way to look at this is that $-t$ is the result of swapping the roots in $t$:
 
 $$ 
-  (x - (\text{t with no rearrangement}))(x - (\text{t with roots swapped}))
+  (x - (\text{t with no swaps}))(x - (\text{t with roots swapped}))
 $$ 
 
 This form is telling us that this is a symmetric polynomial _on the roots_, and
@@ -592,6 +592,18 @@ Come on, try to find the polynomial!
 
 # Hint: Why is the quadratic example a symmetric polynomial on its roots?
 
+We defined it as the product of two terms. Note that the order of the product
+doesn't matter. What happens to the expression if we swap the roots $x_1$ and
+$x_2$? Then we get:
+
+$$ 
+  (x - (\text{t with roots swapped}))(x - (\text{t with no swaps}))
+$$ 
+
+And this is certainly the same polynomial. For the quadratic, all the possible
+rearrangements are only swapping both roots or leaving them the same way. Since
+all these rearrangements give the same polynomial, we can say the polynomial is
+symmetric in the roots $x_1$ and $x_2$. Do you see how this helps for the cubic?
 
 :::
 
@@ -599,14 +611,360 @@ Come on, try to find the polynomial!
 
 # Hint: You'll get a wild expression for the cubic, but try to simplify as much as possible.
 
+The previous hint talked about _all rearrangements_ of the roots. This should
+already be a really good hint. Yes, we're doing exactly that. Let's start from $t$
+and find all possible expressions that come from rearrangements of $x_1$, $x_2$
+and $x_3$ in $t$:
 
+$$ 
+\left\{
+\begin{aligned}
+  x_1 + \omega x_2 + \omega^{2} x_3 &= t \\
+  x_1 + \omega x_3 + \omega^{2} x_2 &= t' \\
+  x_3 + \omega x_1 + \omega^{2} x_2 &= \omega t \\
+  x_2 + \omega x_1 + \omega^{2} x_3 &= \omega t' \\
+  x_2 + \omega x_3 + \omega^{2} x_1 &= \omega^{2} t \\
+  x_3 + \omega x_2 + \omega^{2} x_1 &= \omega^{2} t'
+\end{aligned}
+\right.
+$$ 
+
+There are quite some things going on there, so you'd better pause and check
+those relations hold. Note that we also included $t'$ in there! We now see
+that $t'$ was just one of the expressions obtained from the rearrangements of
+the roots in $t$. Of course, now we'll build a polynomial that has all of these
+as roots, so in particular it will have both $t$ and $t'$ as roots, just like
+we wanted! The reason I wrote the equalities above is so that we now don't
+have to write the absolute beast that this polynomial would be as a product.
+We will instead just write the right side of the equalities:
+
+$$ 
+  (x - t)(x - t')(x - \omega t)(x - \omega t')(x - \omega^{2} t)(x - \omega^{2} t')
+$$ 
+
+Oh, yeah, we're going to have fun trying to simplify this... But by now we
+should know that, no matter how complicated it looks, in the end, this should
+be a polynomial with rational coefficients. It's a symmetric polynomial on the
+roots, _we_ made it like that by multiplying all rearrangements of roots.
+
+What happens if we try to multiply only those terms having $t$? I'll let
+you check that, but the product simplifies nicely because of the relations
+$1 + \omega + \omega^{2} = 0$ and $\omega^{3} = 1$:
+
+$$ 
+  (x - t)(x - \omega t)(x - \omega^{2} t) = x^{3} - t^{3}
+$$ 
+
+We can of course do the same with the terms involving $t'$:
+
+$$ 
+  (x - t')(x - \omega t')(x - \omega^{2} t') = x^{3} - t'^{3}
+$$ 
+
+So because of the useful relations that we got from the roots of unity, our
+product simplified into this much cleaner expression:
+
+$$ 
+  (x^{3} - t^{3})(x^{3} - t'^{3})
+$$ 
 :::
 
+Yes, we still have some work to do to simplify that... 
 
 
 ## I ain't doing that
 
-TODO
+I really like these _boxes_ that help hiding _spoilers_ and try to encourage
+you, my dear lazy reader, to work through some of the steps on your own. Of
+course, we can't hide everything inside these boxes and the text must keep
+flowing. I'll now have to show how the polynomial we were looking for in the
+previous section looks like, but I'm showing a simplified expression. The
+moral of the story is that the _spoiler_ isn't the polynomial itself, because
+it's simplified. The real _spoiler_ is the series of steps you needed to get
+there! Remember we're trying to build intuition.
+
+And in fact, we already got a lot of intuition from the previous section!
+This section is only meant to show you that we can actually end and
+get the solutions of the cubic, although it's more of a rutinary calculation
+from here on. You and me are both lazy human beings that don't bother doing
+those mundane calculations, do we? Let's see what we can do...
+
+We left at this point:
+
+$$ 
+  (x^{3} - t^{3})(x^{3} - t'^{3})
+$$ 
+
+We can expand that product and get this:
+
+$$ 
+  x^{6} - (t^{3} + t'^{3}) x^{3} + t^{3} t'^{3}
+$$ 
+
+See, the values $t^{3}$ and $t'^{3}$ don't have to be rationals themselves,
+but since this came from a symmetric polynomial on the roots, the coefficients
+must be rationals! And we want to try solving a polynomial with known
+coefficients... OK, OK, you don't have to calculate those coefficients if you
+don't want to. I'll tell you what they really are, but we'll give them short
+names $u$ and $v$ for a while after that:
+
+$$ 
+\left\{
+\begin{aligned}
+  u &= t^{3} + t'^{3} = - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3} \\
+  v &= t^{3} t'^{3} = (- 3 a_{1} + a_{2}^{2})^{3}
+\end{aligned}
+\right.
+$$
+
+:::{.callout-note collapse=true}
+
+# So you still want to know how I got them...
+
+Let the computer do the boring stuff for you! We can use the `sympy`
+package available in Python. If you're interested but never used Python,
+it's fine, most of it reads more or less like math, so you can probably
+still read through the steps below.
+
+We first define all the symbols we need in our expressions:
+
+```{python}
+import sympy
+
+x1, x2, x3, a0, a1, a2, w = sympy.symbols("x1 x2 x3 a0 a1 a2 w")
+t = x1 + w * x2 + w**2 * x3
+t_prime = x1 + w**2 * x2 + w * x3
+```
+
+Here I tried to guess that $t \cdot t'$ is already a symmetric polynomial.
+If that's true, then we only need to raise that to the third power.
+
+```{python}
+from sympy.polys.polyfuncs import symmetrize
+
+expr, _ = symmetrize(t * t_prime, [x1, x2, x3])
+
+expr = expr.subs(
+    {
+        x1 + x2 + x3: -a2,
+        x1 * x2 + x2 * x3 + x3 * x1: a1,
+        x1 * x2 * x3: -a0,
+    }
+)
+
+expr
+```
+
+Looks like poor `sympy` needs some help with $\omega$... Of course! It
+doesn't even know what $\omega$ is yet.
+
+```{python}
+expr.subs(1 + w + w**2, 0)
+```
+
+And $t \cdot t'$ was indeed a symmetric polynomial! Then we also got the
+desired value:
+
+$$ 
+  t^3 t'^3 = (-3 a_1 + a_2^2)^3
+$$ 
+
+Let's do the same for $t^{3} + t'^{3}$:
+
+```{python}
+expr, _ = symmetrize(t**3 + t_prime**3, [x1, x2, x3])
+
+expr = expr.subs(
+    {
+        x1 + x2 + x3: -a2,
+        x1 * x2 + x2 * x3 + x3 * x1: a1,
+        x1 * x2 * x3: -a0,
+    }
+)
+
+expr
+```
+
+We can first get rid of the $\omega^{3}$ part:
+
+```{python}
+expr = expr.subs(w**3, 1)
+expr
+```
+
+```{python}
+expr.subs(1 + w + w**2, 0)
+```
+
+You naughty `sympy`, why won't you listen to me? Well, let's 
+try simplifying first...
+
+```{python}
+expr.simplify().subs(1 + w + w**2, 0)
+```
+
+Yes! We got a really neat expression:
+
+$$ 
+  t^{3} + t'^{3} = - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}
+$$
+
+:::
+
+We'll use the actual values of $u$ and $v$ later, just to not write too long
+equations. It turns out we end up with a surprisingly cool equation:
+
+$$ 
+  x^{6} - u x^{3} + v = 0
+$$ 
+
+Another way to look at it is this:
+
+$$ 
+  (x^{3})^{2} - u (x^{3}) + v = 0
+$$ 
+
+Can you see it? This is really just a quadratic equation!
+
+$$ 
+  x^{3} = \frac{u \pm \sqrt{u^{2} - 4v}}{2}
+$$ 
+
+We can obviously just take a cube root now and obtain a solution:
+
+$$ 
+  x = \sqrt[3]{\frac{u \pm \sqrt{u^{2} - 4v}}{2}} 
+$$ 
+
+_No, this isn't one solution, these are a lot of solutions!_ Yes, that's
+right. We already had this kind of discussion before, right? In this case,
+we have two possible values for the inner square root, and three possible
+values for the outer cube root. The six possible solutions! Which ones are
+$t$ and $t'$? Unfortunately, in this case, we can't just choose any combination.
+
+By now I think it's time we get rid of $t'$. How come? Well, we already
+derived a useful relation:
+
+$$ 
+\begin{array}{c}
+  t \cdot t' = - 3 a_{1} + a_{2}^{2} \\
+  \Downarrow \\
+  t' = \frac{- 3 a_{1} + a_{2}^{2} }{t}
+\end{array}
+$$ 
+
+Let's go back to our original equations for the roots. We originally wanted
+to get back the roots by just using one quantity $t$ and other known values.
+We finally made it!
+
+
+$$ 
+\left\{
+\begin{aligned}
+  x_1 &= \frac{t + \frac{k}{t} - a_2}{3} \\
+  x_2 &= \frac{\omega^{2} t + \omega \frac{k}{t} - a_2}{3} \\
+  x_3 &= \frac{\omega t + \omega^{2} \frac{k}{t} - a_2}{3}
+\end{aligned}
+\right.
+\quad
+\text{where } k = -3 a_1 + a_2^{2} 
+$$ 
+
+Did the question change in any way? How do we know which root of the new
+polynomial is the $t$ we want? Of course, we could always try all six
+possible values in these equations for $x_1$, $x_2$ and $x_3$, and double
+check if they really are solutions of the original cubic equation. 
+
+Will you do that for me? Well...
+
+Before we die in the attempt, let's try to give some short expressions for all
+six roots. We will fix one of them and get the others in terms of that one. We'll
+call this one $t$, but this is just a name for a fixed root, it could be any of
+them. Suppose then that $t$ is this:
+
+$$
+  t = \sqrt[3]{\frac{u + \sqrt{u^{2} - 4v}}{2}} 
+$$
+
+When taking cube roots, one way of writing all three of them is to fix one and
+multiply by roots of unity to get the others (because of course you get the same
+if you again raise to the third power). That means another two roots are $\omega t$
+and $\omega^{2} t$. 
+
+What about the other three? We should take the negative sign for the square root
+inside. If we call that one $t'$, we then have the relation we defined earlier:
+
+$$ 
+  t \cdot t' = k \Rightarrow t' = \frac{k}{t} \quad \text{where } k = -3 a_1 + a_2^{2}
+$$ 
+
+So another root is $\frac{k}{t}$. Since there's also a cube root there, we can
+pick another two roots to be $\omega \frac{k}{t}$ and $\omega^{2} \frac{k}{t}$.
+So after fixing one root $t$, all six of them can be expressed like this:
+
+$$ 
+  \left\{ 
+  t, \omega t, \omega ^{2} t, \frac{k}{t}, \omega \frac{k}{t}, \omega^{2} \frac{k}{t} 
+  \right\}
+$$ 
+
+Remember this $t$ was just some fixed root. If we use this one, in the equations
+above for the roots, we would get $x_1$, $x_2$ and $x_3$ in that order. That's
+basically just the definition. How about trying to input $\omega t$ where $t$
+appears in the equations? Let's try:
+
+$$ 
+\left\{
+\begin{aligned}
+  \frac{(\omega t) + \frac{k}{(\omega t)} - a_2}{3} = \frac{\omega t + \omega^{2} \frac{k}{t} - a_2}{3} &= x_3 \\
+  \frac{\omega^{2} (\omega t) + \omega \frac{k}{(\omega t)} - a_2}{3} = \frac{t + \frac{k}{t} - a_2}{3} &= x_1 \\
+  \frac{\omega (\omega t) + \omega^{2} \frac{k}{(\omega t)} - a_2}{3} = \frac{\omega^{2} t + \omega \frac{k}{t} - a_2}{3} &= x_2 
+\end{aligned}
+\right.
+$$ 
+
+In the first one we used the equality $\frac{1}{\omega} = \frac{\omega^{2}}{\omega^{2}} \cdot \frac{1}{\omega} = \omega^{2}$.
+
+Perhaps unexpectedly, we got the same set of solutions, but in a different
+arrangement! Let's try with another one, for example, $\frac{k}{t}$:
+
+$$ 
+\left\{
+\begin{aligned}
+  \frac{(\frac{k}{t}) + \frac{k}{(\frac{k}{t})} - a_2}{3} = \frac{\frac{k}{t} + t - a_2}{3} &= x_1 \\
+  \frac{\omega^{2} (\frac{k}{t}) + \omega \frac{k}{\frac{k}{t}} - a_2}{3} = \frac{\omega^{2} \frac{k}{t} + \omega t - a_2}{3} &= x_3 \\
+  \frac{\omega (\frac{k}{t}) + \omega^{2} \frac{k}{(\frac{k}{t})} - a_2}{3} = \frac{\omega \frac{k}{t} + \omega^{2} t - a_2}{3} &= x_2
+\end{aligned}
+\right.
+$$ 
+
+We got another rearrangement of the roots! What kind of witchery is this? Well,
+I don't know about you, but I'm starting to become tired of writing these
+equations... I claim that each one of the roots of the new polynomial gives a
+different rearrangement of the roots $x_1$, $x_2$ and $x_3$ when introduced
+in the formulae of the roots. Thus, _any_ root of the new polynomial will give
+us valid solutions for the original equation, no matter which one we take.
+Of course, you don't need to trust me, you can check it yourself! I'll leave
+here every root and its rearrangement:
+
+$$ 
+  \left\{
+  \begin{aligned}
+      t \mapsto (x_1, x_2, x_3) \\
+      \omega t \mapsto (x_3, x_1, x_2) \\
+      \omega^{2} t \mapsto (x_2, x_3, x_1) \\
+      \frac{k}{t} \mapsto (x_1, x_3, x_2) \\
+      \omega \frac{k}{t} \mapsto (x_2, x_1, x_3) \\
+      \omega^{2} \frac{k}{t} \mapsto (x_3, x_2, x_1) \\
+  \end{aligned}
+  \right.
+$$ 
+
+Yes, we have the cool result that any root of the new polynomial is valid
+for getting the original solutions of the cubic. But what do you think about
+these neat rearrangements? Are they only useful for the above conclusion,
+or can we do more with them? Was this a coincidence, or a more general result? 
+Keep some popcorn for later. I warned you.
 
 # Fourth degree
 
