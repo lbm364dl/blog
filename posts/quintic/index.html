@@ -197,7 +197,11 @@ window.Quarto = {
   <li><a href="#i-aint-doing-that" id="toc-i-aint-doing-that" class="nav-link" data-scroll-target="#i-aint-doing-that">I ain’t doing that</a></li>
   </ul></li>
   <li><a href="#fourth-degree" id="toc-fourth-degree" class="nav-link" data-scroll-target="#fourth-degree">Fourth degree</a></li>
-  <li><a href="#second-symmetry" id="toc-second-symmetry" class="nav-link" data-scroll-target="#second-symmetry">Second symmetry</a></li>
+  <li><a href="#second-symmetry" id="toc-second-symmetry" class="nav-link" data-scroll-target="#second-symmetry">Second symmetry</a>
+  <ul class="collapse">
+  <li><a href="#cubic-u-still-there" id="toc-cubic-u-still-there" class="nav-link" data-scroll-target="#cubic-u-still-there">Cubic, <em>u still there</em>?</a></li>
+  <li><a href="#descending-into-abstractness" id="toc-descending-into-abstractness" class="nav-link" data-scroll-target="#descending-into-abstractness">Descending into abstractness</a></li>
+  </ul></li>
   <li><a href="#you-cant-solve-it" id="toc-you-cant-solve-it" class="nav-link" data-scroll-target="#you-cant-solve-it">You can’t solve it</a></li>
   </ul>
 </nav>
@@ -288,17 +292,62 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
 <p>…</p>
 </blockquote>
 <p>Well, well, we just started and I’m already digging my own pit. I think I’ll just wait for someone else to address that in a whole post. If you happen to be one of those confused students and you end up here, well, good luck with that. You have all your time. Don’t think the post will be an <em>easy</em> read. But as for the prerequisites, I don’t expect from you anything more than the algebra and complex numbers you were taught in high school.</p>
-<p>While you probably knew the above formula with the coefficients <span class="math inline">\(a, b, c\)</span> just like that, I’m going to be using the same letter with subscripts, where <span class="math inline">\(a_i\)</span> is the coefficient of the term <span class="math inline">\(x^{i}\)</span>. Moreover, note that the coefficient <span class="math inline">\(a_n\)</span> of the highest degree term (here <span class="math inline">\(a_2\)</span>) is useless: the equation obtained from dividing everything by that coefficient will have the same roots (prove it!). So the equation we’ll work with is like this:</p>
+<p>While you probably knew the above formula with the coefficients <span class="math inline">\(a, b, c\)</span> just like that, I’m going to be using the same letter with subscripts, where <span class="math inline">\(a_i\)</span> is the coefficient of the term <span class="math inline">\(x^{i}\)</span>. Moreover, note that the coefficient <span class="math inline">\(a_n\)</span> of the highest degree term (here <span class="math inline">\(a_2\)</span>) is useless: the equation obtained from dividing everything by that coefficient will have the same roots.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why are the roots the same?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>If <span class="math inline">\(x_1\)</span> is a solution of <span class="math inline">\(a_2 x^{2} + a_1 x + a_0 = 0\)</span>, then we have:</p>
+<p><span class="math display">\[
+  a_2 x_1^{2} + a_1 x_1 + a_0 = 0
+\]</span></p>
+<p>But zero divided by any number will still be zero, so we have:</p>
+<p><span class="math display">\[
+  \frac{1}{a_2} \cdot (a_2 x_1^{2} + a_1 x_1 + a_0) = \frac{1}{a_2} \cdot 0 = 0
+\]</span></p>
+<p>This is the same as:</p>
+<p><span class="math display">\[
+  x_1^{2} + \frac{a_1}{a_2} x + \frac{a_0}{a_2} = 0
+\]</span></p>
+<p>This last relation exactly means that <span class="math inline">\(x_1\)</span> is also a solution of the new equation, which has no coefficient for the <span class="math inline">\(x^{2}\)</span> term.</p>
+</div>
+</div>
+</div>
+<p>So the equation we’ll work with looks like this:</p>
 <p><span class="math display">\[
   x^{2} + a_1 x + a_0 = 0
 \]</span></p>
-<p>We haven’t talked about which values can the coefficients of the equation take. We could decide that they can be <em>any natural number</em> (<span class="math inline">\(0, 1, 2\dots\)</span>), <em>any integer</em> (<span class="math inline">\(0, 1, -1, 2, -2\dots\)</span>), <em>any rational</em>… From now on, we’ll assume they’re rational numbers. This is just a fancy term for fractions, the result of dividing one integer by another. They are things like <span class="math inline">\(0, \frac{1}{2}, -\frac{57}{3}, -2\)</span>… Of course, integers are also rationals because any integer <span class="math inline">\(a\)</span> can be written as <span class="math inline">\(\frac{a}{1}\)</span>.</p>
+<p>We haven’t talked about which values can the coefficients of the equation take. We could decide that they can be <em>any natural number</em> (<span class="math inline">\(0, 1, 2\dots\)</span>), <em>any integer</em> (<span class="math inline">\(0, 1, -1, 2, -2\dots\)</span>), <em>any rational</em>… From now on, we’ll assume they’re rational numbers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What’s a rational number?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is just a fancy term for fractions, the result of dividing one integer by another. They are things like <span class="math inline">\(0, \frac{1}{2}, -\frac{57}{3}, -2\)</span>… Of course, integers are also rationals because any integer <span class="math inline">\(a\)</span> can be written as <span class="math inline">\(\frac{a}{1}\)</span>.</p>
+</div>
+</div>
+</div>
 <p>And why not choosing, say, just integers? Because we need some freedom with the operations we do with coefficients. When we talked about dividing everything by <span class="math inline">\(a_2\)</span>, we were already considering that the new coefficients had to be at least rational. Otherwise, depending on which division we perform, if we had integers initially, we could now end up with something that isn’t an integer anymore. Thus, if we choose rational coefficients we’re allowed to do basic operations (sum, subtract, multiply, divide) with them and always be sure that the result will still be a rational number.</p>
 <blockquote class="blockquote">
 <p>It’s dividing fractions… What’s dividing a fraction by a fraction anyway?</p>
 <p>— <em>Only yesterday</em> (1991)</p>
 </blockquote>
-<p>No, I’m not going to explain how to divide fractions today. I just wanted an excuse to include a part of <a href="https://letterboxd.com/film/only-yesterday/">one of my favourite movies</a>, where Taeko, the protagonist, shows her frustration of not being able to understand the logic behind dividing fractions. <em>Ok, I get what I have to do, but why is it like that?</em> This is a recurring theme in many fields, and math is no exception. I also feel like this, even when I was doing my research to write this post. Many suggest that math is something you start understanding while you do it, meaning that you shouldn’t force yourself too far to get the logic behind some concepts until you have already spent quite some time working with them. While I do agree with this, and is partly how I accept my own knowledge gaps, I will try my best in this article to build some intuition.</p>
+<p>No, I’m not going to explain how to divide fractions today. I just wanted an excuse to include a part of <a href="https://letterboxd.com/film/only-yesterday/">one of my favourite movies</a>, where Taeko, the protagonist, shows her frustration of not being able to understand the logic behind dividing fractions. <em>Ok, I get what I have to do, but why is it like that?</em> This is a recurring theme in many fields, and math is no exception. I also feel like this, even while doing my research to write this post. Many suggest that math is something you start understanding while you do it, meaning that you shouldn’t force yourself too far to get the logic behind some concepts until you have already spent quite some time working with them. While I do agree with this, and is partly how I accept my own knowledge gaps, I will try my best in this article to build some intuition.</p>
 <p>So just for the last time, let’s rewrite the equation and the solution with the new letters…</p>
 <p><span class="math display">\[
   x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$ are rationals}
@@ -312,7 +361,20 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
 <p><em>Shut up and memorize!</em></p>
 <p>Just joking. Let’s see what we can do…</p>
 <p>In the previous section we talked about equations and solutions. We might sometimes still use that terminology, but we’re also going to talk about polynomials and roots. For our purposes, an equation can be expressed as <span class="math inline">\(p(x) = 0\)</span>, where <span class="math inline">\(p(x)\)</span> is a polynomial. In the quadratic example, the polynomial would be <span class="math inline">\(p(x) = x^{2} + a_1 x + a_0\)</span>. A root of the polynomial is any value that gives an output of <span class="math inline">\(0\)</span> when plugged as <span class="math inline">\(x\)</span> into that polynomial. Therefore, a solution of the equation is a root of the polynomial.</p>
-<p>Suppose we give names <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> to our hypothetical roots. If something is a root, as we just said, it should evaluate the polynomial to <span class="math inline">\(0\)</span>. This must work for both roots, so when factored out, the polynomial should look like <span class="math inline">\((x - x_1)(x - x_2)\)</span>. Here, if we change <span class="math inline">\(x\)</span> by either <span class="math inline">\(x_1\)</span> or <span class="math inline">\(x_2\)</span>, the result will be <span class="math inline">\(0\)</span> as expected. Now let’s expand:</p>
+<p>Suppose we give names <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> to our hypothetical roots. If something is a root, as we just said, it should evaluate the polynomial to <span class="math inline">\(0\)</span>. This must work for both roots, so when factored out, the polynomial should look like <span class="math inline">\((x - x_1)(x - x_2)\)</span>. Here, if we change <span class="math inline">\(x\)</span> by either <span class="math inline">\(x_1\)</span> or <span class="math inline">\(x_2\)</span>, the result will be <span class="math inline">\(0\)</span> as expected. Can you express the coefficients <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_0\)</span> in terms of the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: try expanding the product <span class="math inline">\((x-x_1)(x-x_2)\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let’s expand the product:</p>
 <p><span class="math display">\[
   (x - x_1) (x - x_2) = x^{2} + (- x_1 - x_2) x + x_1 x_2
 \]</span></p>
@@ -325,13 +387,29 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
   \end{aligned}
   \right.
 \]</span></p>
-<p>The cool thing about them is that the result of adding or multiplying the roots is again a rational number (because our coefficients were rationals), even if the roots themselves might not be rational. In fact, knowing that, any weird expression made up of sums and products of roots, say <span class="math inline">\(\frac{(x_1 + x_2)^{3}}{3x_1 x_2} -4(x_1 + x_2)(x_1 x_2)^{6}\)</span>, will be <em>rationally known</em>. I’m using these words on purpose, because that’s how Galois himself referred to quantities that ultimately evaluate to a rational number, even if the operands themselves aren’t necessarily rationals (like our roots). Keep this cool observation in mind, you’ll see why in just a while.</p>
-<p>So we have to figure out a formula for both roots. They’re just two now, yes, but you know this is going further, right? We will work with higher degree equations later. Wouldn’t it be cool if we could just find the value of <em>one</em> thing, and then get the value of all roots <em>for free</em> just from that? Of course, besides this weird value, we’re also allowed to use the original coefficients of the polynomial, since they’re also known numbers.</p>
+</div>
+</div>
+</div>
+<p>The cool thing about these relations is that the result of adding or multiplying the roots is again a rational number (because our coefficients were rationals), even if the roots themselves might not be rational. In fact, knowing that, any weird expression made up of sums and products of roots, say <span class="math inline">\(\frac{(x_1 + x_2)^{3}}{3x_1 x_2} -4(x_1 + x_2)(x_1 x_2)^{6}\)</span>, will be <em>rationally known</em>. I’m using these words on purpose, because that’s how Galois himself referred to quantities that ultimately evaluate to a rational number, even if the operands themselves aren’t necessarily rationals (like our roots). Keep this cool observation in mind, you’ll see why in just a while.</p>
+<p>So we have to figure out a formula for both roots. They’re just two now, yes, but you know this is going further, right? We will work with higher degree equations later. Wouldn’t it be cool if we could just find the value of <em>one</em> thing, and then get the value of all roots <em>for free</em> just from that? Of course, besides this weird value, we’re also allowed to use the original coefficients of the polynomial or any other known numbers.</p>
 <p>I’ll help you with that. There are probably a lot of values we could choose to find, but I’ll give you this one:</p>
 <p><span class="math display">\[
   t = x_1 - x_2
 \]</span></p>
-<p>Of course you’re now supposed to check that this does <em>encode</em> everything about the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Remember learning how to solve systems of equations in high school? Reduction method, is that you?</p>
+<p>Of course you’re now supposed to check that this does <em>encode</em> everything about the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Can you write them in terms of <span class="math inline">\(t\)</span>?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: use also <span class="math inline">\(-a_1 = x_1 + x_2\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Remember learning how to solve systems of equations in high school? Reduction method, is that you?</p>
 <p><span class="math display">\[
   \left.
   \begin{aligned}
@@ -347,12 +425,32 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
   \end{aligned}
   \right.
 \]</span></p>
-<p>Do you see where this is going? Of course, we’ll now try to find the value of <span class="math inline">\(t\)</span>! But why would this be easier? Well, instead of computing <span class="math inline">\(t\)</span>, let’s try with <span class="math inline">\(t^{2}\)</span>:</p>
+</div>
+</div>
+</div>
+<p>Do you see where this is going? Of course, we’ll now try to find the value of <span class="math inline">\(t\)</span>! But why would this be easier?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: try to find the value of <span class="math inline">\(t^{2}\)</span> first
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Well, instead of computing <span class="math inline">\(t\)</span>, let’s try with <span class="math inline">\(t^{2}\)</span>:</p>
 <p><span class="math display">\[
   t^{2} = (x_1 - x_2)^{2} = x_1^{2} + x_2^{2} - 2 x_1 x_2 = (x_1 + x_2)^{2} - 4 x_1 x_2
   \overset{\text{cool obs.}}{=} a_1^{2} - 4 a_0
 \]</span></p>
-<p>You do know what happened in the last step, right? The cool observation we made earlier. We put everything in terms of <span class="math inline">\(x_1 + x_2\)</span> and <span class="math inline">\(x_1 x_2\)</span>, so we can then use the known rational coefficients, and we’re done. We know what <span class="math inline">\(t^{2}\)</span> is, so we can now pick a square root and have <span class="math inline">\(t = \sqrt{a_1^{2} - 4a_0}\)</span>. Then getting back the values of the original roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> is routine substitution in the equalities we stated earlier.</p>
+<p>You do know what happened in the last step, right? The cool observation we made earlier. We put everything in terms of <span class="math inline">\(x_1 + x_2\)</span> and <span class="math inline">\(x_1 x_2\)</span>, so we can then use the known rational coefficients, and we’re done. We know what <span class="math inline">\(t^{2}\)</span> is, so we can now pick a square root and have <span class="math inline">\(t = \sqrt{a_1^{2} - 4a_0}\)</span>.</p>
+</div>
+</div>
+</div>
+<p>Now that we know the value of <span class="math inline">\(t\)</span>, getting back the values of the original roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> is routine substitution in the equalities we stated earlier.</p>
 <p>But before claiming our trophy in the form of a final result, let’s expand our perspective a bit. Suppose we craft another equation, of which we’re sure that <span class="math inline">\(t\)</span> is a root, and we know how to solve this new equation. That way we would get the value of <span class="math inline">\(t\)</span>, just like above, hoping that it would be easier than trying to solve the original equation.</p>
 <p>So… How does such an equation look like? The one I’ll show you won’t be too surprising, and you’ll even think I’m just making fun of you, but keep in mind I’m trying to prepare a recipe for future sections. Alright, the equation:</p>
 <p><span class="math display">\[
@@ -416,6 +514,18 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
 <p><span class="math display">\[
   x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
 \]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Yes we can! Hint: expand <span class="math inline">\((x-x_1)(x-x_2)(x-x_3)\)</span>uu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>We proceed the same way as for the quadratic. If the roots are <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>, we should be able to factor the equation like <span class="math inline">\((x - x_1)(x - x_2)(x - x_3)\)</span>. What do we get from here? You can check it yourself:</p>
 <p><span class="math display">\[
   (x - x_1)(x - x_2)(x - x_3) = x^{3} - (x_1 + x_2 + x_3) x^{2} + (x_1 x_2 + x_1 x_3 + x_2 x_3) x - x_1 x_2 x_3
@@ -426,10 +536,13 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
   \begin{aligned}
   x_1 + x_2 + x_3 &amp;= -a_2 \\
   x_1 x_2 + x_1 x_3 + x_2 x_3 &amp;= a_1 \\
-  x_1 x_2 x_3 &amp;= -a_3
+  x_1 x_2 x_3 &amp;= -a_0
   \end{aligned}
   \right.
 \]</span></p>
+</div>
+</div>
+</div>
 <p>I know you’re seeing the pattern for the coefficients:</p>
 <ul>
 <li>Sum of all roots, negative sign</li>
@@ -444,10 +557,26 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
   x_1^{2} + x_2^{2} + x_3^{2}
 \]</span></p>
 <p>Can we know its value? Let’s rewrite it…</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: try to relate this value with <span class="math inline">\((x_1 + x_2 + x_3)^{2}\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
   x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
 \]</span></p>
-<p>Yes! That’s a known rational. Let’s try another symmetric polynomial:</p>
+<p>Yes! That’s a known rational number.</p>
+</div>
+</div>
+</div>
+<p>Let’s try another symmetric polynomial:</p>
 <p><span class="math display">\[
   x_1^{3} x_2 + x_2^{3} x_3 + x_3^{3} x_1
 \]</span></p>
@@ -455,16 +584,47 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
 <p><span class="math display">\[
   x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3}
 \]</span></p>
-<p>Yes, much better now. Can you prove this one is indeed symmetric? Hint: it’s enough to check swaps of two roots. That’s because any rearrangement of roots can be explained as a series of swaps of two roots. Now, is this also a known value? Perhaps a product of familiar expressions…?</p>
+<p>Yes, much better now. Can you prove this one is indeed symmetric? Hint: it’s enough to check swaps of two roots. That’s because any rearrangement of roots can be explained as a series of swaps of two roots. Now, is this also a known value?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: is this a product of two familiar expressions…?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
-  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot a_0
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot (-a_0)
 \]</span></p>
+</div>
+</div>
+</div>
 <p>Well, this one also worked. Do you see where I’m going?</p>
 <p>We were already observing in a previous section that any expression written in terms of these elementary symmetric polynomials has a known rational value, no matter how complicated the expression may be. An expression written in terms of elementary symmetric polynomials is of course symmetric, because each of these terms is. But can we go further?</p>
 <p><em>Any symmetric polynomial can be written in terms of elementary symmetric polynomials.</em></p>
 <p>I hope you agree this is not obvious at all. And the statement just like that doesn’t seem too interesting. Because we know that elementary symmetric polynomials are known rational numbers, then we get this more insightful result for free:</p>
 <p><em>Any symmetric polynomial on the roots is a known number.</em></p>
-<p>We’ll use this result a few times later. Of course, we should prove the first statement about elementary symmetric polynomials. In Galois’ time, this was such a well-known fact that he didn’t even bother including it in the prerequisites for his memoir. (TODO: link proof or include in appendix)</p>
+<p>We’ll use this result a few times later. Of course, we should prove the first statement about elementary symmetric polynomials. In Galois’ time, this was such a well-known fact that he didn’t even bother including it in the prerequisites for his memoir.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why is this true?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TODO: sketch of proof</p>
+</div>
+</div>
+</div>
 </section>
 <section id="third-degree" class="level1">
 <h1>Third degree</h1>
@@ -479,13 +639,13 @@ Hint: Subtract <span class="math inline">\(a\)</span> from both sides… And try
   \begin{aligned}
   x_1 + x_2 + x_3 &amp;= -a_2 \\
   x_1 x_2 + x_1 x_3 + x_2 x_3 &amp;= a_1 \\
-  x_1 x_2 x_3 &amp;= -a_3
+  x_1 x_2 x_3 &amp;= -a_0
   \end{aligned}
   \right.
 \]</span></p>
 <p>Remember what we did in the <a href="#but-how-did-you-get-there">Second degree</a> section? We were discussing the possibility of finding a special value <span class="math inline">\(t\)</span> which could encode all the information about our roots, in the sense that we could find their values just from <span class="math inline">\(t\)</span> itself and other known values. For the quadratic we used <span class="math inline">\(t = x_1 - x_2\)</span>. Can we find such a value for the cubic?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -494,7 +654,7 @@ Hint: Can you use the solutions of the equation <span class="math inline">\(x^{3
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Yes we can! Did you think about complex roots of unity? If you like following the pattern, for the quadratic we have <span class="math inline">\(t = \alpha_1 x_1 + \alpha_2 x_2\)</span> where <span class="math inline">\(\alpha_1, \alpha_2\)</span> are the solutions of the equation <span class="math inline">\(x^{2} = 1\)</span>. These are of course <span class="math inline">\(1\)</span> and <span class="math inline">\(-1\)</span>.</p>
 <p>What are the solutions of <span class="math inline">\(x^{3} = 1\)</span>? They’re <span class="math inline">\(1\)</span>, <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span>, where <span class="math inline">\(\omega\)</span> is a complex root of <span class="math inline">\(x^{2} + x + 1 = 0\)</span>. Then, again just following the pattern, we could think of the following special value:</p>
@@ -507,7 +667,7 @@ Hint: Can you use the solutions of the equation <span class="math inline">\(x^{3
 </div>
 <p>Now that we got the value, it’s time to show that the roots can be expressed in terms of this <span class="math inline">\(t\)</span>… Or that’s what I thought while writing this. Too optimistic… I’m not saying it’s not possible, but it can be quite difficult to get those formulas. Instead of trying to narrow down to a single value <span class="math inline">\(t\)</span>, let’s try for a moment to use two values, the other being very similar to <span class="math inline">\(t\)</span>. I’ll help you with this one.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -516,7 +676,7 @@ Check these relations
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math display">\[
 \left\{
@@ -532,7 +692,7 @@ Check these relations
 </div>
 <p>Can you now find the roots by using <span class="math inline">\(t\)</span>, <span class="math inline">\(t'\)</span>, <span class="math inline">\(\omega\)</span> and the coefficients?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -541,7 +701,7 @@ Hint: Can you use the fact that <span class="math inline">\(1 + \omega + \omega^
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>We can try to sum all three equations multiplied by specific coefficients so that our root remains there and the other two are cancelled out à la reduction method, because of the given relation of <span class="math inline">\(\omega\)</span>.</p>
 <p>Doing that, we get these formulas for the roots:</p>
@@ -583,7 +743,7 @@ Hint: Can you use the fact that <span class="math inline">\(1 + \omega + \omega^
 \]</span></p>
 <p>Come on, try to find the polynomial!</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -592,7 +752,7 @@ Hint: Why is the quadratic example a symmetric polynomial on its roots?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>We defined it as the product of two terms. Note that the order of the product doesn’t matter. What happens to the expression if we swap the roots <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>? Then we get:</p>
 <p><span class="math display">\[
@@ -603,7 +763,7 @@ Hint: Why is the quadratic example a symmetric polynomial on its roots?
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -612,7 +772,7 @@ Hint: You’ll get a wild expression for the cubic, but try to simplify as much 
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The previous hint talked about <em>all rearrangements</em> of the roots. This should already be a really good hint. Yes, we’re doing exactly that. Let’s start from <span class="math inline">\(t\)</span> and find all possible expressions that come from rearrangements of <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in <span class="math inline">\(t\)</span>:</p>
 <p><span class="math display">\[
@@ -671,7 +831,7 @@ Hint: You’ll get a wild expression for the cubic, but try to simplify as much 
 \right.
 \]</span></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -680,11 +840,11 @@ So you still want to know how I got them…
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
 <p>We first define all the symbols we need in our expressions:</p>
-<div id="1a744743" class="cell" data-execution_count="1">
+<div id="abc7829e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
@@ -692,7 +852,7 @@ So you still want to know how I got them…
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
-<div id="30ee8c24" class="cell" data-execution_count="2">
+<div id="78e9fa6e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
@@ -706,14 +866,14 @@ So you still want to know how I got them…
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="65">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="51">
 <p><span class="math inline">\(\displaystyle a_{1} \left(w^{2} + w - 2\right) + a_{2}^{2}\)</span></p>
 </div>
 </div>
 <p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
-<div id="4f653bcf" class="cell" data-execution_count="3">
+<div id="8bf3c653" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="66">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="52">
 <p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
 </div>
 </div>
@@ -722,7 +882,7 @@ So you still want to know how I got them…
   t^3 t'^3 = (-3 a_1 + a_2^2)^3
 \]</span></p>
 <p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
-<div id="cf392049" class="cell" data-execution_count="4">
+<div id="78baa94c" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
@@ -734,28 +894,28 @@ So you still want to know how I got them…
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="67">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="53">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(12 w^{3} - 9 w^{2} - 9 w + 6\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
-<div id="9562b7ef" class="cell" data-execution_count="5">
+<div id="0f563a5a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="68">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="54">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
-<div id="ac6e3070" class="cell" data-execution_count="6">
+<div id="49940413" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="69">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="55">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
-<div id="04f6bcc9" class="cell" data-execution_count="7">
+<div id="1ec75602" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="70">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="56">
 <p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
@@ -820,7 +980,19 @@ So you still want to know how I got them…
   t, \omega t, \omega ^{2} t, \frac{k}{t}, \omega \frac{k}{t}, \omega^{2} \frac{k}{t}
   \right\}
 \]</span></p>
-<p>Remember this <span class="math inline">\(t\)</span> was just some fixed root. If we use this one, in the equations above for the roots, we would get <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in that order. That’s basically just the definition. How about trying to input <span class="math inline">\(\omega t\)</span> where <span class="math inline">\(t\)</span> appears in the equations? Let’s try:</p>
+<p>Remember this <span class="math inline">\(t\)</span> was just some fixed root. If we use this one, in the equations above for the roots, we would get <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in that order. That’s basically just the definition. How about trying to input <span class="math inline">\(\omega t\)</span> where <span class="math inline">\(t\)</span> appears in the equations?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Try to relate with the original expressions in <span class="math inline">\(t\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 \left\{
 \begin{aligned}
@@ -831,7 +1003,22 @@ So you still want to know how I got them…
 \right.
 \]</span></p>
 <p>In the first one we used the equality <span class="math inline">\(\frac{1}{\omega} = \frac{\omega^{2}}{\omega^{2}} \cdot \frac{1}{\omega} = \omega^{2}\)</span>.</p>
+</div>
+</div>
+</div>
 <p>Perhaps unexpectedly, we got the same set of solutions, but in a different arrangement! Let’s try with another one, for example, <span class="math inline">\(\frac{k}{t}\)</span>:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: same idea as before
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 \left\{
 \begin{aligned}
@@ -841,7 +1028,22 @@ So you still want to know how I got them…
 \end{aligned}
 \right.
 \]</span></p>
-<p>We got another rearrangement of the roots! What kind of witchery is this? Well, I don’t know about you, but I’m starting to become tired of writing these equations… I claim that each one of the roots of the new polynomial gives a different rearrangement of the roots <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> when introduced in the formulae of the roots. Thus, <em>any</em> root of the new polynomial will give us valid solutions for the original equation, no matter which one we take. Of course, you don’t need to trust me, you can check it yourself! I’ll leave here every root and its rearrangement:</p>
+</div>
+</div>
+</div>
+<p>We got another rearrangement of the roots! What kind of witchery is this? Well, I don’t know about you, but I’m starting to become tired of writing these equations… I claim that each one of the roots of the new polynomial gives a different rearrangement of the roots <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> when introduced in the formulae of the roots. Thus, <em>any</em> root of the new polynomial will give us valid solutions for the original equation, no matter which one we take. Of course, you don’t need to trust me, you can check it yourself!</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+All the rearrangements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
   \left\{
   \begin{aligned}
@@ -854,16 +1056,265 @@ So you still want to know how I got them…
   \end{aligned}
   \right.
 \]</span></p>
-<p>Yes, we have the cool result that any root of the new polynomial is valid for getting the original solutions of the cubic. But what do you think about these neat rearrangements? Are they only useful for the above conclusion, or can we do more with them? Was this a coincidence, or a more general result? Keep some popcorn for later. I warned you.</p>
+</div>
+</div>
+</div>
+<p>Yes, we have the cool result that any root of the new polynomial is valid for getting the original solutions of the cubic. But what do you think about these neat rearrangements? Are they only useful for the above conclusion, or can we do more with them? Was this a coincidence, or a more general result? Save some popcorn for later. I warned you.</p>
 </section>
 </section>
 <section id="fourth-degree" class="level1">
 <h1>Fourth degree</h1>
 <p>Ha! Did you really think I was going to do this again? Nope.</p>
+<p>The journey is challenging, but if you’re willing to venture further… You know what to do!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Which special value <span class="math inline">\(t\)</span> can we use for an equation of fourth degree?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You see the pattern. We should use the roots of <span class="math inline">\(x^{4} = 1\)</span>. These are <span class="math inline">\(1, i, -1, -i\)</span>, where <span class="math inline">\(i\)</span> is the imaginary number (<span class="math inline">\(i^{2} = -1\)</span>). Then the special value you should try to use is the familiar:</p>
+<p><span class="math display">\[
+  t = x_1 + i \cdot x_2 - x_3 -i \cdot x_4
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Trust me, it works!</p>
+<p>For those who don’t find excitement in the too specific formula for a quartic equation, just keep reading…</p>
 </section>
 <section id="second-symmetry" class="level1">
 <h1>Second symmetry</h1>
+<section id="cubic-u-still-there" class="level2">
+<h2 class="anchored" data-anchor-id="cubic-u-still-there">Cubic, <em>u still there</em>?</h2>
+<p>In the third degree section we found ourselves solving the general cubic equation thanks to this special value <span class="math inline">\(t = x_1 + \omega x_2 + \omega^{2} x_3\)</span>. I think we managed to justify why this special one is quite helpful for solving the cubic. I mean this in the sense that, the new equation we have to solve is simple enough, so that finding one of its roots is easier than finding a root of the original equation, even if the new one has sixth degree.</p>
+<p>Anyway, a natural question would be: <em>Are there other special values that allow us to solve the original equation in the same way?</em> And we’re now only interested in the theoretical question. We don’t mind if the new equation is hard to solve or not. We really only want to know if there are other special values which encode all information about the roots.</p>
+<p>Let’s try ourselves! I’m a bit tired of writing monstrous equations though. We’ll try with a specific example, of which we could even know the roots in advance. Remember this is just a sort of thought experiment. OK, so our cubic equation will be this:</p>
+<p><span class="math display">\[
+  x^{3} - x^{2} - x - 2 = 0
+\]</span></p>
+<p>We can quickly check if there is an integer solution by only trying the values <span class="math inline">\(\pm 1, \pm 2\)</span> for <span class="math inline">\(x\)</span>. Maybe you even recall doing this in high school!</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Can you see why?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We can rewrite the equation like this:</p>
+<p><span class="math display">\[
+  x \cdot (x^{2} - x - 1) = 2
+\]</span></p>
+<p>If <span class="math inline">\(x\)</span> was an integer, we would have <span class="math inline">\(x \cdot \text{other integer} = 2\)</span>, so <span class="math inline">\(x\)</span> must be a divisor of <span class="math inline">\(2\)</span>. The only possible values would then be <span class="math inline">\(\pm 1, \pm 2\)</span>.</p>
+</div>
+</div>
+</div>
+<p>It turns out that <span class="math inline">\(x = 2\)</span> is a valid solution (you can verify it). That means the cubic polynomial will have a factor <span class="math inline">\((x-2)\)</span>. Were you told how to perform polynomial long division? If so, go ahead, factor this cubic! If not, don’t worry, we have some workarounds. We can try to write the factorization like this:</p>
+<p><span class="math display">\[
+  x^{3} - x^{2} -x - 2 = (x-2)(x^{2} + a_1 x + a_0)
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Can you find <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_0\)</span>? Hint: expand the product and compare coefficients
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+  x^{3} + (a_1 - 2) x^{2} + (a_0 - 2 a_1) x - 2 a_0
+\]</span></p>
+<p>Following the coefficients of the original polynomial, we must have <span class="math inline">\(-2 a_0 = -2\)</span>, so <span class="math inline">\(a_0 = 1\)</span>. Likewise, <span class="math inline">\(a_1 - 2 = -1\)</span>, so <span class="math inline">\(a_1 = 1\)</span>. These also give the expected result for <span class="math inline">\(a_0 - 2 a_1 = -1\)</span>, so we got the coefficients. The factorization is then:</p>
+<p><span class="math display">\[
+  x^{3} - x^{2} - x - 2 = (x-2)(x^{2} + x + 1) = (x-2)(x-\omega)(x-\omega^{2})
+\]</span></p>
+<p>We also know the last equality! The polynomial <span class="math inline">\(x^{2} + x + 1\)</span> is already familiar to us, and we defined its solutions as <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span>.</p>
+</div>
+</div>
+</div>
+<p>So we now know the three solutions of this equation. We’re cheating! Who cares? Let’s try a different special value! If you recall, we used <span class="math inline">\(t = x_1 - x_2\)</span> for the quadratic equation. Well, let’s just try it with the cubic as well, and see what happens.</p>
+<p>Suppose we like defining <span class="math inline">\(x_1 = 2\)</span>, <span class="math inline">\(x_2 = \omega\)</span>, <span class="math inline">\(x_3 = \omega^{2}\)</span>. Then we can have these relations:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+      t &amp;= x_1 - x_2 \\
+      \frac{7}{t} &amp;= x_1 - x_3 \\
+      1 &amp;= x_1 + x_2 + x_3
+  \end{aligned}
+  \right.
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Where did those come from?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first one is just the current definition for <span class="math inline">\(t\)</span>. The last one comes from the coefficient relation <span class="math inline">\(x_1 + x_2 + x_3 = -a_2\)</span> we already saw in a previous section. The second one comes from a product:</p>
+<p><span class="math display">\[
+  (x_1 - x_2)(x_1 - x_3) = (2 - \omega)(2 - \omega^{2}) = 4 -2\omega -2\omega^{2} + \omega^{3} = 6 - 2 (1 + \omega + \omega^{2}) + 1 = 7
+\]</span></p>
+<p>Then we have</p>
+<p><span class="math display">\[
+  (x_1 - x_3) = \frac{7}{x_1 - x_2} = \frac{7}{t}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Using the above relations, can you obtain all roots in terms of <span class="math inline">\(t\)</span>?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Use reduction method!
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>As in other examples, this is a matter of summing all equations, each one multiplied by a certain number to cancel out the roots we don’t want. After you find the correct numbers you get:</p>
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+    x_1 &amp;= \frac{t + \frac{7}{t} + 1}{3} \\
+    x_2 &amp;= \frac{-2t + \frac{7}{t} + 1}{3} \\
+    x_3 &amp;= \frac{t - 2 \cdot \frac{7}{t} + 1}{3}
+  \end{aligned}
+  \right.
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Yes! It turns out we can use a different special value, and still be able to encode the information of all roots. Now that we have the roots in terms of <span class="math inline">\(t\)</span>, we only need the values of <span class="math inline">\(t\)</span>. You know what to do now, don’t you? The new equation from which we get the values of <span class="math inline">\(t\)</span> is that one with products of all possible rearrangements of <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in <span class="math inline">\(t\)</span>. Since we’re cheating and we already know the roots of the original polynomial, we can save ourselves from building that new polynomial monstrosity and directly write down all its six roots. In case you’re a bit lost, I’ll tell you the first one, which comes from no rearrangement: <span class="math inline">\(t = x_1 - x_2 = 2 - \omega\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Which are the rearrangements?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+    t &amp;= x_1 - x_2 = 2 - \omega \\
+    \frac{7}{t} &amp;= x_1 - x_3 = 2 - \omega^{2} \\
+    -t &amp;= x_2 - x_1 = \omega - 2 \\
+    -\frac{7}{t} &amp;= x_3 - x_1 = \omega^{2} - 2 \\
+    -t + \frac{7}{t} &amp;= x_2 - x_3 = \omega - \omega^{2} \\
+    t - \frac{7}{t} &amp;= x_3 - x_2 = \omega^{2} - \omega
+  \end{aligned}
+  \right.
+\]</span></p>
+<p>The right side of each equation is the actual rearrangement of the roots. I only wrote the left side to show you they can be written in terms of <span class="math inline">\(t\)</span>, and in case these alternative expressions are useful to you to more easily plug them into the root relations to calculate <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>.</p>
+</div>
+</div>
+</div>
+<p>Now for the final step! Let’s try to get those roots back from the values of <span class="math inline">\(t\)</span>. I said values in plural on purpose. In the general cubic, we somehow got the striking result that all values of <span class="math inline">\(t\)</span> are valid because they just give back a different arrangement of <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>. Here we’re interested in seeing if this still holds for a different special value <span class="math inline">\(t\)</span>. Alright, I’ll also include this one in a spoiler just in case you’re in the mood for some calculations.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Find the roots for each possible value of <span class="math inline">\(t\)</span>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+  \left\{
+  \begin{aligned}
+    t = 2 - \omega &amp;\mapsto (1, \omega, \omega^{2}) \\
+    \frac{7}{t} = 2 - \omega^{2} &amp;\mapsto (1, \omega^{2}, \omega) \\
+    -t = \omega - 2 &amp;\mapsto \left(-\frac{4}{3}, \frac{2}{3} - \omega, \frac{5}{3} + \omega \right) \\
+    -\frac{7}{t} = \omega^{2} - 2 &amp;\mapsto \left(-\frac{4}{3}, \frac{2}{3} - \omega^{2}, \frac{5}{3} + \omega^{2} \right) \\
+    -t + \frac{7}{t} = \omega - \omega^{2} &amp;\mapsto \left(\frac{1}{3} - \frac{4}{9} (\omega - \omega^{2}), \frac{1}{3} - \frac{13}{9} (\omega - \omega^{2}), \frac{1}{3} + \frac{17}{9}(\omega - \omega^{2})\right) \\
+    t - \frac{7}{t} = \omega^{2} - \omega &amp;\mapsto \left(\frac{1}{3} + \frac{4}{9} (\omega - \omega^{2}), \frac{1}{3} + \frac{13}{9} (\omega - \omega^{2}), \frac{1}{3} - \frac{17}{9}(\omega - \omega^{2})\right)
+  \end{aligned}
+  \right.
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Huh… What is this absolute rubbish? We expected some neat rearrangements of the roots <span class="math inline">\(2\)</span>, <span class="math inline">\(\omega\)</span>, <span class="math inline">\(\omega^{2}\)</span>, and, well, we got that for the first two possible values of <span class="math inline">\(t\)</span>, but we got some ugly results for the others… Unfortunately, we’ll have to conclude from this that not all solutions of the new equation can be used to get the solutions of the original one.</p>
+<p>But we can certainly use <em>some</em> of them. You see, the ones corresponding to <span class="math inline">\(2 - \omega = t\)</span> and <span class="math inline">\(2 - \omega^{2} = \frac{7}{t}\)</span> did give the intended solutions. Now the next question should be: <em>Is there some rule to know exactly which solutions of the new equation do retrieve the solutions for the original one?</em></p>
+<p>In this case, let’s consider a smaller part of the new equation. Let’s compute the product of only those two factors including the roots that worked:</p>
+<p><span class="math display">\[
+  (x - (2 - \omega))(x - (2 - \omega^{2})) = x^{2} -(2 - \omega + 2 - \omega^{2})x + (2-\omega)(2-\omega^{2})
+\]</span></p>
+<p>In fact, this is already a polynomial with known coefficients! The coefficient for <span class="math inline">\(x\)</span> simplifies thanks to <span class="math inline">\(1+\omega+\omega^{2} = 0\)</span>, and we already computed the product <span class="math inline">\((2-\omega)(2-\omega^{2})\)</span> before. The polynomial is then:</p>
+<p><span class="math display">\[
+  x^{2} -3x + 7
+\]</span></p>
+<p>The whole point of computing a huge product of all rearrangements was that we were sure the resulting polynomial would have known coefficients. We didn’t expect that, at least in this case, a smaller polynomial containing <span class="math inline">\(t\)</span> would already have known coefficients. We could already find <span class="math inline">\(t\)</span> from this even easier polynomial, since it’s just quadratic. And thanks to our half-failure from before, we also know that the other four roots were completely useless.</p>
+<p>Following on that idea, remember when we factored the original polynomial because one of the roots was an integer. The other part would then be <span class="math inline">\(x^{2} + x + 1\)</span>, and we know from quadratics that <span class="math inline">\(x_2 + x_3 = -1\)</span> and <span class="math inline">\(x_2 \cdot x_3 = 1\)</span>. In the <a href="first-symmetry">First symmetry</a> section we learned that:</p>
+<p><em>Any symmetric polynomial on the roots is a known number.</em></p>
+<p>In this example, because of the root <span class="math inline">\(x_1\)</span> already being rational, we can use the same reasoning for only the other two roots, so we can be even more specific:</p>
+<p><em>Any symmetric polynomial on the roots <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> is a known number.</em></p>
+<p>This shows that, at least sometimes, if we confirm a polynomial on the roots is unchanged by some of the rearrangements, not necessarily all of them, we can already be sure that its result is a known number.</p>
+<p>What about the other way around? If we know a polynomial on the roots is a known number, will it always be unchanged by those specific rearrangements?</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+In our specific example, the answer is yes! Why?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Any polynomial on the roots <span class="math inline">\(x_2 = \omega\)</span> and <span class="math inline">\(x_3 = \omega^{2}\)</span> can actually be written as <span class="math inline">\(a + b \omega\)</span>, where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are rationals. How? We can just rewrite <span class="math inline">\(\omega^{2}\)</span> as <span class="math inline">\(-1 -\omega\)</span> because of the relation <span class="math inline">\(1 + \omega + \omega^{2} = 0\)</span>, and then group all terms based on whether they multiply an <span class="math inline">\(\omega\)</span> or not.</p>
+<p>If the polynomial is written like that, then being a known rational value means that <span class="math inline">\(b\)</span> must be an expression that simplifies to zero. This again means that swapping <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span> in this expression doesn’t change the result, since that would only change <span class="math inline">\(a + b \omega\)</span> to <span class="math inline">\(a + b \omega^{2}\)</span>, but we still have <span class="math inline">\(b\)</span> simplifying to zero anyway.</p>
+</div>
+</div>
+</div>
+<p>So what have we learned?</p>
+<ul>
+<li>The roots of our original polynomial <span class="math inline">\(x^{3} - x^{2} -x - 2\)</span> are <span class="math inline">\(2\)</span>, <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span>.</li>
+<li>Any polynomial expression on these roots satisfies a special property related to rearranging the roots of the expression.</li>
+<li>This property is that the operations of “<em>not rearranging any root</em>” and “<em>swapping <span class="math inline">\(\omega\)</span> and <span class="math inline">\(\omega^{2}\)</span></em>” together completely determine when a polynomial on the roots simplifies to a known rational number.</li>
+<li>We got these two operations from the rearrangements obtained by plugging the roots of the polynomial with known coefficients <span class="math inline">\(x^{2} - 3x + 7\)</span> (which was smaller than expected) into the expressions for <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span> in terms of <span class="math inline">\(t\)</span>.</li>
+<li>From the monstrous polynomial with all rearrangements of roots in <span class="math inline">\(t\)</span>, the polynomial <span class="math inline">\(x^{2} - 3x + 7\)</span> is actually the factor with lowest degree that has known rational coefficients and includes <span class="math inline">\(t = 1 - \omega\)</span> as one of its roots. It can’t have degree 1 because that would mean <span class="math inline">\(1-\omega\)</span> is a rational number. Maybe this “polynomial with lowest degree that has <span class="math inline">\(t\)</span> as a root” is a good rule of thumb in general?</li>
+</ul>
+<p><em>But we already learned how to solve cubics… Why should I care about all of this?</em> There’s a high chance you’re asking yourself that question. I’ll clarify shortly. We’re on the verge of finding an <em>invariant</em> of the original polynomial. This is how mathematicians refer to some special property that is inherent to an object. Something that doesn’t change.</p>
+<p><em>But what could change here?</em> Well, in the above example we chose a specific labeling of the roots (we said that <span class="math inline">\(x_1 = 2\)</span>, <span class="math inline">\(x_2 = \omega\)</span> and <span class="math inline">\(x_3 = \omega^{2}\)</span>) and we also chose a certain special value <span class="math inline">\(t = x_1 - x_2\)</span>. And we now know there might be more than one such value that works. Just imagine being able to create the same object, no matter which choice we wake on the order of the roots or the value of <span class="math inline">\(t\)</span>.</p>
+<p><em>// Start of TV-drama cliffhanger</em>.</p>
+<p>Will we succeed? Find out in the next episode!</p>
+<p><em>// End of TV-drama cliffhanger</em>.</p>
+</section>
+<section id="descending-into-abstractness" class="level2">
+<h2 class="anchored" data-anchor-id="descending-into-abstractness">Descending into abstractness</h2>
 <p>TODO</p>
+</section>
 </section>
 <section id="you-cant-solve-it" class="level1">
 <h1>You can’t solve it</h1>
