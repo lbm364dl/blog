@@ -1284,8 +1284,8 @@ calculations.
 $$ 
   \left\{
   \begin{aligned}
-    t = 2 - \omega &\mapsto (1, \omega, \omega^{2}) \\
-    \frac{7}{t} = 2 - \omega^{2} &\mapsto (1, \omega^{2}, \omega) \\
+    t = 2 - \omega &\mapsto (2, \omega, \omega^{2}) \\
+    \frac{7}{t} = 2 - \omega^{2} &\mapsto (2, \omega^{2}, \omega) \\
     -t = \omega - 2 &\mapsto \left(-\frac{4}{3}, \frac{2}{3} - \omega, \frac{5}{3} + \omega \right) \\
     -\frac{7}{t} = \omega^{2} - 2 &\mapsto \left(-\frac{4}{3}, \frac{2}{3} - \omega^{2}, \frac{5}{3} + \omega^{2} \right) \\
     -t + \frac{7}{t} = \omega - \omega^{2} &\mapsto \left(\frac{1}{3} - \frac{4}{9} (\omega - \omega^{2}), \frac{1}{3} - \frac{13}{9} (\omega - \omega^{2}), \frac{1}{3} + \frac{17}{9}(\omega - \omega^{2})\right) \\
