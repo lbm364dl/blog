@@ -146,6 +146,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
  <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toc = document.getElementById("TOC");
+  console.log("TOC found:", toc);
+
+  // const mobileMenu = document.getElementById("quarto-navbar-collapse");
+  const mobileMenu = document.querySelector("#navbarCollapse"); // the collapsible menu
+  console.log("Mobile menu found:", mobileMenu);
+
+  if (toc && mobileMenu) {
+    let tocClone = toc.cloneNode(true);
+    tocClone.id = "TOC-mobile"
+    // toc.remove()
+    tocClone.classList.add("mobile-toc");
+    mobileMenu.appendChild(tocClone);
+    console.log("TOC cloned into mobile menu.");
+  } else {
+    console.warn("Could not insert TOC — missing element(s).");
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

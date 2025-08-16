@@ -206,7 +206,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWF0aA==" data-listing-date-sort="1753912800000" data-listing-file-modified-sort="1755357859538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="43" data-listing-word-count-sort="8458">
+<div class="quarto-post image-right" data-index="0" data-categories="bWF0aA==" data-listing-date-sort="1753912800000" data-listing-file-modified-sort="1755363556695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="43" data-listing-word-count-sort="8458">
 <div class="thumbnail"><a href="./posts/quintic/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -236,6 +236,27 @@ Jul 31, 2025
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toc = document.getElementById("TOC");
+  console.log("TOC found:", toc);
+
+  // const mobileMenu = document.getElementById("quarto-navbar-collapse");
+  const mobileMenu = document.querySelector("#navbarCollapse"); // the collapsible menu
+  console.log("Mobile menu found:", mobileMenu);
+
+  if (toc && mobileMenu) {
+    let tocClone = toc.cloneNode(true);
+    tocClone.id = "TOC-mobile"
+    // toc.remove()
+    tocClone.classList.add("mobile-toc");
+    mobileMenu.appendChild(tocClone);
+    console.log("TOC cloned into mobile menu.");
+  } else {
+    console.warn("Could not insert TOC — missing element(s).");
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

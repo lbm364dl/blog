@@ -5,3 +5,26 @@ mjx-container {
   overflow-y: hidden;
   max-width: 100%;
 }
+
+#TOC-mobile {
+  display: none;
+  flex: 0 0 250px; /* fixed width */
+  padding: 0.5rem;
+}
+
+.mobile-toc .toc-actions a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-toc .toc-actions ul {
+  list-style: none;   /* remove bullets */
+  padding-left: 0;    /* remove default indentation */
+  margin-left: 0;     /* optional, remove extra spacing */
+}
+
+@media (max-width: 767.98px) {
+  #TOC-mobile {
+    display: block !important;
+  }
+}
