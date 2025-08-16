@@ -194,7 +194,14 @@ Suppose we give names $x_1$, $x_2$ to our hypothetical roots. If something
 is a root, as we just said, it should evaluate the polynomial to $0$. This
 must work for both roots, so when factored out, the polynomial should look
 like $(x - x_1)(x - x_2)$. Here, if we change $x$ by either $x_1$ or $x_2$,
-the result will be $0$ as expected. Now let's expand:
+the result will be $0$ as expected. Can you express the coefficients $a_1$
+and $a_0$ in terms of the roots $x_1$ and $x_2$? 
+
+:::{.callout-tip collapse=true}
+
+# Hint: try expanding the product $(x-x_1)(x-x_2)$
+
+Let's expand the product:
 
 $$ 
   (x - x_1) (x - x_2) = x^{2} + (- x_1 - x_2) x + x_1 x_2
@@ -212,9 +219,11 @@ $$
   \right.
 $$
 
-The cool thing about them is that the result of adding or multiplying the roots
-is again a rational number (because our coefficients were rationals), even if
-the roots themselves might not be rational. 
+:::
+
+The cool thing about these relations is that the result of adding or multiplying
+the roots is again a rational number (because our coefficients were rationals),
+even if the roots themselves might not be rational. 
 In fact, knowing that, any weird expression made up of sums and products of roots, say
 $\frac{(x_1 + x_2)^{3}}{3x_1 x_2} -4(x_1 + x_2)(x_1 x_2)^{6}$, will be _rationally
 known_. I'm using these words on purpose, because that's how Galois
@@ -226,8 +235,8 @@ So we have to figure out a formula for both roots. They're just two now, yes, bu
 you know this is going further, right? We will work with higher degree equations later.
 Wouldn't it be cool if we could just find the value of _one_ thing, and then get
 the value of all roots _for free_ just from that? Of course, besides this weird value,
-we're also allowed to use the original coefficients of the polynomial, since they're
-also known numbers.
+we're also allowed to use the original coefficients of the polynomial or any other
+known numbers.
 
 I'll help you with that. There are probably a lot of values we could choose to find,
 but I'll give you this one:
@@ -237,8 +246,14 @@ $$
 $$ 
 
 Of course you're now supposed to check that this does _encode_ everything about
-the roots $x_1$ and $x_2$. Remember learning how to solve systems of equations in
-high school? Reduction method, is that you?
+the roots $x_1$ and $x_2$. Can you write them in terms of $t$?
+
+:::{.callout-tip collapse=true}
+
+# Hint: use also $-a_1 = x_1 + x_2$
+
+Remember learning how to solve systems of equations in high school? Reduction
+method, is that you?
 
 $$ 
   \left.
@@ -256,8 +271,16 @@ $$
   \right.
 $$ 
 
+:::
+
 Do you see where this is going? Of course, we'll now try to find the value of $t$!
-But why would this be easier? Well, instead of computing $t$, let's try with $t^{2}$:
+But why would this be easier? 
+
+:::{.callout-tip collapse=true}
+
+# Hint: try to find the value of $t^{2}$ first
+
+Well, instead of computing $t$, let's try with $t^{2}$:
 
 $$ 
   t^{2} = (x_1 - x_2)^{2} = x_1^{2} + x_2^{2} - 2 x_1 x_2 = (x_1 + x_2)^{2} - 4 x_1 x_2 
@@ -267,9 +290,13 @@ $$
 You do know what happened in the last step, right? The cool observation we made
 earlier. We put everything in terms of $x_1 + x_2$ and $x_1 x_2$, so we can then
 use the known rational coefficients, and we're done. We know what $t^{2}$ is, so
-we can now pick a square root and have $t = \sqrt{a_1^{2} - 4a_0}$. Then getting
-back the values of the original roots $x_1$ and $x_2$ is routine substitution in
-the equalities we stated earlier.
+we can now pick a square root and have $t = \sqrt{a_1^{2} - 4a_0}$. 
+
+:::
+
+Now that we know the value of $t$, getting back the values of the original
+roots $x_1$ and $x_2$ is routine substitution in the equalities we stated
+earlier.
 
 But before claiming our trophy in the form of a final result, let's expand our perspective
 a bit. Suppose we craft another equation, of which we're sure that $t$ is a root, and we
@@ -373,6 +400,10 @@ $$
   x^{3} + a_2 x^{2} + a_1 x + a_0 = 0 \text{ where $a_0$, $a_1$, $a_2$ are rationals}
 $$ 
 
+:::{.callout-tip collapse=true}
+
+# Yes we can! Hint: expand $(x-x_1)(x-x_2)(x-x_3)$uu
+
 We proceed the same way as for the quadratic. If the roots are $x_1$, $x_2$ and
 $x_3$, we should be able to factor the equation like $(x - x_1)(x - x_2)(x - x_3)$.
 What do we get from here? You can check it yourself:
@@ -388,10 +419,12 @@ $$
   \begin{aligned}
   x_1 + x_2 + x_3 &= -a_2 \\
   x_1 x_2 + x_1 x_3 + x_2 x_3 &= a_1 \\
-  x_1 x_2 x_3 &= -a_3
+  x_1 x_2 x_3 &= -a_0
   \end{aligned}
   \right.
 $$
+
+:::
 
 I know you're seeing the pattern for the coefficients:
 
@@ -420,11 +453,19 @@ $$
 
 Can we know its value? Let's rewrite it...
 
+:::{.callout-tip collapse=true}
+
+# Hint: try to relate this value with $(x_1 + x_2 + x_3)^{2}$
+
 $$ 
   x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
 $$ 
 
-Yes! That's a known rational. Let's try another symmetric polynomial:
+Yes! That's a known rational number.
+
+:::
+
+Let's try another symmetric polynomial:
 
 $$ 
   x_1^{3} x_2 + x_2^{3} x_3 + x_3^{3} x_1
@@ -439,11 +480,16 @@ $$
 Yes, much better now. Can you prove this one is indeed symmetric? Hint: it's
 enough to check swaps of two roots. That's because any rearrangement of roots
 can be explained as a series of swaps of two roots. Now, is this also a known value?
-Perhaps a product of familiar expressions...?
+
+:::{.callout-tip collapse=true}
+
+# Hint: is this a product of two familiar expressions...?
 
 $$ 
-  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot a_0
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot (-a_0)
 $$ 
+
+:::
 
 Well, this one also worked. Do you see where I'm going?
 
@@ -491,7 +537,7 @@ $$
   \begin{aligned}
   x_1 + x_2 + x_3 &= -a_2 \\
   x_1 x_2 + x_1 x_3 + x_2 x_3 &= a_1 \\
-  x_1 x_2 x_3 &= -a_3
+  x_1 x_2 x_3 &= -a_0
   \end{aligned}
   \right.
 $$
@@ -956,7 +1002,11 @@ $$
 Remember this $t$ was just some fixed root. If we use this one, in the equations
 above for the roots, we would get $x_1$, $x_2$ and $x_3$ in that order. That's
 basically just the definition. How about trying to input $\omega t$ where $t$
-appears in the equations? Let's try:
+appears in the equations?
+
+:::{.callout-tip collapse=true}
+
+# Hint: Try to relate with the original expressions in $t$
 
 $$ 
 \left\{
@@ -970,8 +1020,14 @@ $$
 
 In the first one we used the equality $\frac{1}{\omega} = \frac{\omega^{2}}{\omega^{2}} \cdot \frac{1}{\omega} = \omega^{2}$.
 
+:::
+
 Perhaps unexpectedly, we got the same set of solutions, but in a different
 arrangement! Let's try with another one, for example, $\frac{k}{t}$:
+
+:::{.callout-tip collapse=true}
+
+# Hint: same idea as before
 
 $$ 
 \left\{
@@ -983,14 +1039,19 @@ $$
 \right.
 $$ 
 
+:::
+
 We got another rearrangement of the roots! What kind of witchery is this? Well,
 I don't know about you, but I'm starting to become tired of writing these
 equations... I claim that each one of the roots of the new polynomial gives a
 different rearrangement of the roots $x_1$, $x_2$ and $x_3$ when introduced
 in the formulae of the roots. Thus, _any_ root of the new polynomial will give
 us valid solutions for the original equation, no matter which one we take.
-Of course, you don't need to trust me, you can check it yourself! I'll leave
-here every root and its rearrangement:
+Of course, you don't need to trust me, you can check it yourself!
+
+:::{.callout-note collapse=true}
+
+# All the rearrangements
 
 $$ 
   \left\{
@@ -1005,24 +1066,34 @@ $$
   \right.
 $$ 
 
+:::
+
 Yes, we have the cool result that any root of the new polynomial is valid
 for getting the original solutions of the cubic. But what do you think about
 these neat rearrangements? Are they only useful for the above conclusion,
 or can we do more with them? Was this a coincidence, or a more general result? 
-Keep some popcorn for later. I warned you.
+Save some popcorn for later. I warned you.
 
 # Fourth degree
 
 Ha! Did you really think I was going to do this again? Nope.
 
 The journey is challenging, but if you're willing to venture further... You
-know what to do! You see the pattern. We should use the roots of $x^{4} = 1$.
+know what to do! 
+
+:::{.callout-tip collapse=true}
+
+# Which special value $t$ can we use for an equation of fourth degree?
+
+You see the pattern. We should use the roots of $x^{4} = 1$.
 These are $1, i, -1, -i$, where $i$ is the imaginary number ($i^{2} = -1$).
 Then the special value you should try to use is the familiar:
 
 $$ 
   t = x_1 + i \cdot x_2 - x_3 -i \cdot x_4
 $$ 
+
+:::
 
 Trust me, it works!
 
