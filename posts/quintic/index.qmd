@@ -402,7 +402,7 @@ $$
 
 :::{.callout-tip collapse=true}
 
-# Yes we can! Hint: expand $(x-x_1)(x-x_2)(x-x_3)$uu
+# Yes we can! Hint: expand $(x-x_1)(x-x_2)(x-x_3)$
 
 We proceed the same way as for the quadratic. If the roots are $x_1$, $x_2$ and
 $x_3$, we should be able to factor the equation like $(x - x_1)(x - x_2)(x - x_3)$.

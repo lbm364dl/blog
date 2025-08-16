@@ -3,6 +3,8 @@ project:
 
 website:
   title: "random-blog"
+  repo-url: https://github.com/lbm364dl/quarto-blog
+  repo-actions: [edit, issue]
   navbar:
     right:
       - about.qmd
