@@ -19,6 +19,8 @@ format:
       - brand
     css: styles.css
     toc: true
+    toc-location: right
+    include-after-body: include-after.html
 
 execute:
   freeze: true
