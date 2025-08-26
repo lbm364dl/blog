@@ -579,7 +579,9 @@ $$
 
 It is obviously symmetric, since all three terms are squared and the order 
 of the sum doesn't matter. However, it's not an _elementary symmetric
-polynomial_ itself, because it doesn't fit the pattern we introduced above.
+polynomial_ itself. The closest elementary one from above might be
+$x_1 + x_2 + x_3$, but ours has each term squared, so it doesn't fit that
+pattern exactly.
 
 Can we actually know its value? Let's rewrite it...
 
