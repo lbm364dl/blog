@@ -156,12 +156,28 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("Mobile menu found:", mobileMenu);
 
   if (toc && mobileMenu) {
-    let tocClone = toc.cloneNode(true);
-    tocClone.id = "TOC-mobile"
-    // toc.remove()
+    // let tocClone = toc.cloneNode(true);
+    // tocClone.id = "TOC-mobile"
+    // // toc.remove()
+    // tocClone.classList.add("mobile-toc");
+
+    // create a wrapper for the clone
+    const tocClone = document.createElement("div");
+    tocClone.id = "TOC-mobile";
     tocClone.classList.add("mobile-toc");
+
+    // copy just the markup, not the live nodes with attributes
+    tocClone.innerHTML = toc.innerHTML;
+
+    // strip scrollspy-related attributes/classes
+    tocClone.querySelectorAll("a").forEach(a => {
+      a.removeAttribute("data-scroll-target");
+      a.classList.remove("active");
+    });
+
     mobileMenu.appendChild(tocClone);
     console.log("TOC cloned into mobile menu.");
+
   } else {
     console.warn("Could not insert TOC — missing element(s).");
   }
