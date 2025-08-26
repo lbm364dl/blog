@@ -518,16 +518,70 @@ are _symmetric_ polynomials. A polynomial on the roots $x_1, x_2, \dots, x_n$
 is _symmetric_ if it doesn't change no matter how we rearrange the roots.
 
 The symmetric polynomials we've been working with actually have a special name:
-they're called _elementary symmetric polynomials_. Any guess for why they have
-this name? I'll give you a few examples to think.
+they're called _elementary symmetric polynomials_. Just to make it clear, the
+_elementary symmetric polynomials_ we've seen so far are the following: 
 
-Let's take for example this obviously symmetric polynomial:
+:::{.callout-note collapse=true}
+
+# For two roots
+
+$$ 
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 \\
+  x_1 x_2
+  \end{aligned}
+  \right.
+$$ 
+
+:::
+
+:::{.callout-note collapse=true}
+
+# For three roots
+
+$$ 
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 \\
+  x_1 x_2 + x_1 x_3 + x_2 x_3 \\
+  x_1 x_2 x_3
+  \end{aligned}
+  \right.
+$$ 
+
+:::
+
+:::{.callout-note collapse=true}
+
+# Guess the ones for four roots
+
+$$ 
+  \left\{
+  \begin{aligned}
+  x_1 + x_2 + x_3 + x_4 \\
+  x_1 x_2 + x_1 x_3 + x_1 x_4 + x_2 x_3 + x_2 x_4 + x_3 x_4 \\
+  x_1 x_2 x_3 + x_1 x_2 x_4 + x_1 x_3 x_4 + x_2 x_3 x_4 \\
+  x_1 x_2 x_3 x_4
+  \end{aligned}
+  \right.
+$$ 
+
+:::
+
+Any guess for why they're called _elementary_? I'll give you a few examples to think.
+
+Let's take for example this polynomial:
 
 $$ 
   x_1^{2} + x_2^{2} + x_3^{2}
 $$ 
 
-Can we know its value? Let's rewrite it...
+It is obviously symmetric, since all three terms are squared and the order 
+of the sum doesn't matter. However, it's not an _elementary symmetric
+polynomial_ itself, because it doesn't fit the pattern we introduced above.
+
+Can we actually know its value? Let's rewrite it...
 
 :::{.callout-tip collapse=true}
 
