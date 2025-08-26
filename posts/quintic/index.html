@@ -646,7 +646,7 @@ Guess the ones for four roots
 <p><span class="math display">\[
   x_1^{2} + x_2^{2} + x_3^{2}
 \]</span></p>
-<p>It is obviously symmetric, since all three terms are squared and the order of the sum doesn’t matter. However, it’s not an <em>elementary symmetric polynomial</em> itself, because it doesn’t fit the pattern we introduced above.</p>
+<p>It is obviously symmetric, since all three terms are squared and the order of the sum doesn’t matter. However, it’s not an <em>elementary symmetric polynomial</em> itself. The closest elementary one from above might be <span class="math inline">\(x_1 + x_2 + x_3\)</span>, but ours has each term squared, so it doesn’t fit that pattern exactly.</p>
 <p>Can we actually know its value? Let’s rewrite it…</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
@@ -935,7 +935,7 @@ So you still want to know how I got them…
 <div class="callout-body-container callout-body">
 <p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
 <p>We first define all the symbols we need in our expressions:</p>
-<div id="9d76b754" class="cell" data-execution_count="1">
+<div id="e64fea28" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
@@ -943,7 +943,7 @@ So you still want to know how I got them…
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
-<div id="3e507270" class="cell" data-execution_count="2">
+<div id="b64951ac" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
@@ -957,14 +957,14 @@ So you still want to know how I got them…
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="9">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
 <p><span class="math inline">\(\displaystyle a_{1} \left(w^{2} + w - 2\right) + a_{2}^{2}\)</span></p>
 </div>
 </div>
 <p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
-<div id="175e37d7" class="cell" data-execution_count="3">
+<div id="dd7f6384" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
 <p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
 </div>
 </div>
@@ -973,7 +973,7 @@ So you still want to know how I got them…
   t^3 t'^3 = (-3 a_1 + a_2^2)^3
 \]</span></p>
 <p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
-<div id="9f4b6aa8" class="cell" data-execution_count="4">
+<div id="8646d477" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
@@ -985,28 +985,28 @@ So you still want to know how I got them…
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="4">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(12 w^{3} - 9 w^{2} - 9 w + 6\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
-<div id="32520e60" class="cell" data-execution_count="5">
+<div id="d5ccb956" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="5">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
-<div id="a0007401" class="cell" data-execution_count="6">
+<div id="1cdb3789" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="13">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="6">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
-<div id="7e15f7b7" class="cell" data-execution_count="7">
+<div id="95978b6a" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="14">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="7">
 <p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
