@@ -7,7 +7,7 @@ categories: [math]
 ::: {.callout-important}
 This post is a work in progress. The second half is still unwritten, but
 I believe the existing first half is already large enough for an interesting
-reading.
+reading and could be a post by itself.
 :::
 
 # Overture
