@@ -113,15 +113,15 @@ compound words (terms made of at least two characters).
 
 :::{style="display: flex;"}
 
-[![](/assets/chinese-characters/images/四-oracle.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-oracle.svg){target="_blank"}
+[![](/assets/images/chinese-characters/四-oracle.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-oracle.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/四-silk.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-silk.svg){target="_blank"}
+[![](/assets/images/chinese-characters/四-silk.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-silk.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/四-bigseal.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-bigseal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/四-bigseal.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-bigseal.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/四-ancient.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-ancient.svg){target="_blank"}
+[![](/assets/images/chinese-characters/四-ancient.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-ancient.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/四-seal.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-seal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/四-seal.svg)](https://commons.wikimedia.org/wiki/File:%E5%9B%9B-seal.svg){target="_blank"}
 
 :::
 
@@ -147,11 +147,11 @@ character was borrowed just for its sound.
 
 :::{style="display: flex;"}
 
-[![](/assets/chinese-characters/images/五-oracle.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-oracle.svg){target="_blank"}
+[![](/assets/images/chinese-characters/五-oracle.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-oracle.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/五-bronze.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-bronze.svg){target="_blank"}
+[![](/assets/images/chinese-characters/五-bronze.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-bronze.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/五-silk.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-silk.svg){target="_blank"}
+[![](/assets/images/chinese-characters/五-silk.svg)](https://commons.wikimedia.org/wiki/File:%E4%BA%94-silk.svg){target="_blank"}
 
 :::
 
@@ -215,13 +215,13 @@ horse here? Oh well...
 
 :::{style="display: flex;"}
 
-[![](/assets/chinese-characters/images/馬-1.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-oracle.svg){target="_blank"}
+[![](/assets/images/chinese-characters/馬-1.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-oracle.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/馬-2.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-bronze.svg){target="_blank"}
+[![](/assets/images/chinese-characters/馬-2.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-bronze.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/馬-3.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-seal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/馬-3.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-seal.svg){target="_blank"}
 
-[![](/assets/chinese-characters/images/馬-4.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-clerical-han.svg){target="_blank"}
+[![](/assets/images/chinese-characters/馬-4.svg)](https://commons.wikimedia.org/wiki/File:%E9%A6%AC-clerical-han.svg){target="_blank"}
 
 :::
 
@@ -449,15 +449,15 @@ with two different sounds for the same character. But now you know the reason.
 ::::{style="display: flex;"}
 
 :::{style="flex: 1;"}
-[![](/assets/chinese-characters/images/續-seal.svg)](https://commons.wikimedia.org/wiki/File:%E7%BA%8C-seal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/續-seal.svg)](https://commons.wikimedia.org/wiki/File:%E7%BA%8C-seal.svg){target="_blank"}
 :::
 
 :::{style="flex: 1;"}
-[![](/assets/chinese-characters/images/𧶠-seal.svg)](https://commons.wikimedia.org/wiki/File:%F0%A7%B6%A0-seal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/𧶠-seal.svg)](https://commons.wikimedia.org/wiki/File:%F0%A7%B6%A0-seal.svg){target="_blank"}
 :::
 
 :::{style="flex: 1;"}
-[![](/assets/chinese-characters/images/賣-seal.svg)](https://commons.wikimedia.org/wiki/File:%E8%B3%A3-seal.svg){target="_blank"}
+[![](/assets/images/chinese-characters/賣-seal.svg)](https://commons.wikimedia.org/wiki/File:%E8%B3%A3-seal.svg){target="_blank"}
 :::
 
 ::::
