@@ -2,6 +2,7 @@
 title: "The hidden voices of Chinese characters"
 date: "2025-03-16"
 categories: [languages]
+image: /assets/images/chinese-characters/續-seal.svg
 aliases: 
   - "/languages/2025/03/16/the-hidden-voices-of-chinese-characters.html"
 ---
