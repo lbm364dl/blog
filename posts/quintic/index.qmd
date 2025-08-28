@@ -1,8 +1,14 @@
 ---
-title: "TODO: title"
+title: "But can I really solve this equation?"
 date: "2025-07-31"
 categories: [math]
 ---
+
+::: {.callout-important}
+This post is a work in progress. The second half is still unwritten, but
+I believe the existing first half is already large enough for an interesting
+reading.
+:::
 
 # Overture
 
