@@ -206,7 +206,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWF0aA==" data-listing-date-sort="1753912800000" data-listing-file-modified-sort="1756219909880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="47" data-listing-word-count-sort="9355">
+<div class="quarto-post image-right" data-index="0" data-categories="bWF0aA==" data-listing-date-sort="1753912800000" data-listing-file-modified-sort="1756379402333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="47" data-listing-word-count-sort="9355">
 <div class="thumbnail"><a href="./posts/quintic/index.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -233,7 +233,7 @@ Jul 31, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bGFuZ3VhZ2Vz" data-listing-date-sort="1742079600000" data-listing-file-modified-sort="1756378649073" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6511">
+<div class="quarto-post image-right" data-index="1" data-categories="bGFuZ3VhZ2Vz" data-listing-date-sort="1742079600000" data-listing-file-modified-sort="1756379402333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6511">
 <div class="thumbnail"><a href="./posts/the-hidden-voices-of-chinese-characters/index.html" class="no-external">
 
 <p class="card-img-top"><img src="assets/chinese-characters/images/四-oracle.svg"  class="thumbnail-image card-img"/></p>
@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lbm364dl\.github\.io\/quarto-blog\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
