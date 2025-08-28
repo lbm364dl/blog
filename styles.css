@@ -28,3 +28,37 @@ mjx-container {
     display: block !important;
   }
 }
+
+.right-quote blockquote {
+  text-align: right;
+  border-left: none;
+  margin-bottom: 40px;
+}
+
+/* Hide only the section’s own heading, keep the content visible */
+section.hide-heading > h1,
+section.hide-heading > h2,
+section.hide-heading > h3,
+section.hide-heading > h4,
+section.hide-heading > h5,
+section.hide-heading > h6,
+div.hide-heading > h1,
+div.hide-heading > h2,
+div.hide-heading > h3,
+div.hide-heading > h4,
+div.hide-heading > h5,
+div.hide-heading > h6 {
+  /* choose one: fully remove... */
+  /* display: none; */
+
+  /* ...or visually hide but keep for screen readers: */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
