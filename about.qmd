@@ -1,19 +1,22 @@
 ---
-title: "About"
-image: profile.jpg
+title: "What is this"
+image: /assets/images/profile_pic.jpeg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
     - icon: github
       text: Github
-      href: https://github.com
-
+      href: https://github.com/lbm364dl
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/catalin-sorin-covaci-a6bb44248/
+    - icon: envelope
+      text: Email
+      href: mailto:ctl.covaci@gmail.com
 ---
 
-About this blog
+I'm just a random person with random interests. If I ever get around to
+writing another post, it'll probably be about some topic I like: computer
+science, mathematics, films, languages... Or not, who knows!
+
+Enjoy!

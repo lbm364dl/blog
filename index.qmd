@@ -1,5 +1,5 @@
 ---
-title: "random-blog"
+title: "My random posts"
 listing:
   contents: posts
   sort: "date desc"

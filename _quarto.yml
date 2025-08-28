@@ -2,16 +2,18 @@ project:
   type: website
 
 website:
-  title: "random-blog"
+  title: "Random blog"
   repo-url: https://github.com/lbm364dl/blog
   repo-actions: [edit, issue]
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/lbm364dl
+      - icon: linkedin
+        href: https://www.linkedin.com/in/catalin-sorin-covaci-a6bb44248/
+      - icon: envelope
+        href: mailto:ctl.covaci@gmail.com
 format:
   html:
     theme:
