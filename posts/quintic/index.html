@@ -264,6 +264,16 @@ Important
 </blockquote>
 <p>That’s the story you’ve heard, isn’t it?</p>
 <p>History is harder. The figure of <a href="https://en.wikipedia.org/wiki/%C3%89variste_Galois">Évariste Galois</a> as a precocious mind is undeniable. These stories are great engagements into mathematics, but are often exaggerated or fantasized. We’ll shortly try to get these down to earth in this introduction.</p>
+<div id="fig-galois" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-galois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><a href="https://commons.wikimedia.org/wiki/File:Evariste_galois.jpg" target="_blank"><img src="../../assets/images/quintic/Evariste_galois.jpg" class="img-fluid figure-img" width="300"></a></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-galois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Sketch of Galois that you’re probably tired of seeing everywhere because <del>there aren’t any others</del> he looks less creepier than in <a href="https://commons.wikimedia.org/wiki/File:E._Galois_Portrait_No.2.jpg" target="_blank">the one his brother did from memory years after his death</a>
+</figcaption>
+</figure>
+</div>
 <p>Revolutionary mathematics. Évariste Galois essentially gave birth to two big branches of mathematics, group theory and Galois theory. What an unexpected name for the second one, right? We will soon start getting our hands dirty with the same mathematics that were driving the passion of a young Galois, and then <em>you</em> will have to judge whether they were really <em>revolutionary mathematics</em>. You will try to actively approach his life through his mathematics.</p>
 <p>Galois had a short life. He died at the age of 20. Despite this short life, he wrote his arguably most important paper (the one which showcases his <em>revolutionary</em> ideas and often referred to as the <em>first memoir</em>) four years before his death, roughly at the age of 17. This is of course far from the common belief of him writing down all his theory just the night prior to his death. My intention in this post is going through this first memoir, to introduce you to Galois’ ideas as close as possible to how he himself viewed them back then. We will start doing this after a few shamefully long but I believe necessary motivation sections.</p>
 <p>Pointless death. <em>But why did he die so young?</em> Ah, yes, these mathematicians needing some love and doing anything in their hands when they get a chance. And let’s just throw in <a href="https://www.reddit.com/r/todayilearned/comments/13ycbnu/til_that_%C3%A9variste_galois_a_math_prodigy_who/">some Reddit jokes</a> because why not. In reality, this is an obscure part of Galois’ life and we can’t really tell for sure what happened. If you think dying in a duel for the woman you love is weird, wait until I tell you about this one.</p>
@@ -953,7 +963,7 @@ So you still want to know how I got them…
 <div class="callout-body-container callout-body">
 <p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
 <p>We first define all the symbols we need in our expressions:</p>
-<div id="8bf54424" class="cell" data-execution_count="1">
+<div id="914c112e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
@@ -961,7 +971,7 @@ So you still want to know how I got them…
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
-<div id="2a90e6bb" class="cell" data-execution_count="2">
+<div id="a31d64a4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
@@ -980,7 +990,7 @@ So you still want to know how I got them…
 </div>
 </div>
 <p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
-<div id="416186a5" class="cell" data-execution_count="3">
+<div id="52b43cbf" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
 <p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
@@ -991,7 +1001,7 @@ So you still want to know how I got them…
   t^3 t'^3 = (-3 a_1 + a_2^2)^3
 \]</span></p>
 <p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
-<div id="e756947a" class="cell" data-execution_count="4">
+<div id="19db0865" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
@@ -1008,21 +1018,21 @@ So you still want to know how I got them…
 </div>
 </div>
 <p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
-<div id="b8b05cff" class="cell" data-execution_count="5">
+<div id="566ffd37" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
-<div id="c1861016" class="cell" data-execution_count="6">
+<div id="5a8203d6" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="13">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
-<div id="a758e2a6" class="cell" data-execution_count="7">
+<div id="c82861df" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="14">
 <p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
