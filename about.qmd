@@ -1,6 +1,6 @@
 ---
 title: "What is this"
-image: /assets/images/profile_pic.jpeg
+image: assets/images/profile_pic.jpeg
 about:
   template: jolla
   links:
