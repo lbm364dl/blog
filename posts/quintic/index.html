@@ -209,6 +209,7 @@ window.Quarto = {
   <li><a href="#descending-into-abstractness" id="toc-descending-into-abstractness" class="nav-link" data-scroll-target="#descending-into-abstractness">Descending into abstractness</a></li>
   </ul></li>
   <li><a href="#you-cant-solve-it" id="toc-you-cant-solve-it" class="nav-link" data-scroll-target="#you-cant-solve-it">You can’t solve it</a></li>
+  <li><a href="#afterword" id="toc-afterword" class="nav-link" data-scroll-target="#afterword">Afterword</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lbm364dl/blog/edit/main/posts/quintic/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lbm364dl/blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -1021,7 +1022,7 @@ So you still want to know how I got them…
 <div class="callout-body-container callout-body">
 <p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
 <p>We first define all the symbols we need in our expressions:</p>
-<div id="0bc05624" class="cell" data-execution_count="1">
+<div id="97343e89" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
@@ -1029,7 +1030,7 @@ So you still want to know how I got them…
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
-<div id="0dbdcc70" class="cell" data-execution_count="2">
+<div id="5c7cb7b7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
@@ -1043,14 +1044,14 @@ So you still want to know how I got them…
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="9">
 <p><span class="math inline">\(\displaystyle a_{1} \left(w^{2} + w - 2\right) + a_{2}^{2}\)</span></p>
 </div>
 </div>
 <p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
-<div id="94bca313" class="cell" data-execution_count="3">
+<div id="a4251fe5" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
 <p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
 </div>
 </div>
@@ -1059,7 +1060,7 @@ So you still want to know how I got them…
   t^3 t'^3 = (-3 a_1 + a_2^2)^3
 \]</span></p>
 <p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
-<div id="30a31f8f" class="cell" data-execution_count="4">
+<div id="de8c2ebd" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
@@ -1071,28 +1072,28 @@ So you still want to know how I got them…
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="4">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(12 w^{3} - 9 w^{2} - 9 w + 6\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
-<div id="e61bfa75" class="cell" data-execution_count="5">
+<div id="c705eb0e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="5">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
-<div id="dbb0f2a1" class="cell" data-execution_count="6">
+<div id="be94fee9" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="6">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="13">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
-<div id="6b78913c" class="cell" data-execution_count="7">
+<div id="011c789c" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="7">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="14">
 <p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
@@ -1496,6 +1497,19 @@ In our specific example, the answer is yes! Why?
 <section id="you-cant-solve-it" class="level1">
 <h1>You can’t solve it</h1>
 <p><em>Of course I can’t, you haven’t written anything here!</em></p>
+</section>
+<section id="afterword" class="level1">
+<h1>Afterword</h1>
+<p>I’ll tell you a bit about this post. After all, this is a personal blog.</p>
+<p>I studied math and computer science. Because of that, the curriculum for both was shortened as compared to studying each one individually. I didn’t have a Galois theory class, so I decided to write <a href="https://oa.upm.es/70885/">my End of Degree Project</a> on this topic. It was basically like studying a more advanced math class, nothing else. Just some hand-waving of complex mathematical structures like groups, rings and fields. Surely it was a good way to develop my math skills, but looking back at my final writing, it has no particular interest. No attempt to make the topic more appealing. Too generic and boring writing style.</p>
+<p>That was three years ago, when I finished my studies. I convinced myself that I had enough with the math side and I’d better get some software engineering jobs and call it a day. Three years later, math is waiting for me to catch up. I’m starting a master’s degree in math soon.</p>
+<p>This post is basically me saying <em>I could’ve done better. Writing is fun.</em></p>
+<p>My initial intention was writing a kind of summary of the content I covered in my End of Degree Project. This was reinforced after finding a surprisingly short (just six pages!) introduction to the topic titled <em>Galois Theory for Beginners</em>, written by John Stillwell. I still think it’s a good read, but making a text short is usually the opposite of an <em>easy</em> reading. I was also finding myself again trying to understand the concept of a <em>Galois group</em>, looking for something a bit more intuitive than its modern definition using automorphisms.</p>
+<p>At the same time, I also started reading Laura Toti’s biography of Galois. While reading a lot of mentions to his first memoir in there, I was starting to consider the idea of reading that memoir myself, just out of curiosity. Before this, I never really tried reading such old original works. And I started reading Galois’s first memoir. And once I started understanding the basic ideas, I decided that was the way to go in this post. Just do what Galois did.</p>
+<p>The original works of Galois are translated to English in the book <em>The mathematical writings of Evariste Galois</em> by Peter M. Neumann. Galois himself also has a rather verbose writing style. Maybe this was true in general for works from that time, compared with modern math works, I’m not sure. I can just tell I like his writing style. The problem is, there are some parts where he isn’t very clear or he just leaves empty gaps to fill, and I needed some help to follow them.</p>
+<p>That’s how I arrived at what I believe is the main source for this post, <em>Galois Theory</em> by Harold Edwards. Here he basically does the same we tried to do here, that is, to try to present Galois theory in the same way Galois himself did it. This book covers a larger content than what I specifically wanted for this post, and he also doesn’t mind using some modern concepts to draw the connections with modern Galois theory. To keep the post as elementary as possible, I tried to avoid that.</p>
+<p>And that’s how we got here. Unfortunately, most of the still unwritten second half of the post covers the real content from Galois’ first memoir. But there’s already a lot of intuition in the existing portion. Until I manage to finish writing everything, I encourage you to try more polynomial examples similar to how we did in <a href="#cubic-u-still-there">Cubic, <em>u still there</em>?</a> and try to develop your own intuition. Maybe you end up proving some results yourself! As we said, you really learn math by doing it.</p>
+<p>I hope you enjoy the content.</p>
 
 
 </section>
