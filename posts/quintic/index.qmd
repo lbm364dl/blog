@@ -607,7 +607,7 @@ Can we actually know its value? Let's rewrite it...
 # Hint: try to relate this value with $(x_1 + x_2 + x_3)^{2}$
 
 $$ 
-  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
+  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 2(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 2 a_1
 $$ 
 
 Yes! That's a known rational number.
@@ -635,7 +635,7 @@ can be explained as a series of swaps of two roots. Now, is this also a known va
 # Hint: is this a product of two familiar expressions...?
 
 $$ 
-  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot (-a_0)
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -2 a_1) \cdot (-a_0)
 $$ 
 
 :::
@@ -662,14 +662,196 @@ statement about elementary symmetric polynomials. In Galois' time, this was
 such a well-known fact that he didn't even bother including it in the
 prerequisites for his memoir. 
 
+Unless you're really really interested at this point, you could simply believe
+the statement is true and keep reading, and only come back later. Or you can
+skim through the proof and don't stress yourself if something isn't entirely
+clear. This is a really important result, but it's just a building block for
+more things that are coming.
+
 :::{.callout-note collapse=true}
 
-# Why is this true?
+# Why is the statement true?
 
-TODO: sketch of proof
+This won't be a super general rigorous proof, but you'll get the idea and by
+the end you should be able to write down something yourself. The idea of the
+proof is constructive. What's a constructive proof? We prove something exists
+by actually building a recipe that, if followed, will arrive at that thing.
+Sounds familiar? Yeah, I told you previously that we're building another recipe,
+but more on that later. In this case, this thing is _a way of writing the
+symmetric polynomial in terms of elementary symmetric polynomials_.
+
+To get an idea, let's come up with a _different_, more naive way of finding 
+that representation for one of the previous examples, the polynomial
+
+$$ 
+  f = x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3}
+$$ 
+
+Suppose we would like to arrive at an expression that doesn't include the
+first term $x_1^{3} x_2 x_3$. Why that term you may ask? I promise, I'll tell
+you later! We'll try to find a clever symmetric polynomial that also has this
+term, so then we can get rid of it by subtracting this polynomial from the
+original $f$ one. How would such a polynomial look like? Look at the
+coefficients of our term $x_1^{3} x_2 x_3$. They're $3, 1, 1$. Now look at this
+cool expression:
+
+$$ 
+  (x_1 + x_2 + x_3)^{3 - 1} (x_1 x_2 + x_1 x_3 + x_2 x_3)^{1 - 1} (x_1 x_2 x_3)^{1} = (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3)
+$$ 
+
+This expression has a lot going on, but if you focus on each first term summing,
+that is, $x_1$, $x_1 x_2$ and $x_1 x_2 x_3$, the expression certainly contains at
+least the following term:
+
+$$ 
+  (x_1)^{3 - 1}(x_1 x_2)^{1 - 1}(x_1 x_2 x_3)^{1} = x_1^{3-1+1} x_2^{1-1+1} x_3^{1} = x_1^{3} x_2^{1} x_3^{1}
+$$ 
+
+This is the term we wanted! We got it. We found a polynomial that doesn't contain
+our term. How does it look like? Hopefully it's simpler...?
+
+$$ 
+  f - (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) = -2 x_1^{2} x_2^{2} x_3 - 2 x_1^{2} x_2 x_3^{2} - 2 x_1 x_2^{2} x_3^{2}
+$$ 
+
+Geez... Is this a joke? This seems as hard as the original polynomial! How did
+it get any better? Trust me... Let's keep going! We now try to find another one
+that doesn't contain the first term $-2 x_1^{2} x_2^{2} x_3$. You already
+know how the trick works, don't you? Except we now also have a $-2$ in there,
+but that's not a big deal, just multiply by $-2$... Recall our coefficients
+this time, they're $2, 2, 1$:
+
+$$ 
+  -2 (x_1 + x_2 + x_3)^{2 - 2} (x_1 x_2 + x_1 x_3 + x_2 x_3)^{2 - 1} (x_1 x_2 x_3)^{1} = -2 (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3)
+$$ 
+
+Again, this will at least contain the following term:
+
+$$ 
+  -2 (x_1)^{2 - 2}(x_1 x_2)^{2 - 1}(x_1 x_2 x_3)^{1} = -2 x_1^{2-2+2} x_2^{2-1+1} x_3^{1} = -2 x_1^{2} x_2^{2} x_3^{1}
+$$ 
+
+Got it! Let's see what the new polynomial is...
+
+$$ 
+  f - (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) - (-2) (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3) = 0
+$$ 
+
+Oh, we must've been so lucky there, the result is $0$! Then we can just express
+$f$ like this:
+
+$$ 
+  f = (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) -2 (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3)
+$$ 
+
+These are all elementary symmetric polynomials! And we can even factor
+$x_1 x_2 x_3$ so we get exactly the same expression we found earlier by just
+pure observation:
+
+$$ 
+  f = ((x_1 + x_2 + x_3)^{2} - 2 (x_1 x_2 + x_1 x_3 + x_2 x_3))(x_1 x_2 x_3) = (a_2^{2} - 2 a_1)(-a_0)
+$$ 
+
+What did we gain here? Remember, we're trying to build a recipe that can work
+in general for any symmetric polynomial. To make sure this is the case, we need
+to revisit some questions:
+
+1. Why did we choose to remove those specific terms?
+2. Can we always construct the polynomial with fancy exponent subtractions?
+3. Will this whole procedure always somehow end in a finite number of steps?
+
+I didn't tell you, but I wrote the polynomials above in a special order. Have
+you heard of lexicographical ordering? Such a fancy term. All it means is that
+you compare things one by one, from left to right. In our case, the terms are 
+compared lexicographically based on their coefficients. We first compare the 
+coefficients of $x_1$. If they're different we're done. Otherwise we check
+$x_2$, and so on... The constant numbers that multiply terms are ignored.
+
+Now we can answer the first question. The chosen term is the largest one
+lexicographically. In the original polynomial, $x_1^{3} x_2 x_3$ is larger than
+both $x_1 x_2^{3} x_3$ and $x_1 x_2 x_3^{3}$ because when comparing $x_1$, we 
+have from the coefficients that $3 > 1$. In the polynomial from the second step,
+we got $-2x_1^{2} x_2^{2} x_3$. This is larger than $-2 x_1 x_2^{2} x_3^{2}$ for 
+the same reason as before. It is also larger than $-2 x_1^{2} x_2 x_3^{2}$, since
+in this case we have $2 = 2$ for the coefficients of $x_1$, but we have $2 > 1$
+for those of $x_2$.
+
+What about the second question? This is a matter of making sure the exponents
+are non-negative. Did you see the pattern? If we have a term with some
+coefficients $x_1^{a_1} x_2^{a_2} x_3^{a_3}$, the exponents will be $a_1 - a_2$,
+$a_2 - a_3$ and $a_3$. For the subtractions, this all means that the
+coefficients must form a non-decreasing sequence, that is, $a_1 \ge a_2 \ge a_3$.
+
+But why would this be true? Because the polynomials are symmetric! I mean, the 
+original one is symmetric, and the ones at each step are too, because they're 
+the original one minus some other symmetric polynomials, so the whole result 
+is also a symmetric polynomial. Now, suppose we chose the lexicographically
+largest term but, for example, we have $a_2 < a_3$. Because the polynomial is
+symmetric, it is the same when swapping $x_2$ and $x_3$, so there should also
+be another term $x_1^{a_1} x_2^{a_3} x_3^{a_2}$. But this term is
+lexicographically larger than the one we chose before! That would mean we failed
+at picking the largest one, so we should choose this one instead, which 
+does satisfy that the coefficients are non-decreasing. Therefore, for the
+lexicographically largest term, we always have the non-decreasing coefficients 
+and the subtractions can't be negative.
+
+That leaves us with the third question... Why would this procedure even finish?
+It turns out this is also a consequence of the lexicographical ordering!
+But be careful. Suppose we have a sequence of three numbers $(1, 1, 1)$.
+There can be infinitely many sequences that are lexicographically smaller. How
+come? Just choose $(0, 1, 1)$, $(0, 2, 1)$, $(0, 3, 1)$, $(0, 4, 1)$, ... You
+get the idea. 
+
+But in our case, we're getting a smaller one at each step of the procedure.
+This is not exactly the same. Imagine we start with $(0, 0, 3)$. In the worst
+case, it would take three steps to finish if we have the sequence:
+
+$$ 
+  (0, 0, 3) \to (0, 0, 2) \to (0, 0, 1) \to (0, 0, 0)
+$$
+
+What about starting with $(0, 1, 1)$? The next one could be $(0, 1, 0)$, but 
+then we can only keep going if we subtract from the second element. Even if 
+we're unlucky and the next one is something like $(0, 0, 100)$, we would 
+still finish eventually. What about starting with $(1, 2, 3)$? I think you
+get the idea...
+
+But intuition isn't always spot on. The rigorous answer as for why this ends
+relies on a property called _well ordering principle_ for our lexicographical
+ordering. Again, just a fancy term. It means that, if I give you any bunch of
+different sequences, you can always find _the smallest one_. How come?
+Well, start by finding the minimum value among all the first elements. There 
+might be more of those, just pick all of them. Now, among these, do the same 
+for the second element, and so on... In the end we get a single one.
+
+Now suppose our procedure never finishes. This is the same as saying we get
+an infinite list of sequences, each one smaller than the previous one. What's
+_the smallest one_ here? No matter which one we choose, there are always other
+smaller ones! This is a contradiction, because we said we can always find the
+smallest element. Then we failed at assuming the procedure never finishes.
+
+In addition, if we keep going freely, the only time we can't keep going is
+when we have $(0, 0, 0)$. And we must finish at some point because of
+the previous argument. So we must finish here. When talking about our
+polynomials, this means the term looks like $k \cdot x_1^{0} x_2^{0} x_3^{0}$,
+where $k$ is some constant known number. So we don't necessarily end at
+$0$, but at any known number.
+
+We're done.
 
 :::
 
+The proof we saw gives a recipe that can be followed for any symmetric
+polynomial, and will give us a way of expressing it in terms of elementary
+symmetric polynomials, and thus, in terms of known numbers. Most of the times 
+we're only going to use this result to assert that some symmetric polynomial
+_is_ a known number, without caring about what number it might be. In the cases
+we do want to know the specific number, we now have a way of finding it. 
+It might be a stupidly long procedure, but it can be done. And because of that,
+we don't have to do it ourselves! We could feed this set of instructions to a 
+computer, and in theory it will do it for us. There's actually one place in the
+next section where I tell the computer to do it because I'm also too lazy to do
+these calculations...
 
 # Third degree
 
@@ -1559,8 +1741,23 @@ _// End of TV-drama cliffhanger_.
 
 ## Descending into abstractness
 
-TODO
+_Well, it seems like this descent will take quite some time, let's wait..._
 
 # You can't solve it
 
-TODO
+_Of course I can't, you haven't written anything here!_
+
+# Afterword
+
+I'll tell you why I'm writing this post. 
+
+I studied math and computer science. Because of that, the curriculum for both
+was shortened as compared to studying each one individually. I didn't have a 
+Galois theory class, so I decided to write my End of Degree Project on this 
+topic. It was basically like studying a more advanced math class, nothing else.
+Just some hand-waving of complex mathematical structures like groups, rings
+and fields. Surely it was a good way to develop my math skills, but looking 
+back at my final writing, it has no particular interest. No attempt to make 
+the topic more appealing. The writing style is too generic.
+
+This was three years ago, when I finished my studies.
