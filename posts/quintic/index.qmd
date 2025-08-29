@@ -1749,15 +1749,64 @@ _Of course I can't, you haven't written anything here!_
 
 # Afterword
 
-I'll tell you why I'm writing this post. 
+I'll tell you a bit about this post. After all, this is a personal blog.
 
 I studied math and computer science. Because of that, the curriculum for both
 was shortened as compared to studying each one individually. I didn't have a 
-Galois theory class, so I decided to write my End of Degree Project on this 
-topic. It was basically like studying a more advanced math class, nothing else.
-Just some hand-waving of complex mathematical structures like groups, rings
-and fields. Surely it was a good way to develop my math skills, but looking 
-back at my final writing, it has no particular interest. No attempt to make 
-the topic more appealing. The writing style is too generic.
+Galois theory class, so I decided to write [my End of Degree Project
+](https://oa.upm.es/70885/) on this topic. It was basically like studying a
+more advanced math class, nothing else. Just some hand-waving of complex
+mathematical structures like groups, rings and fields. Surely it was a good
+way to develop my math skills, but looking back at my final writing, it has
+no particular interest. No attempt to make the topic more appealing. Too
+generic and boring writing style.
 
-This was three years ago, when I finished my studies.
+That was three years ago, when I finished my studies. I convinced myself that
+I had enough with the math side and I'd better get some software engineering
+jobs and call it a day. Three years later, math is waiting for me to catch up.
+I'm starting a master's degree in math soon.
+
+This post is basically me saying _I could've done better. Writing is fun._
+
+My initial intention was writing a kind of summary of the content I covered in 
+my End of Degree Project. This was reinforced after finding a surprisingly 
+short (just six pages!) introduction to the topic titled _Galois Theory for
+Beginners_, written by John Stillwell. I still think it's a good read, but 
+making a text short is usually the opposite of an _easy_ reading. I was also
+finding myself again trying to understand the concept of a _Galois group_,
+looking for something a bit more intuitive than its modern definition using
+automorphisms.
+
+At the same time, I also started reading Laura Toti's biography of Galois.
+While reading a lot of mentions to his first memoir in there, I was starting
+to consider the idea of reading that memoir myself, just out of curiosity. 
+Before this, I never really tried reading such old original works. And I 
+started reading Galois's first memoir. And once I started understanding
+the basic ideas, I decided that was the way to go in this post. Just do 
+what Galois did.
+
+The original works of Galois are translated to English in the book 
+_The mathematical writings of Evariste Galois_ by Peter M. Neumann.
+Galois himself also has a rather verbose writing style. Maybe this was true 
+in general for works from that time, compared with modern math works, I'm not
+sure. I can just tell I like his writing style. The problem is, there are some
+parts where he isn't very clear or he just leaves empty gaps to fill, and I 
+needed some help to follow them. 
+
+That's how I arrived at what I believe is the main source for this post,
+_Galois Theory_ by Harold Edwards. Here he basically does the same we tried
+to do here, that is, to try to present Galois theory in the same way Galois 
+himself did it. This book covers a larger content than what I specifically 
+wanted for this post, and he also doesn't mind using some modern concepts to 
+draw the connections with modern Galois theory. To keep the post as elementary
+as possible, I tried to avoid that.
+
+And that's how we got here. Unfortunately, most of the still unwritten second
+half of the post covers the real content from Galois' first memoir. But there's
+already a lot of intuition in the existing portion. Until I manage to finish
+writing everything, I encourage you to try more polynomial examples similar to
+how we did in [Cubic, _u still there_?](#cubic-u-still-there) and try to develop
+your own intuition. Maybe you end up proving some results yourself! As we said,
+you really learn math by doing it.
+
+I hope you enjoy the content.
