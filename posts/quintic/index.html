@@ -209,6 +209,7 @@ window.Quarto = {
   <li><a href="#descending-into-abstractness" id="toc-descending-into-abstractness" class="nav-link" data-scroll-target="#descending-into-abstractness">Descending into abstractness</a></li>
   </ul></li>
   <li><a href="#you-cant-solve-it" id="toc-you-cant-solve-it" class="nav-link" data-scroll-target="#you-cant-solve-it">You can’t solve it</a></li>
+  <li><a href="#afterword" id="toc-afterword" class="nav-link" data-scroll-target="#afterword">Afterword</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lbm364dl/blog/edit/main/posts/quintic/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lbm364dl/blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -689,7 +690,7 @@ Hint: try to relate this value with <span class="math inline">\((x_1 + x_2 + x_3
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math display">\[
-  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 4(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 4 a_1
+  x_1^{2} + x_2^{2} + x_3^{2} = (x_1 + x_2 + x_3)^{2} - 2(x_1 x_2 + x_1 x_3 + x_2 x_3) = a_2^{2} - 2 a_1
 \]</span></p>
 <p>Yes! That’s a known rational number.</p>
 </div>
@@ -717,7 +718,7 @@ Hint: is this a product of two familiar expressions…?
 <div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math display">\[
-  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -4 a_1) \cdot (-a_0)
+  x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3} = (x_1^{2} + x_2^{2} + x_3^{2} )(x_1 x_2 x_3) = (a_2^{2} -2 a_1) \cdot (-a_0)
 \]</span></p>
 </div>
 </div>
@@ -728,22 +729,80 @@ Hint: is this a product of two familiar expressions…?
 <p>I hope you agree this is not obvious at all. And the statement just like that doesn’t seem too interesting. Because we know that elementary symmetric polynomials are known rational numbers, then we get this more insightful result for free:</p>
 <p><em>Any symmetric polynomial on the roots is a known number.</em></p>
 <p>We’ll use this result a few times later. Of course, we should prove the first statement about elementary symmetric polynomials. In Galois’ time, this was such a well-known fact that he didn’t even bother including it in the prerequisites for his memoir.</p>
+<p>Unless you’re really really interested at this point, you could simply believe the statement is true and keep reading, and only come back later. Or you can skim through the proof and don’t stress yourself if something isn’t entirely clear. This is a really important result, but it’s just a building block for more things that are coming.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Why is this true?
+Why is the statement true?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO: sketch of proof</p>
+<p>This won’t be a super general rigorous proof, but you’ll get the idea and by the end you should be able to write down something yourself. The idea of the proof is constructive. What’s a constructive proof? We prove something exists by actually building a recipe that, if followed, will arrive at that thing. Sounds familiar? Yeah, I told you previously that we’re building another recipe, but more on that later. In this case, this thing is <em>a way of writing the symmetric polynomial in terms of elementary symmetric polynomials</em>.</p>
+<p>To get an idea, let’s come up with a <em>different</em>, more naive way of finding that representation for one of the previous examples, the polynomial</p>
+<p><span class="math display">\[
+  f = x_1^{3} x_2 x_3 + x_1 x_2^{3} x_3 + x_1 x_2 x_3^{3}
+\]</span></p>
+<p>Suppose we would like to arrive at an expression that doesn’t include the first term <span class="math inline">\(x_1^{3} x_2 x_3\)</span>. Why that term you may ask? I promise, I’ll tell you later! We’ll try to find a clever symmetric polynomial that also has this term, so then we can get rid of it by subtracting this polynomial from the original <span class="math inline">\(f\)</span> one. How would such a polynomial look like? Look at the coefficients of our term <span class="math inline">\(x_1^{3} x_2 x_3\)</span>. They’re <span class="math inline">\(3, 1, 1\)</span>. Now look at this cool expression:</p>
+<p><span class="math display">\[
+  (x_1 + x_2 + x_3)^{3 - 1} (x_1 x_2 + x_1 x_3 + x_2 x_3)^{1 - 1} (x_1 x_2 x_3)^{1} = (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3)
+\]</span></p>
+<p>This expression has a lot going on, but if you focus on each first term summing, that is, <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_1 x_2\)</span> and <span class="math inline">\(x_1 x_2 x_3\)</span>, the expression certainly contains at least the following term:</p>
+<p><span class="math display">\[
+  (x_1)^{3 - 1}(x_1 x_2)^{1 - 1}(x_1 x_2 x_3)^{1} = x_1^{3-1+1} x_2^{1-1+1} x_3^{1} = x_1^{3} x_2^{1} x_3^{1}
+\]</span></p>
+<p>This is the term we wanted! We got it. We found a polynomial that doesn’t contain our term. How does it look like? Hopefully it’s simpler…?</p>
+<p><span class="math display">\[
+  f - (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) = -2 x_1^{2} x_2^{2} x_3 - 2 x_1^{2} x_2 x_3^{2} - 2 x_1 x_2^{2} x_3^{2}
+\]</span></p>
+<p>Geez… Is this a joke? This seems as hard as the original polynomial! How did it get any better? Trust me… Let’s keep going! We now try to find another one that doesn’t contain the first term <span class="math inline">\(-2 x_1^{2} x_2^{2} x_3\)</span>. You already know how the trick works, don’t you? Except we now also have a <span class="math inline">\(-2\)</span> in there, but that’s not a big deal, just multiply by <span class="math inline">\(-2\)</span>… Recall our coefficients this time, they’re <span class="math inline">\(2, 2, 1\)</span>:</p>
+<p><span class="math display">\[
+  -2 (x_1 + x_2 + x_3)^{2 - 2} (x_1 x_2 + x_1 x_3 + x_2 x_3)^{2 - 1} (x_1 x_2 x_3)^{1} = -2 (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3)
+\]</span></p>
+<p>Again, this will at least contain the following term:</p>
+<p><span class="math display">\[
+  -2 (x_1)^{2 - 2}(x_1 x_2)^{2 - 1}(x_1 x_2 x_3)^{1} = -2 x_1^{2-2+2} x_2^{2-1+1} x_3^{1} = -2 x_1^{2} x_2^{2} x_3^{1}
+\]</span></p>
+<p>Got it! Let’s see what the new polynomial is…</p>
+<p><span class="math display">\[
+  f - (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) - (-2) (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3) = 0
+\]</span></p>
+<p>Oh, we must’ve been so lucky there, the result is <span class="math inline">\(0\)</span>! Then we can just express <span class="math inline">\(f\)</span> like this:</p>
+<p><span class="math display">\[
+  f = (x_1 + x_2 + x_3)^{2}(x_1 x_2 x_3) -2 (x_1 x_2 + x_1 x_3 + x_2 x_3)(x_1 x_2 x_3)
+\]</span></p>
+<p>These are all elementary symmetric polynomials! And we can even factor <span class="math inline">\(x_1 x_2 x_3\)</span> so we get exactly the same expression we found earlier by just pure observation:</p>
+<p><span class="math display">\[
+  f = ((x_1 + x_2 + x_3)^{2} - 2 (x_1 x_2 + x_1 x_3 + x_2 x_3))(x_1 x_2 x_3) = (a_2^{2} - 2 a_1)(-a_0)
+\]</span></p>
+<p>What did we gain here? Remember, we’re trying to build a recipe that can work in general for any symmetric polynomial. To make sure this is the case, we need to revisit some questions:</p>
+<ol type="1">
+<li>Why did we choose to remove those specific terms?</li>
+<li>Can we always construct the polynomial with fancy exponent subtractions?</li>
+<li>Will this whole procedure always somehow end in a finite number of steps?</li>
+</ol>
+<p>I didn’t tell you, but I wrote the polynomials above in a special order. Have you heard of lexicographical ordering? Such a fancy term. All it means is that you compare things one by one, from left to right. In our case, the terms are compared lexicographically based on their coefficients. We first compare the coefficients of <span class="math inline">\(x_1\)</span>. If they’re different we’re done. Otherwise we check <span class="math inline">\(x_2\)</span>, and so on… The constant numbers that multiply terms are ignored.</p>
+<p>Now we can answer the first question. The chosen term is the largest one lexicographically. In the original polynomial, <span class="math inline">\(x_1^{3} x_2 x_3\)</span> is larger than both <span class="math inline">\(x_1 x_2^{3} x_3\)</span> and <span class="math inline">\(x_1 x_2 x_3^{3}\)</span> because when comparing <span class="math inline">\(x_1\)</span>, we have from the coefficients that <span class="math inline">\(3 &gt; 1\)</span>. In the polynomial from the second step, we got <span class="math inline">\(-2x_1^{2} x_2^{2} x_3\)</span>. This is larger than <span class="math inline">\(-2 x_1 x_2^{2} x_3^{2}\)</span> for the same reason as before. It is also larger than <span class="math inline">\(-2 x_1^{2} x_2 x_3^{2}\)</span>, since in this case we have <span class="math inline">\(2 = 2\)</span> for the coefficients of <span class="math inline">\(x_1\)</span>, but we have <span class="math inline">\(2 &gt; 1\)</span> for those of <span class="math inline">\(x_2\)</span>.</p>
+<p>What about the second question? This is a matter of making sure the exponents are non-negative. Did you see the pattern? If we have a term with some coefficients <span class="math inline">\(x_1^{a_1} x_2^{a_2} x_3^{a_3}\)</span>, the exponents will be <span class="math inline">\(a_1 - a_2\)</span>, <span class="math inline">\(a_2 - a_3\)</span> and <span class="math inline">\(a_3\)</span>. For the subtractions, this all means that the coefficients must form a non-decreasing sequence, that is, <span class="math inline">\(a_1 \ge a_2 \ge a_3\)</span>.</p>
+<p>But why would this be true? Because the polynomials are symmetric! I mean, the original one is symmetric, and the ones at each step are too, because they’re the original one minus some other symmetric polynomials, so the whole result is also a symmetric polynomial. Now, suppose we chose the lexicographically largest term but, for example, we have <span class="math inline">\(a_2 &lt; a_3\)</span>. Because the polynomial is symmetric, it is the same when swapping <span class="math inline">\(x_2\)</span> and <span class="math inline">\(x_3\)</span>, so there should also be another term <span class="math inline">\(x_1^{a_1} x_2^{a_3} x_3^{a_2}\)</span>. But this term is lexicographically larger than the one we chose before! That would mean we failed at picking the largest one, so we should choose this one instead, which does satisfy that the coefficients are non-decreasing. Therefore, for the lexicographically largest term, we always have the non-decreasing coefficients and the subtractions can’t be negative.</p>
+<p>That leaves us with the third question… Why would this procedure even finish? It turns out this is also a consequence of the lexicographical ordering! But be careful. Suppose we have a sequence of three numbers <span class="math inline">\((1, 1, 1)\)</span>. There can be infinitely many sequences that are lexicographically smaller. How come? Just choose <span class="math inline">\((0, 1, 1)\)</span>, <span class="math inline">\((0, 2, 1)\)</span>, <span class="math inline">\((0, 3, 1)\)</span>, <span class="math inline">\((0, 4, 1)\)</span>, … You get the idea.</p>
+<p>But in our case, we’re getting a smaller one at each step of the procedure. This is not exactly the same. Imagine we start with <span class="math inline">\((0, 0, 3)\)</span>. In the worst case, it would take three steps to finish if we have the sequence:</p>
+<p><span class="math display">\[
+  (0, 0, 3) \to (0, 0, 2) \to (0, 0, 1) \to (0, 0, 0)
+\]</span></p>
+<p>What about starting with <span class="math inline">\((0, 1, 1)\)</span>? The next one could be <span class="math inline">\((0, 1, 0)\)</span>, but then we can only keep going if we subtract from the second element. Even if we’re unlucky and the next one is something like <span class="math inline">\((0, 0, 100)\)</span>, we would still finish eventually. What about starting with <span class="math inline">\((1, 2, 3)\)</span>? I think you get the idea…</p>
+<p>But intuition isn’t always spot on. The rigorous answer as for why this ends relies on a property called <em>well ordering principle</em> for our lexicographical ordering. Again, just a fancy term. It means that, if I give you any bunch of different sequences, you can always find <em>the smallest one</em>. How come? Well, start by finding the minimum value among all the first elements. There might be more of those, just pick all of them. Now, among these, do the same for the second element, and so on… In the end we get a single one.</p>
+<p>Now suppose our procedure never finishes. This is the same as saying we get an infinite list of sequences, each one smaller than the previous one. What’s <em>the smallest one</em> here? No matter which one we choose, there are always other smaller ones! This is a contradiction, because we said we can always find the smallest element. Then we failed at assuming the procedure never finishes.</p>
+<p>In addition, if we keep going freely, the only time we can’t keep going is when we have <span class="math inline">\((0, 0, 0)\)</span>. And we must finish at some point because of the previous argument. So we must finish here. When talking about our polynomials, this means the term looks like <span class="math inline">\(k \cdot x_1^{0} x_2^{0} x_3^{0}\)</span>, where <span class="math inline">\(k\)</span> is some constant known number. So we don’t necessarily end at <span class="math inline">\(0\)</span>, but at any known number.</p>
+<p>We’re done.</p>
 </div>
 </div>
 </div>
+<p>The proof we saw gives a recipe that can be followed for any symmetric polynomial, and will give us a way of expressing it in terms of elementary symmetric polynomials, and thus, in terms of known numbers. Most of the times we’re only going to use this result to assert that some symmetric polynomial <em>is</em> a known number, without caring about what number it might be. In the cases we do want to know the specific number, we now have a way of finding it. It might be a stupidly long procedure, but it can be done. And because of that, we don’t have to do it ourselves! We could feed this set of instructions to a computer, and in theory it will do it for us. There’s actually one place in the next section where I tell the computer to do it because I’m also too lazy to do these calculations…</p>
 </section>
 <section id="third-degree" class="level1">
 <h1>Third degree</h1>
@@ -963,7 +1022,7 @@ So you still want to know how I got them…
 <div class="callout-body-container callout-body">
 <p>Let the computer do the boring stuff for you! We can use the <code>sympy</code> package available in Python. If you’re interested but never used Python, it’s fine, most of it reads more or less like math, so you can probably still read through the steps below.</p>
 <p>We first define all the symbols we need in our expressions:</p>
-<div id="914c112e" class="cell" data-execution_count="1">
+<div id="7c1f3efd" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x1, x2, x3, a0, a1, a2, w <span class="op">=</span> sympy.symbols(<span class="st">"x1 x2 x3 a0 a1 a2 w"</span>)</span>
@@ -971,7 +1030,7 @@ So you still want to know how I got them…
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t_prime <span class="op">=</span> x1 <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> x2 <span class="op">+</span> w <span class="op">*</span> x3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here I tried to guess that <span class="math inline">\(t \cdot t'\)</span> is already a symmetric polynomial. If that’s true, then we only need to raise that to the third power.</p>
-<div id="a31d64a4" class="cell" data-execution_count="2">
+<div id="155f2506" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy.polys.polyfuncs <span class="im">import</span> symmetrize</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t <span class="op">*</span> t_prime, [x1, x2, x3])</span>
@@ -985,14 +1044,14 @@ So you still want to know how I got them…
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="9">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
 <p><span class="math inline">\(\displaystyle a_{1} \left(w^{2} + w - 2\right) + a_{2}^{2}\)</span></p>
 </div>
 </div>
 <p>Looks like poor <code>sympy</code> needs some help with <span class="math inline">\(\omega\)</span>… Of course! It doesn’t even know what <span class="math inline">\(\omega\)</span> is yet.</p>
-<div id="52b43cbf" class="cell" data-execution_count="3">
+<div id="35ff2be8" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
 <p><span class="math inline">\(\displaystyle - 3 a_{1} + a_{2}^{2}\)</span></p>
 </div>
 </div>
@@ -1001,7 +1060,7 @@ So you still want to know how I got them…
   t^3 t'^3 = (-3 a_1 + a_2^2)^3
 \]</span></p>
 <p>Let’s do the same for <span class="math inline">\(t^{3} + t'^{3}\)</span>:</p>
-<div id="19db0865" class="cell" data-execution_count="4">
+<div id="251af92b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>expr, _ <span class="op">=</span> symmetrize(t<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> t_prime<span class="op">**</span><span class="dv">3</span>, [x1, x2, x3])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(</span>
@@ -1013,28 +1072,28 @@ So you still want to know how I got them…
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="4">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(12 w^{3} - 9 w^{2} - 9 w + 6\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>We can first get rid of the <span class="math inline">\(\omega^{3}\)</span> part:</p>
-<div id="566ffd37" class="cell" data-execution_count="5">
+<div id="c7829132" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>expr <span class="op">=</span> expr.subs(w<span class="op">**</span><span class="dv">3</span>, <span class="dv">1</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>expr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="5">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
-<div id="5a8203d6" class="cell" data-execution_count="6">
+<div id="cbab9253" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>expr.subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="13">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="6">
 <p><span class="math inline">\(\displaystyle - a_{0} \left(- 9 w^{2} - 9 w + 18\right) - a_{1} a_{2} \left(3 w^{2} + 3 w - 6\right) - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
 <p>You naughty <code>sympy</code>, why won’t you listen to me? Well, let’s try simplifying first…</p>
-<div id="c82861df" class="cell" data-execution_count="7">
+<div id="bd228766" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>expr.simplify().subs(<span class="dv">1</span> <span class="op">+</span> w <span class="op">+</span> w<span class="op">**</span><span class="dv">2</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="14">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="7">
 <p><span class="math inline">\(\displaystyle - 27 a_{0} + 9 a_{1} a_{2} - 2 a_{2}^{3}\)</span></p>
 </div>
 </div>
@@ -1432,12 +1491,18 @@ In our specific example, the answer is yes! Why?
 </section>
 <section id="descending-into-abstractness" class="level2">
 <h2 class="anchored" data-anchor-id="descending-into-abstractness">Descending into abstractness</h2>
-<p>TODO</p>
+<p><em>Well, it seems like this descent will take quite some time, let’s wait…</em></p>
 </section>
 </section>
 <section id="you-cant-solve-it" class="level1">
 <h1>You can’t solve it</h1>
-<p>TODO</p>
+<p><em>Of course I can’t, you haven’t written anything here!</em></p>
+</section>
+<section id="afterword" class="level1">
+<h1>Afterword</h1>
+<p>I’ll tell you why I’m writing this post.</p>
+<p>I studied math and computer science. Because of that, the curriculum for both was shortened as compared to studying each one individually. I didn’t have a Galois theory class, so I decided to write my End of Degree Project on this topic. It was basically like studying a more advanced math class, nothing else. Just some hand-waving of complex mathematical structures like groups, rings and fields. Surely it was a good way to develop my math skills, but looking back at my final writing, it has no particular interest. No attempt to make the topic more appealing. The writing style is too generic.</p>
+<p>This was three years ago, when I finished my studies.</p>
 
 
 </section>
