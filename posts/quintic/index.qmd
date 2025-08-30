@@ -136,12 +136,11 @@ you. If you feel like a formula is going out of the screen, please try to
 scroll it even if you don't see a scroll bar! Here, an example:
 
 $$ 
-  \text{I am not one of those who fear to die, and I will not go quietly to the grave without telling the truth. My life's work will be understood in time. I have studied the theory of equations not as an isolated discipline but as part of a grander vision — the theory of groups. This new approach will illuminate the roots of algebraic problems and forever change mathematics. Though my life may be brief, my ideas will live on.}
+  \text{Unfortunately what is little recognized is that the most worthwhile scientific books are those in which the author clearly indicates what he does not know; for an author most hurts his readers by concealing difficulties.}
 $$ 
 
 
 :::
-
 
 # Second degree
 
