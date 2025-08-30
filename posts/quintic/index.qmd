@@ -14,6 +14,8 @@ reading and could be a post by itself.
 
 Revolutionary mathematics. Pointless death.
 
+[_You fancy writer, enough with the overblown intros, give me my math!_](#first-degree)
+
 > A young mathematician. A sleepless night. A mind well aware of the mathematical
   relevance of his fresh ideas. Years of frustration under self-imposed labels.
   _Misunderstood_. _Ahead of his time_. The eve of a fatal duel. A mathematical
@@ -147,7 +149,7 @@ $$
 
 Our _good ol'_ friends the Babylonians were already solving second degree equations...
 Ok, yeah, they didn't formulate them in the same way, but they really could solve them.
-For us, this is a second degree equation:
+For us, this is a second degree equation in the modern sense:
 
 $$ 
   ax^{2} + bx + c = 0
@@ -1772,16 +1774,38 @@ My initial intention was writing a kind of summary of the content I covered in
 my End of Degree Project. This was reinforced after finding a surprisingly 
 short (just six pages!) introduction to the topic titled _Galois Theory for
 Beginners_, written by John Stillwell. I still think it's a good read, but 
-making a text short is usually the opposite of an _easy_ reading. I was also
+making a text short is usually the opposite of an _easy_ read. I was also
 finding myself again trying to understand the concept of a _Galois group_,
 looking for something a bit more intuitive than its modern definition using
 automorphisms.
+
+I also wanted to take a look at some existing introductions of Galois theory
+out there, be it YouTube videos or written posts. These are contents I
+watched/read myself, I won't judge if they're good introductions or not,
+you can do that yourself. Some of them are:
+
+- [_(video)_ Why you can't solve quintic equations (Galois theory approach)](https://www.youtube.com/watch?v=zCU9tZ2VkWc&t=1869s&ab_channel=Mathemaniac)
+- [_(video)_ But why is there no quintic formula? | Galois Theory](https://www.youtube.com/watch?v=1EWUsef0iFs&ab_channel=MathKiwi)
+- [_(video)_ The Insolvability of the Quintic](https://www.youtube.com/watch?v=9aUsTlBjspE&ab_channel=Aleph0)
+- [_(video)_ Galois Theory Explained Simply](https://www.youtube.com/watch?v=Ct2fyigNgPY&ab_channel=MathVisualized)
+- [_(written)_ What is Galois Theory Anyway?](https://www.math3ma.com/blog/what-is-galois-theory-anyway)
+- [_(written)_ An introduction to Galois theory (NRICH)](https://nrich.maths.org/articles/introduction-galois-theory)
+
+Surprisingly, my favourite one is [Why There's 'No' Quintic Formula (proof without Galois theory)
+](https://www.youtube.com/watch?v=BSHv9Elk1MU&ab_channel=notallwrong), which,
+as the name says, is not really an introduction to Galois theory, but deals with 
+the same topic as this post (the unsolvability of the quintic), from a different
+perspective. This is a video originally based on the article [Arnolds's elementary
+proof of the insolvability of the quintic](https://web.williams.edu/Mathematics/lg5/394/ArnoldQuintic.pdf),
+which is by itself a worth read. To my knowledge, there's still no introduction
+based on John Stillwell's text. I think that would be a great addition to the
+world of Galois theory exposition intros.
 
 At the same time, I also started reading Laura Toti's biography of Galois.
 While reading a lot of mentions to his first memoir in there, I was starting
 to consider the idea of reading that memoir myself, just out of curiosity. 
 Before this, I never really tried reading such old original works. And I 
-started reading Galois's first memoir. And once I started understanding
+started reading Galois' first memoir. And once I started understanding
 the basic ideas, I decided that was the way to go in this post. Just do 
 what Galois did.
 
@@ -1794,9 +1818,9 @@ parts where he isn't very clear or he just leaves empty gaps to fill, and I
 needed some help to follow them. 
 
 That's how I arrived at what I believe is the main source for this post,
-_Galois Theory_ by Harold Edwards. Here he basically does the same we tried
-to do here, that is, to try to present Galois theory in the same way Galois 
-himself did it. This book covers a larger content than what I specifically 
+_Galois Theory_ by Harold Edwards. In his book, he basically does the same we
+tried to do here, that is, to try to present Galois theory in the same way
+Galois himself did it. This book covers a larger content than what I specifically
 wanted for this post, and he also doesn't mind using some modern concepts to 
 draw the connections with modern Galois theory. To keep the post as elementary
 as possible, I tried to avoid that.
