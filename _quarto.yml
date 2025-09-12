@@ -17,6 +17,7 @@ website:
   page-footer:
     right: |
       This blog was built with <a href="https://quarto.org/">Quarto</a>.
+  google-analytics: "G-27FX5XLDN9"
 format:
   html:
     theme:
