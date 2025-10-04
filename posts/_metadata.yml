@@ -1,0 +1,11 @@
+comments:
+  giscus:
+    repo: lbm364dl/blog
+    repo-id: R_kgDOOL_FKw
+    category: Announcements
+    category-id: DIC_kwDOOL_FK84CwO_h
+    mapping: pathname
+    reactions-enabled: true
+    input-position: bottom
+    theme: preferred_color_scheme
+    language: en
