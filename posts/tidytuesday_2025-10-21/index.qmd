@@ -1,0 +1,88 @@
+---
+title: "Historic UK Meteorological & Climate Data"
+date: "2025-03-16"
+categories: [tidytuesday]
+---
+
+```{r}
+#| output: false
+tuesdata <- tidytuesdayR::tt_load("2025-10-21")
+historic_station_met <- tuesdata$historic_station_met |>
+  dplyr::mutate(year = as.integer(year))
+station_meta <- tuesdata$station_meta |>
+  dplyr::mutate(opened = as.integer(opened))
+```
+
+```{r}
+historic_station_met
+```
+
+```{r}
+station_meta
+```
+
+::: {.callout-note collapse=true}
+## When was the first station opened?
+
+```{r}
+station_meta |>
+  dplyr::slice_min(opened)
+```
+
+This happened in 1853 with two stations opened in that year!
+:::
+
+::: {.callout-note collapse=true}
+## Which data was collected in that year?
+```{r}
+station_meta |>
+  dplyr::slice_min(opened) |>
+  dplyr::inner_join(
+    historic_station_met,
+    dplyr::join_by(station, opened == year)
+  ) |>
+  print(n = Inf)
+```
+
+Even though two opened in that year, it seems the one from Oxford was better prepared, since it also measured temperature (in consequence, also number of air frost days in each month).
+:::
+
+::: {.callout-note collapse=true}
+## Can we visualize when the stations were opened in a map over time?
+
+```{r}
+data <- station_meta |>
+  dplyr::mutate(year = opened) |>
+  tidyr::complete(station, year) |>
+  dplyr::arrange(station, opened) |>
+  tidyr::fill(everything(), .direction = "down") |>
+  dplyr::filter(year >= opened) |>
+  dplyr::mutate(
+    decade = ggplot2::cut_width(year, width = 10),
+    status = ifelse(year == opened, "New", "Existed")
+  ) |>
+  dplyr::slice_min(year, by = c("station", "decade"))
+```
+
+```{r}
+ggmap::register_stadiamaps(key = Sys.getenv("STADIA_KEY"))
+
+uk_map <- ggmap::get_stadiamap(
+  bbox = osmdata::getbb("United Kingdom"),
+  zoom = 6,
+  maptype = "stamen_watercolor"
+)
+```
+
+```{r}
+uk_map |>
+  ggmap::ggmap() +
+  ggplot2::geom_point(data = data, ggplot2::aes(lng, lat, color = status)) +
+  ggplot2::facet_wrap(~decade) +
+  ggplot2::scale_color_manual(
+    values = c("Existed" = "gray60", "New" = "black")
+  )
+```
+:::
+
+
