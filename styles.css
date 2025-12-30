@@ -66,3 +66,14 @@ div.hide-heading > h6 {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* Style for the attribution link specifically */
+.attribution-link {
+  font-size: 0.85em;
+  color: #777 !important;
+  text-decoration: none;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
