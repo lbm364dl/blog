@@ -2,6 +2,9 @@
 title: "A cinematic year"
 date: "2025-12-31"
 categories: [movies]
+format:
+  html:
+    linkcolor: "#212529"
 ---
 
 
@@ -21,7 +24,8 @@ I chose one of my favorite movies as my first watch this year. If you've read my
 
 ![](/assets/images/a-cinematic-year/only-yesterday.jpg){width=600}
 
-I can taste that pineapple · [[Image: Studio Ghibli]](https://www.ghibli.jp/works/omoide/#&gid=1&pid=6){.attribution-link}
+I can taste that pineapple <br>
+[[Image: Studio Ghibli]](https://www.ghibli.jp/works/omoide/#&gid=1&pid=6){.attribution-link}
 
 :::
 
@@ -37,11 +41,12 @@ Come to [_Sing Sing_](https://letterboxd.com/lbm364dl/film/sing-sing-2023/). As 
 
 ![](/assets/images/a-cinematic-year/sing-sing.jpg){width=600}
 
-Purple is the color of magic · [[Image: A24 / Black Bear Pictures]](https://blackbearpictures.com/film-and-tv/sing-sing){.attribution-link}
+Purple is the color of magic <br>
+[[Image: A24 / Black Bear Pictures]](https://blackbearpictures.com/film-and-tv/sing-sing){.attribution-link}
 
 :::
 
-As you might have already guessed from the constant bombardment of movie links which, fear not, won't stop throughout this post, I use [Letterboxd](https://letterboxd.com/). I love adding the movies I see to [my diary](https://letterboxd.com/lbm364dl/diary/), where I sometimes also add some comments, in Spanish because, after all, it's _my_ diary. You can also add a rating from 1 to 5. You see, even if you don't use Letterboxd and were just to play this inoffensive rating game with some friends after leaving the theater, you'd inevitably shift your perspective. You'd become a cold-minded, analytical machine. _This scene was cool, but the script was something my dog could write. And this actor... What a shame_. Well, maybe you don't relate to this. I did feel like that sometimes. If I have to rate a movie I see, I _need_ to think along those lines. I feel the need to _judge_.
+As you might have already guessed from the constant bombardment of movie links which, fear not, won't stop throughout this post, I use ~~[letterboxing](https://en.wikipedia.org/wiki/Letterboxing_(filming))~~ [Letterboxd](https://letterboxd.com/). I love adding the movies I see to [my diary](https://letterboxd.com/lbm364dl/diary/), where I sometimes also add some comments, in Spanish because, after all, it's _my_ diary. You can also add a rating from 1 to 5. You see, even if you don't use Letterboxd and were just to play this inoffensive rating game with some friends after leaving the theater, you'd inevitably shift your perspective. You'd become a cold-minded, analytical machine. _This scene was cool, but the script was something my dog could write. And this actor... What a shame_. Well, maybe you don't relate to this. I did feel like that sometimes. If I have to rate a movie I see, I _need_ to think along those lines. I feel the need to _judge_.
 
 Enough of this crap. I just want to enjoy the movies. Since that day, I've never rated a movie again. I just add them to my diary and optionally hit a _like_. Not sure what _likes_ mean for others, but I defined my own meaning for them. If I _like_ a movie it means I'd watch it again. If I don't hit a _like_ I’ll most likely not rewatch it. I say _most likely_ because it already failed a couple of times ([_Romería_](https://letterboxd.com/lbm364dl/film/romeria/1/) I'm looking at you).
 
@@ -59,7 +64,8 @@ Evil lies in routine. That's another way to put it. I said my urge for movies is
 
 ![](/assets/images/a-cinematic-year/three-colors-blue.jpg){width=600}
 
-Hanging memories · [[Image: MK2 / Criterion]](https://www.criterion.com/films/27731-three-colors-blue){.attribution-link}
+Hanging memories <br>
+[[Image: MK2 / Criterion]](https://www.criterion.com/films/27731-three-colors-blue){.attribution-link}
 
 :::
 
@@ -79,7 +85,8 @@ In that sense, this year I had some enlightening non-cinema experiences. You can
 
 ![](/assets/images/a-cinematic-year/cria-cuervos.jpg){width=600}
 
-I can hear Jeanette singing · [[Image: Elías Querejeta P.C. / Criterion]](https://www.imdb.com/title/tt0074360/mediaviewer/rm860656385/){.attribution-link}
+I can hear Jeanette singing <br>
+[[Image: Elías Querejeta P.C. / Criterion]](https://www.imdb.com/title/tt0074360/mediaviewer/rm860656385/){.attribution-link}
 
 :::
 
@@ -96,7 +103,8 @@ The most important conclusion (or rather a consequence of the others?) is that, 
 
 ![](/assets/images/a-cinematic-year/el-sur.jpeg){width=600}
 
-The smell of silence · [[Image: Elías Querejeta P.C. / Criterion]](https://www.criterion.com/films/27745-el-sur){.attribution-link}
+The smell of silence <br> 
+[[Image: Elías Querejeta P.C. / Criterion]](https://www.criterion.com/films/27745-el-sur){.attribution-link}
 
 :::
 
@@ -108,13 +116,14 @@ As I said, don't be fooled by my misanthropic soliloquy. If you know me and want
 
 Beauty lies in routine. Yes, I'm repeating myself because this section is about repetition. Maybe repetition is the key.
 
-The first time I watched ~~[_Aftersun_](https://letterboxd.com/agasthya/film/aftersun-2022/) ([whoops wrong movie](https://letterboxd.com/trisfilms/film/aftersun-2022/))~~ [_Aftersun_](https://letterboxd.com/lbm364dl/film/aftersun/), I was far from imagining this would be my favorite movie. It was all by chance. I didn't know about it and a friend told me we should go watch it (thanks Furtis). Then again, in less than a month we went back to watch it with some other friends. I started to like it more, but it was still just a really good movie for me. It was only by the fourth time that I could finally say "_I have never felt something like this, it must be my favorite_". And that just happened this year! I appreciate _Aftersun_ now being basically a cult movie. That means I can find a theater screening it every few months. The fourth time I found out where the screening was thanks to an [unknown Letterboxd user](https://letterboxd.com/robertrouns/film/aftersun/2/). Yes, I like to stalk random people going to the same theaters as me (_Knock, knock, FBI here_). In fact, I already found the next screening for March next year. Can't wait for that.
+The first time I watched ~~[_Aftersun_](https://letterboxd.com/agasthya/film/aftersun-2022/) ([whoops wrong movie](https://letterboxd.com/trisfilms/film/aftersun-2022/))~~ [_Aftersun_](https://letterboxd.com/lbm364dl/film/aftersun/), I was far from imagining this would be my favorite movie. It was all by chance. I didn't know about it and a friend told me we should go watch it. Surprisingly, this is the same person who introduced me to Letterboxd (thank you [Furtis](https://letterboxd.com/treefngrs/)). Then again, in less than a month we went back to watch it with some other friends. I started to like it more, but it was still just a really good movie for me. It was only by the fourth time that I could finally say "_I have never felt something like this, it must be my favorite_". And that just happened this year! I appreciate _Aftersun_ now being basically a cult movie. That means I can find a theater screening it every few months. The fourth time I found out where the screening was thanks to an [unknown Letterboxd user](https://letterboxd.com/robertrouns/film/aftersun/2/). Yes, I like to stalk random people going to the same theaters as me (_Knock, knock, FBI here_). In fact, I already found the next screening for March next year. Can't wait for that.
 
 :::{.text-center}
 
 ![](/assets/images/a-cinematic-year/aftersun.jpg){width=600}
 
-A perfectly imperfect copy · [[Image: A24 / MUBI]](https://www.imdb.com/title/tt19770238/mediaviewer/rm2026192641/){.attribution-link}
+A perfectly imperfect copy <br>
+[[Image: A24 / MUBI]](https://www.imdb.com/title/tt19770238/mediaviewer/rm2026192641/){.attribution-link}
 
 :::
 
@@ -134,7 +143,8 @@ Going to the cinema is important for me. I decided not to watch movies at home, 
 
 ![](/assets/images/a-cinematic-year/cinema-paradiso.jpg){width=600}
 
-A radiant smile · [[Image: Cristaldifilm]](https://www.imdb.com/title/tt0095765/mediaviewer/rm1966310145/){.attribution-link}
+A radiant smile <br> 
+[[Image: Cristaldifilm]](https://www.imdb.com/title/tt0095765/mediaviewer/rm1966310145/){.attribution-link}
 
 :::
 
@@ -167,7 +177,8 @@ While finishing this post, one day I took a short break to check whether there w
 
 ![](/assets/images/a-cinematic-year/verano-1993.jpg){width=600}
 
-May we meet again soon · [[Image: Inicia Films / Avalon]](https://www.imdb.com/title/tt5897636/mediaviewer/rm952644096/){.attribution-link}
+May we meet again soon <br> 
+[[Image: Inicia Films / Avalon]](https://www.imdb.com/title/tt5897636/mediaviewer/rm952644096/){.attribution-link}
 
 :::
 
