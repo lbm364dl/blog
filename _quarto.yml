@@ -3,6 +3,8 @@ project:
 
 website:
   title: "Random blog"
+  site-url: https://lbm364dl.github.io/blog
+  description: "Random blog with random topics"
   repo-url: https://github.com/lbm364dl/blog
   repo-actions: [edit, issue]
   navbar:
@@ -14,6 +16,8 @@ website:
         href: https://www.linkedin.com/in/catalin-sorin-covaci-a6bb44248/
       - icon: envelope
         href: mailto:ctl.covaci@gmail.com
+      - icon: rss
+        href: index.xml
   page-footer:
     right: |
       This blog was built with <a href="https://quarto.org/">Quarto</a>.
